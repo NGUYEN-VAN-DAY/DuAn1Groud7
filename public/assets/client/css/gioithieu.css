@@ -1,0 +1,60 @@
+.zalo-fb {
+
+    /* Cài đặt chung cho nút Zalo và Facebook */
+    .zalo-btn,
+    .facebook-btn {
+        position: fixed;
+        bottom: 100px;
+        z-index: 1000;
+    }
+
+    .zalo-btn {
+        right: 55px;
+    }
+
+    .facebook-btn {
+        right: 0px;
+    }
+
+    /* Định dạng nút với biểu tượng full khung */
+    .zalo-btn a,
+    .facebook-btn a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 50px;
+        height: 50px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        overflow: hidden;
+        /* Cắt phần icon vượt quá khung */
+        transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    /* Màu nền cho từng nút */
+    .zalo-btn a {
+        background-color: #0084ff;
+        /* Màu xanh của Zalo */
+    }
+
+    .facebook-btn a {
+        background-color: #1877f2;
+        /* Màu xanh của Facebook */
+    }
+
+    /* Biểu tượng full khung */
+    .zalo-btn img,
+    .facebook-btn img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        /* Đảm bảo icon full khung */
+    }
+
+    /* Hiệu ứng hover */
+    .zalo-btn a:hover,
+    .facebook-btn a:hover {
+        transform: scale(1.1);
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    }
+}
