@@ -53,11 +53,15 @@ class Header extends BaseView
 
         <body>
             <div class="banner">
-                <div class="banner-content">
+                <marquee behavior="" direction="" bgcolor="red" id="banner"> <span>Ưu đãi lên đến 30% cho tất cả sản phẩm mùa hè!</span>
+                    <span>Mua 2 tặng 1 cho mọi loại trái cây!</span>
+                    <span>Freeship toàn quốc cho đơn hàng từ 300,000 VNĐ!</span>
+                </marquee>
+                <!-- <div class="banner-content">
                     <span>Ưu đãi lên đến 30% cho tất cả sản phẩm mùa hè!</span>
                     <span>Mua 2 tặng 1 cho mọi loại trái cây!</span>
                     <span>Freeship toàn quốc cho đơn hàng từ 300,000 VNĐ!</span>
-                </div>
+                </div> -->
             </div>
             <div class="hero_area">
                 <!-- header section strats -->
