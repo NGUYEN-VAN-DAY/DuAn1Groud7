@@ -12,13 +12,40 @@ class Index extends BaseView
 
 
 ?>
-        <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous"> -->
-        <div class="container-fluid">
-            <section class="shop_section layout_padding">
-                <div class="row">
-                    <div class="col-md-3">
-                        <div>
+        <section class="shop_section layout_padding">
+            <div class="row">
+                <div class="col-md-3">
+                    <?php
+                    Category::render($data['categories']);
+                    ?>
+                </div>
+                <div class="col-md-9">
+                    <?php
+                    if (count($data) && count($data['products'])) :
+                    ?>
+                        <div class="container">
 
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <h3>
+                                        Sản phẩm
+                                        </h2>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="dropdown">
+                                        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                            Dropdown button
+                                        </button>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="#">Action</a></li>
+                                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
                             <?php
                             Category::render($data['categories']);
                             ?>
