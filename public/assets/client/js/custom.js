@@ -1,4 +1,9 @@
 // to get current year
+import 'bootstrap';
+import 'bootstrap/dist/css/bootstrap.css';
+import 'bootstrap/dist/js/bootstrap.js';
+import $ from 'jquery';
+import Popper from 'popper.js';
 function getYear() {
     var currentDate = new Date();
     var currentYear = currentDate.getFullYear();
@@ -6,6 +11,8 @@ function getYear() {
 }
 
 getYear();
+
+
 
 // owl carousel 
 

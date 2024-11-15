@@ -122,7 +122,8 @@ class ProductController
             'is_feature' => $_POST['is_feature'],
             'status' => $_POST['status'],
             'category_id' => $_POST['category_id'],
-            'description' => $_POST['description']
+            'description' => $_POST['description'],
+            'logDescription' => $_POST['logDescription']
 
         ];
 

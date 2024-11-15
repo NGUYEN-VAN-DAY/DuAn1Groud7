@@ -11143,14 +11143,21 @@ a.text-dark:focus {
 }
 
 /*# sourceMappingURL=bootstrap.css.map */
-
+#banner{
+  height: 30px;
+}
 
 /* Banner chạy */
 .banner {
   overflow: hidden;
-  background-color: #dc3545;
+  /* background-color: #dc3545; */
   color: #ffffff;
   position: relative;
+  width: 100%0
+  ;
+  height: 30px;
+
+
 }
 
 .banner-content {

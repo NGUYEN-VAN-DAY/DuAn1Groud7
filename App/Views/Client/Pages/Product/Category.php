@@ -34,9 +34,9 @@ class Category extends BaseView
                             ?>
                                 <div class="col-sm-6 col-md-4 col-lg-3">
                                     <div class="box">
-                                        <a href="/products/<?= $item['id'] ?>" class="">
-                                            <div class="card mb-4 shadow-sm">
-                                                <img class="img-index" src="<?= APP_URL ?>/public/uploads/products/<?= $item['image'] ?>" class="card-img-top" alt="" style="width: 100%; display: block;" data-holder-rendered="true">
+                                        <a href="/products/<?= $item['id'] ?>" class=""  style="height: 100px;">
+                                            <div class="card mb-4 shadow-sm ">
+                                                <img class="img-index" id="img" src="<?= APP_URL ?>/public/uploads/products/<?= $item['image'] ?>"  class="card-img-top" alt=""  data-holder-rendered="true">
                                             </div>
                                             <div class="">
                                                 <h6>

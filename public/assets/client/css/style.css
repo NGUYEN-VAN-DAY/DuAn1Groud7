@@ -6,7 +6,23 @@ body {
   background-color: #ffffff;
 }
 
+#banner{
+  height: 30px;
+}
 
+
+/* Banner chạy */
+.banner {
+  overflow: hidden;
+  /* background-color: #dc3545; */
+  color: #ffffff;
+  position: relative;
+  width: 100%0
+  ;
+  height: 30px;
+
+
+}
 .layout_padding {
   padding-top: 90px;
   padding-bottom: 90px;
