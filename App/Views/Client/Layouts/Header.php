@@ -13,8 +13,9 @@ class Header extends BaseView
         // var_dump($is_login);
 
 ?>
-        <!DOCTYPE html>
-        <html>
+
+
+
 
         <head>
             <!-- Basic -->
@@ -31,7 +32,7 @@ class Header extends BaseView
             <title>
                 Cửa hàng trái cây
             </title>
-
+            <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
             <!-- slider stylesheet -->
             <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
             <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
