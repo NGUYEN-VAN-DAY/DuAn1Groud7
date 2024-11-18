@@ -14,75 +14,95 @@ class Category extends BaseView
     {
 
 ?>
-        <section class="shop_section layout_padding">
+        <div class="container-fluid">
 
-            <div class="row">
-                <div class="col-md-3">
-                    <?php
-                    ComponentsCategory::render($data['categories']);
-                    ?>
-                </div>
-                <div class="col-md-9">
-                    <?php
-                    if (isset($data) && isset($data['products']) && $data && $data['products']) :
-                    ?>
-                        <h1 class="container"><?= $data['products'][0]['category_name'] ?></h1>
+            <section class="shop_section layout_padding">
 
-                        <div class="row">
-                            <?php
-                            foreach ($data['products'] as $item) :
-                            ?>
-                                <div class="col-sm-6 col-md-4 col-lg-3">
-                                    <div class="box">
-                                        <a href="/products/<?= $item['id'] ?>" class=""  style="height: 100px;">
-                                            <div class="card mb-4 shadow-sm ">
-                                                <img class="img-index" id="img" src="<?= APP_URL ?>/public/uploads/products/<?= $item['image'] ?>"  class="card-img-top" alt=""  data-holder-rendered="true">
-                                            </div>
-                                            <div class="">
-                                                <h6>
-                                                    <p class="card-text"><?= $item['name'] ?></p>
-                                                </h6>
-                                                <h6>
-                                                    <?php
-                                                    if ($item['discount_price'] > 0) :
-                                                    ?>
-                                                        <p>Giá gốc: <strike><?= number_format($item['price']) ?> đ</strike></p>
-                                                        <p>Giảm giá: <strong class="text-danger"><?= number_format($item['price'] - $item['discount_price']) ?> đ</strong></p>
+                <div class="row">
+                    <div class="col-md-3">
+                        <?php
+                        ComponentsCategory::render($data['categories']);
+                        ?>
+                    </div>
+                    <div class="col-md-9">
 
-                                                    <?php
-                                                    else :
-                                                    ?>
-                                                        <p>Giá tiền: <?= number_format($item['price']) ?> đ</p>
+                        <?php
+                        if (isset($data) && isset($data['products']) && $data && $data['products']) :
+                        ?>
 
-                                                    <?php
-                                                    endif;
-                                                    ?>
-                                                </h6>
-                                            </div>
-                                            <div class="new">
-                                                <span>
-                                                    <?= ($item['is_feature'] == 1) ? 'Mới' : (($item['is_feature'] == 2) ? 'Hot' : '') ?>
-                                                </span>
-                                            </div>
-                                        </a>
+                            <div class="container-fluid">
+
+                                <div class="row">
+                                    <div class="col-md-9">
+                                        <h3 class="container"><?= $data['products'][0]['category_name'] ?></h3>
+                                    </div>
+                                    <div class="col-md-3 text-right">
+                                        <label for="fruits">Default Sorting:</label>
+                                        <select id="fruits" name="fruitlist" class="border-0 form-select-sm bg-light  " form="fruitform">
+                                            <option value="volvo">Nothing</option>
+                                            <option value="saab">Popularity</option>
+                                            <option value="opel">Organic</option>
+                                            <option value="audi">Fantastic</option>
+                                        </select>
                                     </div>
                                 </div>
+                            </div>
+                            <div class="row">
+                                <?php
+                                foreach ($data['products'] as $item) :
+                                ?>
+                                    <div class="col-sm-6 col-md-4 col-lg-3">
+                                        <div class="box">
+                                            <a href="/products/<?= $item['id'] ?>" class="" style="height: 100px;">
+                                                <div class="card mb-4 shadow-sm ">
+                                                    <img class="img-index" id="img" src="<?= APP_URL ?>/public/uploads/products/<?= $item['image'] ?>" class="card-img-top" alt="" data-holder-rendered="true">
+                                                </div>
+                                                <div class="">
+                                                    <h6>
+                                                        <p class="card-text"><?= $item['name'] ?></p>
+                                                    </h6>
+                                                    <h6>
+                                                        <?php
+                                                        if ($item['discount_price'] > 0) :
+                                                        ?>
+                                                            <p>Giá gốc: <strike><?= number_format($item['price']) ?> đ</strike></p>
+                                                            <p>Giảm giá: <strong class="text-danger"><?= number_format($item['price'] - $item['discount_price']) ?> đ</strong></p>
 
-                            <?php
-                            endforeach;
-                            ?>
-                        </div>
-                    <?php
-                    else :
-                    ?>
-                        <h3 class="text-center text-danger">Không có sản phẩm</h3>
-                    <?php
-                    endif;
-                    ?>
+                                                        <?php
+                                                        else :
+                                                        ?>
+                                                            <p>Giá tiền: <?= number_format($item['price']) ?> đ</p>
+
+                                                        <?php
+                                                        endif;
+                                                        ?>
+                                                    </h6>
+                                                </div>
+                                                <div class="new">
+                                                    <span>
+                                                        <?= ($item['is_feature'] == 1) ? 'Mới' : (($item['is_feature'] == 2) ? 'Hot' : '') ?>
+                                                    </span>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                <?php
+                                endforeach;
+                                ?>
+                            </div>
+                        <?php
+                        else :
+                        ?>
+                            <h3 class="text-center text-danger">Không có sản phẩm</h3>
+                        <?php
+                        endif;
+                        ?>
+                    </div>
                 </div>
-            </div>
-            </div>
+        </div>
         </section>
+        </div>
 <?php
 
     }
