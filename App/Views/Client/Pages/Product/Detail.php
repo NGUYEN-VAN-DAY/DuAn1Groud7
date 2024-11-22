@@ -52,7 +52,7 @@
                         </div>
                     </div>
                     <script>
-                        var basePrice = <?php  echo $data['product']['price'] - $data['product']['discount_price'] ?> ; // Giá cơ bản cho 1 sản phẩm
+                        var basePrice = <?php echo $data['product']['price'] - $data['product']['discount_price'] ?> ; // Giá cơ bản cho 1 sản phẩm
                         console.log(basePrice);
                         
                         function updatePrice() {
@@ -116,7 +116,7 @@
                     <hr>
                     <h3>Mô tả sản phẩm</h3>
                     <!-- <hr> -->
-                    <?= $data['product']['long_description'] ?>
+                    <?= $data['product']['logDescription'] ?>
                 </div>
                 <br>
 
@@ -213,16 +213,16 @@
                                             ?>
                                                 <img src="<?= APP_URL ?>/public/uploads/users/user1.jpeg" alt="user" width="50" class="rounded-circle">
 
-                                            <?php
-                                            endif;
-                                            ?>
-                                        </div>
-                                        <div class="comment-text w-100">
-                                            <h6 class="font-medium"> <?= $_SESSION['user']['username'] ?></h6>
-                                            <form action="/comments" method="post">
-                                                <input type="hidden" name="method" value="POST" id="">
-                                                <input type="hidden" name="product_id" value="<?= $data['product']['id'] ?>" id="product_id">
-                                                <input type="hidden" name="user_id" value="<?= $_SESSION['user']['id'] ?>" id="user_id">
+                                        <?php
+                                        endif;
+                                        ?>
+                                    </div>
+                                    <div class="comment-text w-100">
+                                        <h6 class="font-medium"><?= $_SESSION['user']['name'] ?> <?= $_SESSION['user']['username'] ?></h6>
+                                        <form action="/comments" method="post">
+                                            <input type="hidden" name="method" value="POST" id="">
+                                            <input type="hidden" name="product_id" value="<?= $data['product']['id'] ?>" id="product_id">
+                                            <input type="hidden" name="user_id" value="<?= $_SESSION['user']['id'] ?>" id="user_id">
 
                                                 <div class="form-group">
                                                     <label for="">Bình luận</label>
