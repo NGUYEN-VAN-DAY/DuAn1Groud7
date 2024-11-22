@@ -28,6 +28,7 @@ class Header extends BaseView
             <meta name="description" content="" />
             <meta name="author" content="" />
             <link rel="shortcut icon" href="images/bivicon.png" type="image/x-icon">
+            <link rel="icon" type="image/png" sizes="16x16" href="<?= APP_URL ?>/public/assets/client/images/tong_hop.png">
 
             <title>
                 Cửa hàng trái cây
@@ -156,7 +157,7 @@ class Header extends BaseView
                                     </a>
                                 </div>
                                 <li class="nav-item">
-                                    <a class="nav-link bi bi-cart2" href="#">
+                                    <a class="nav-link bi bi-cart2" href="/cart">
                                     </a>
                                 </li>
                         </div>

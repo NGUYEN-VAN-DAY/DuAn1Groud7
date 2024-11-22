@@ -24,6 +24,8 @@ Route::get(url: '/post', controllerMethod: 'App\Controllers\Client\PostControlle
 
 //Liên hệ
 Route::get(url: '/contact', controllerMethod: 'App\Controllers\Client\ContactController@index');
+Route::get(url: '/post', controllerMethod: 'App\Controllers\Client\PostController@index');
+Route::get(url: '/pay', controllerMethod: 'App\Controllers\Client\PayController@index');
 //
 Route::get(url: '/introduce', controllerMethod: 'App\Controllers\Client\IntroduceController@index');
 
@@ -83,5 +85,11 @@ Route::post(url: '/admin/users', controllerMethod: 'App\Controllers\Admin\UserCo
 Route::get('/admin/users/{id}', 'App\Controllers\Admin\UserController@edit');
 Route::put('/admin/users/{id}', 'App\Controllers\Admin\UserController@update');
 Route::delete('/admin/users/{id}', 'App\Controllers\Admin\UserController@delete');
+//Comment
+Route::post('/admin/comments', 'App\Controllers\Admin\CommentController@index');
+//history
+Route::post('/admin/historys', 'App\Controllers\Admin\HistoryController@index');
+//post
+Route::post('/admin/posts', 'App\Controllers\Admin\PostController@index');
 
 Route::dispatch($_SERVER['REQUEST_URI']);

@@ -53,7 +53,7 @@ class Index extends BaseView
                     <?php
                     if ($is_login) :
                     ?>
-                        <a href="/checkout" class="btn btn-outline-dark">Thanh toán</a>
+                        <a href="/pay" class="btn btn-outline-dark">Thanh toán</a>
 
                     <?php
                     else :

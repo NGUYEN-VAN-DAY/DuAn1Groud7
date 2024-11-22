@@ -9,28 +9,32 @@ class ChangePassword extends BaseView
     public static function render($data = null)
     {
 ?>
-        <div class="container mt-5">
-            <div class="row">
-                <div class="offset-md-1 col-md-3">
-                    <?php
-                    if ($data && $data['avatar']):
-                    ?>
-                        <img src="<?= APP_URL ?>/public/uploads/users/<?= $data['avatar'] ?>" width="100%" alt="">
-                    <?php
-                    else :
-                    ?>
-                        <img src="<?= APP_URL ?>/public/uploads/users/use4.jpg" width="100%" alt="">
 
-                    <?php
-                    endif;
-                    ?>
+        <div class="container mt-5">
+            <div class="row justify-content-center">
+                <div class="offset">
                 </div>
                 <div class="col-md-7">
                     <div class="card card-body">
                         <h3 class="text-center">Đổi mật Khẩu</h3>
                         <form action="/change-password" method="post">
                             <input type="hidden" name="method" value="PUT">
+                            <div class="offset" style="display: flex">
+                                <?php
 
+                                if ($data && $data['avatar']):
+                                ?>
+                                    <img class="avatar_user " src="<?= APP_URL ?>/public/uploads/users/<?= $data['avatar'] ?>" width="150px" height="150px" style="margin: auto; border-radius: 50%; " alt="">
+                                <?php
+                                else :
+                                ?>
+                                    <img src="<?= APP_URL ?>/public/uploads/users/avatars.jpg" width="50%" height="200px" alt="">
+
+                                <?php
+                                endif;
+                                ?>
+
+                            </div>
                             <div class="form-group">
                                 <label for="username">Tên đăng nhập*</label>
                                 <input type="text" class="form-control" id="username" placeholder="Nhập tên đăng nhập..." name="username" disabled value="<?= $data['username'] ?>">

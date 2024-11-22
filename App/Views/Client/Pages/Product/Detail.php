@@ -12,34 +12,34 @@ class Detail extends BaseView
 ?>
 <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous"> -->
 
-        <div class="container mt-5 mb-5">
+            <div class="container mt-5 mb-5">
 
-            <div class="row">
-                <div class="col-md-8">
-                    <img src="<?= APP_URL ?>/public/uploads/products/<?= $data['product']['image'] ?>" alt="" width="80%" class="img-padding">
-                    <div>
+                <div class="row">
+                    <div class="col-md-8">
+                        <img src="<?= APP_URL ?>/public/uploads/products/<?= $data['product']['image'] ?>" alt="" width="80%" class="img-padding">
+                        <div>
+                        </div>
                     </div>
-                </div>
-                <div class="col-md-4">
+                    <div class="col-md-4">
 
-                    <h1 class="fs-1"><?= $data['product']['name'] ?></h1>
-                    <!-- <h4>trạng thái: <button class="btn btn-success">còn hàng</button></h4> -->
-                    <h5>Mô tả: <?= $data['product']['description'] ?></h5>
+                        <h1 class="fs-1"><?= $data['product']['name'] ?></h1>
+                        <!-- <h4>trạng thái: <button class="btn btn-success">còn hàng</button></h4> -->
+                        <h5>Mô tả: <?= $data['product']['description'] ?></h5>
 
 
-                    <?php
-                    if ($data['product']['discount_price'] > 0) :
-                    ?>
-                        <h5>Giá gốc: <strike><?= number_format($data['product']['price']) ?> đ</strike></h5>
-                        <h5 id="price">Giá giảm: <strong class="text-danger"><?= number_format($data['product']['price'] - $data['product']['discount_price']) ?> đ</strong></h5>
+                        <?php
+                        if ($data['product']['discount_price'] > 0) :
+                        ?>
+                            <h5>Giá gốc: <strike><?= number_format($data['product']['price']) ?> đ</strike></h5>
+                            <h5 id="price">Giá giảm: <strong class="text-danger"><?= number_format($data['product']['price'] - $data['product']['discount_price']) ?> đ</strong></h5>
 
-                    <?php
-                    else :
-                    ?>
-                        <h5>Giá tiền: <?= number_format($data['product']['price']) ?> đ</h5>
-                    <?php
-                    endif;
-                    ?>
+                        <?php
+                        else :
+                        ?>
+                            <h5>Giá tiền: <?= number_format($data['product']['price']) ?> đ</h5>
+                        <?php
+                        endif;
+                        ?>
 
                     <div class="product-detail">
                         <!-- <h2 class="product-name">Tên sản phẩm</h2> -->
@@ -61,43 +61,59 @@ class Detail extends BaseView
                             document.getElementById("price").innerText = price.toLocaleString() + " VND /kg";
                         }
 
-                        function increaseQuantity() {
-                            let quantityInput = document.getElementById("quantity");
-                            quantityInput.value = parseInt(quantityInput.value) + 1;
-                            updatePrice();
-                        }
+                            function increaseQuantity() {
+                                let quantityInput = document.getElementById("quantity");
+                                quantityInput.value = parseInt(quantityInput.value) + 1;
+                                updatePrice();
+                            }
 
-                        function decreaseQuantity() {
-                            var quantityInput = document.getElementById("quantity");
-                            quantityInput.value = parseInt(quantityInput.value) - 1
-                           console.log(quantityInput.value);
-                          quantityInput.value=Math.max(1,quantityInput.value);
-                           
-                            updatePrice();
-                        }
-                    </script>
+                            function decreaseQuantity() {
+                                var quantityInput = document.getElementById("quantity");
+                                quantityInput.value = parseInt(quantityInput.value) - 1
+                            console.log(quantityInput.value);
+                            quantityInput.value=Math.max(1,quantityInput.value);
+                            
+                                updatePrice();
+                            }
+                        </script>
 
 
-                    <form action="#" method="post">
-                        <input type="hidden" name="method" id="" value="POST">
-                        <input type="hidden" name="id" id="" value="<?= $data['product']['id'] ?>" required>
+                        <form action="#" method="post">
+                            <input type="hidden" name="method" id="" value="POST">
+                            <input type="hidden" name="id" id="" value="<?= $data['product']['id'] ?>" required>
 
-                        <button type="submit" class="btn btn-sm btn-outline-success mt-3 "> Thêm vào giỏ hàng</button>
-                       
-                        <button type="submit" class="btn btn-sm btn-outline-success mt-3 "> Mua ngay</button>
-                    </form>
+                            <button type="submit" class="btn btn-sm btn-outline-success mt-3 "> Thêm vào giỏ hàng</button>
+                        
+                            <button type="submit" class="btn btn-sm btn-outline-success mt-3 "> Mua ngay</button>
+                        </form>
 
-                    <br>
-                    <div class="border border-danger p-3">
-                        <h4>Tiêu chuẩn dịch vụ</h4>
-                        <div><img src="https://baobihuuco.com/wp-content/uploads/2019/04/icon-giao-hang-toan-quoc.jpg" alt="" width="10%"> giao hàng nội thành từ 2-4 giờ</div>
-                        <div><img src="https://png.pngtree.com/png-vector/20220611/ourlarge/pngtree-gold-star-medal-png-image_4994571.png" width="10%"> Đổi trả trong vòng 48 giờ nếu sản phẩm không đạt chất lượng cam kết</div>
+                        <br>
+                        <div class="border border-danger p-3">
+                            <h4>Tiêu chuẩn dịch vụ</h4>
+                            <div><img src="https://baobihuuco.com/wp-content/uploads/2019/04/icon-giao-hang-toan-quoc.jpg" alt="" width="10%"> giao hàng nội thành từ 2-4 giờ</div>
+                            <div><img src="https://png.pngtree.com/png-vector/20220611/ourlarge/pngtree-gold-star-medal-png-image_4994571.png" width="10%"> Đổi trả trong vòng 48 giờ nếu sản phẩm không đạt chất lượng cam kết</div>
+                        </div>
+                        <br>
+                        <!-- <div class="border border-warning p-3">
+                            <h4>Đánh giá sản phẩm ...</h4>
+
+                        </div> -->
+
+            <div class="row">
+                <div class="col-md-8">
+                    <img src="<?= APP_URL ?>/public/uploads/products/<?= $data['product']['image'] ?>" alt="" width="80%" class="img-padding">
+                    <div>
                     </div>
-                    <br>
-                    <!-- <div class="border border-warning p-3">
-                        <h4>Đánh giá sản phẩm ...</h4>
+                </div>
+                <div class="col-md-4">
 
-                    </div> -->
+                <div class="col-md-12 mt-5">
+                    <hr>
+                    <h3>Mô tả sản phẩm</h3>
+                    <!-- <hr> -->
+                    <?= $data['product']['logDescription'] ?>
+                </div>
+                <br>
 
                 </div>
             </div>
