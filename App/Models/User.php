@@ -62,14 +62,27 @@ class User extends BaseModel
             $username = $data['username'];
             $email = $data['email'];
             $password = $data['password'];
-            $sql = "UPDATE $this->table SET password='$password' WHERE username='$username' AND email='$email'";
+            $address = $data['address'];
+            $phone = $data['phone'];
+    
+            // Updated SQL query to include phone and address
+            $sql = "UPDATE $this->table 
+                    SET password = ?, address = ?, phone = ? 
+                    WHERE username = ? AND email = ?";
+    
             $conn = $this->_conn->MySQLi();
             $stmt = $conn->prepare($sql);
+            
+            // Binding parameters to the prepared statement
+            $stmt->bind_param('sssss', $password, $address, $phone, $username, $email);
+    
+            // Execute the statement
             return $stmt->execute();
         } catch (\Throwable $th) {
-            error_log('Lỗi khi cập nhật dữ liệu: ', $th->getMessage());
+            error_log('Lỗi khi cập nhật dữ liệu: ' . $th->getMessage());
             NotificationHelper::error('updateUserByUsernameAndEmail', 'Lỗi khi cập nhật dữ liệu');
             return false;
         }
     }
+    
 }

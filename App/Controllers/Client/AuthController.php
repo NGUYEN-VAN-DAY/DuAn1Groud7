@@ -41,6 +41,7 @@ class AuthController
             'username' => $username,
             'password' => $hash_password,
             'email' => $email,
+            
 
         ];
         $result = AuthHelper::register($data);
@@ -107,23 +108,36 @@ class AuthController
         Footer::render();
     }
     public static function update($id)
-    {
-        $is_valid = AuthValidation::edit();
-        if (!$is_valid) {
-            NotificationHelper::error('update_user', 'Cập nhật thất bại');
-            header("Location: /users/$id");
-            exit();
-        }
-        $data = [
-            'email' => $_POST['email'],
-        ];
-        $is_upload = AuthValidation::uploadAvatar();
-        if ($is_upload) {
-            $data['avatar'] = $is_upload;
-        }
-        $result = AuthHelper::update($id, $data);
+{
+    // Xác thực các trường đầu vào
+    $is_valid = AuthValidation::edit();
+    if (!$is_valid) {
+        NotificationHelper::error('update_user', 'Cập nhật thất bại');
         header("Location: /users/$id");
+        exit();
     }
+
+    // Chuẩn bị dữ liệu để cập nhật
+    $data = [
+        'email' => $_POST['email'],
+        'address' => $_POST['address'], // Giả sử bạn có trường địa chỉ trong form
+        'phone' => $_POST['phone'], // Giả sử bạn có trường số điện thoại trong form
+    ];
+    $is_upload = AuthValidation::uploadAvatar();
+    if ($is_upload) {
+        $data['avatar'] = $is_upload;
+    }
+    $result = AuthHelper::update($id, $data);
+    
+    if ($result) {
+        header("Location: /users/$id");
+        exit();
+    } else {
+        NotificationHelper::error('update_user', 'Cập nhật thất bại');
+        header("Location: /users/$id");
+        exit();
+    }
+}
 
     public static function forgotPassword()
     {
