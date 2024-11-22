@@ -70,6 +70,7 @@ class Footer extends BaseView
 
 
     <script src="public/assets/client/js/gioithieu.js"></script>
+    <script src="public/assets/client/js/priceFilter.js"></script>
 
     <script src="public/assets/client/js/jquery-3.4.1.min.js"></script>
     <script src="public/assets/client/js/bootstrap.js"></script>

@@ -155,4 +155,18 @@ abstract class BaseModel implements CrudInterface
             return $result;
         }
     }
+    // public function getPrice()
+    // {
+    //     $min_price = isset($_GET['min_price']) ? (int)$_GET['min_price'] : 0;
+    //     $max_price = isset($_GET['max_price']) ? (int)$_GET['max_price'] : 1000000;
+
+    //     // Câu truy vấn SQL
+    //     $sql = "SELECT * FROM $this->table WHERE price >= $min_price AND price <= $max_price";
+    //     $conn = $this->_conn->MySQLi();
+
+    //     $stmt = $conn->prepare($sql);
+    //     $stmt->bind_param("ii", $min_price, $max_price);
+    //     $stmt->execute();
+    //     $result = $stmt->get_result();
+    // }
 }
