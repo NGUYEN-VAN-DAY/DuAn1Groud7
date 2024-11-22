@@ -52,7 +52,7 @@
                         </div>
                     </div>
                     <script>
-                        var basePrice = <?php echo $data['product']['price'] - $data['product']['discount_price'] ?> ; // Giá cơ bản cho 1 sản phẩm
+                        var basePrice = <?php  echo $data['product']['price'] - $data['product']['discount_price'] ?> ; // Giá cơ bản cho 1 sản phẩm
                         console.log(basePrice);
                         
                         function updatePrice() {
@@ -116,7 +116,7 @@
                     <hr>
                     <h3>Mô tả sản phẩm</h3>
                     <!-- <hr> -->
-                    <?= $data['product']['logDescription'] ?>
+                    <?= $data['product']['long_description'] ?>
                 </div>
                 <br>
 
