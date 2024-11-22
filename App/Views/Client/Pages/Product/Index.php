@@ -64,22 +64,27 @@ class Index extends BaseView
                                         </h3>
                                     </div>
                                     <div class="col-md-3 text-right  ">
-                                    <label for="fruits">Default Sorting:</label>
-                                    <select id="fruits" name="fruitlist" class="border-0 form-select-sm bg-light  " form="fruitform">
-                                        <option value="volvo">Nothing</option>
-                                        <option value="saab">Popularity</option>
-                                        <option value="opel">Organic</option>
-                                        <option value="audi">Fantastic</option>
-                                    </select>
+                                        <label for="fruits">Sắp xếp theo mặc định:</label>
+                                        <select id="choose" name="choose" onchange="" class="border-0 form-select-sm bg-light  " form="fruitform">
+                                            <option value="ttc" >Từ thấp tới cao</option>
+                                            <option value="ctt" >Từ cao tới thấp</option>
+                                            <option value="opel">Sản phẩm nổi bật</option>
+                                            <option value="opel">Mới nhất</option>
+                                            <option value="opel">Cũ nhất</option>
+
+                                        </select>
+                                        <p id="output"></p>
                                     </div>
                                 </div>
                             </div>
-                            <div class="row">
+                            <div class="row" >
+                              
                                 <?php
                                 foreach ($data['products'] as $item) :
                                 ?>
-                                    <div class="col-sm-6 col-md-4 col-lg-3">
-                                        <div class="box">
+                                    <div class="col-sm-6 col-md-4 col-lg-3"id="product" >
+
+                                        <div class="box" >
                                             <a href="/products/<?= $item['id'] ?>" class="">
                                                 <div class="card mb-4 shadow-sm">
                                                     <img class="img-index" src="<?= APP_URL ?>/public/uploads/products/<?= $item['image'] ?>" class="card-img-top" alt="" style="width: 100%;  display: block;" data-holder-rendered="true">
@@ -94,7 +99,9 @@ class Index extends BaseView
                                                         ?>
                                                             <p>Giá gốc: <strike><?= number_format($item['price']) ?> đ</strike></p>
                                                             <p>Giảm giá: <strong class="text-danger"><?= number_format($item['price'] - $item['discount_price']) ?> đ</strong></p>
+                                                            <p style="display: none;" id="priceProduct"> <?= $item['price'] - $item['discount_price'] ?> </p>
 
+                                                            <!-- <?php echo $data['product']['price'] - $data['product']['discount_price'] ?> -->
                                                         <?php
                                                         else :
                                                         ?>
@@ -119,6 +126,7 @@ class Index extends BaseView
 
                                 ?>
                             </div>
+                        
                         <?php
                         else :
                         ?>
@@ -128,6 +136,7 @@ class Index extends BaseView
                         ?>
                     </div>
                 </div>
+            
         </div>
         </section>
 
