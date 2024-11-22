@@ -26,8 +26,7 @@ class Edit extends BaseView
                                 <?php
                                 else :
                                 ?>
-                                    <img src="<?= APP_URL ?>/public/uploads/users/avatars.jpg" width="150px" height="150px" style="margin: auto; border-radius: 50%; " alt="avatar">
-
+                                    <img src="<?= APP_URL ?>/public/uploads/users/20241115121158.jpg" width="150px" height="150px" style="margin: auto; border-radius: 50%; " alt="avatar">
                                 <?php
                                 endif;
                                 ?>

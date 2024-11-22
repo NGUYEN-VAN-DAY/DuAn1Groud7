@@ -77,6 +77,14 @@ class Edit extends BaseView
                                         <input type="file" class="form-control" id="avatar" placeholder="Chọn ảnh đại diện" name="avatar">
                                     </div>
                                     <div class="form-group">
+                                        <label for="address">Address</label>
+                                        <input type="text" class="form-control" id="address" placeholder="Nhập địa chỉ" name="address">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="phone">Số điện thoại</label>
+                                        <input type="tel" class="form-control" id="phone" placeholder="Nhập số điện thoại" name="phone">
+                                    </div>
+                                    <div class="form-group">
                                         <label for="role">Quyền</label>
                                         <input type="text" class="form-control" id="role " name="role" value="<?= ($data['role'] == 1) ? 'Quản trị' : 'Khách hàng' ?>" disabled>
                                     </div>
