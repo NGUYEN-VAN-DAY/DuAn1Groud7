@@ -5,6 +5,7 @@ namespace App\Controllers\Client;
 use App\Helpers\AuthHelper;
 use App\Helpers\NotificationHelper;
 use App\Models\Category;
+use App\Models\Comment;
 use App\Models\Product;
 use App\Views\Client\Components\Notification;
 use App\Views\Client\Layouts\Footer;
@@ -30,6 +31,8 @@ class ProductController
         $product = new Product();
         $data['product'] = $product->getOneProductByStatus($id);
         $data['is_login'] = AuthHelper::checkLogin();
+        $comments = new Comment();
+        $data['comments'] = $comments->get5CommentNewestByProductAndStatus($id);
         Header::render();
         Notification::render();
         NotificationHelper::unset();
@@ -46,4 +49,5 @@ class ProductController
         ProductCategory::render($data);
         Footer::render();
     }
+    
 }

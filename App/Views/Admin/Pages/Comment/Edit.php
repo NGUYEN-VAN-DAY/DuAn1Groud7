@@ -34,7 +34,7 @@ class Edit extends BaseView
                             <form class="form-horizontal" action="/admin/comments/<?= $data['id']?>" method="POST">
                                 <div class="card-body">
                                     <h4 class="card-title">Sửa bình luận</h4>
-                                    <input type="hidden" name="method" id="" value="">
+                                    <input type="hidden" name="method" id="" value="PUT">
                                     <div class="form-group">
                                         <label for="id">ID</label>
                                         <input type="text" class="form-control" id="id" name="id" value="<?= $data['id'] ?>" disabled>

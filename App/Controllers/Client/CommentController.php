@@ -5,7 +5,9 @@ namespace App\Controllers\Client;
 use App\Helpers\NotificationHelper;
 use App\Models\Comment;
 use App\Validations\CommentValidation;
-
+use App\Views\Client\Components\Notification;
+use App\Views\Client\Layouts\Header;
+use App\Views\Client\Pages\Auth\Edit;
 
 class CommentController
 {
@@ -40,5 +42,29 @@ class CommentController
     }
     header("location: /products/$product_id");
 }
+
+public static function delete(int $id)
+{
+    $comment = new Comment();
+    $result = $comment->deleteComment($id);
+    if ($result) {
+        NotificationHelper::success('delete', 'Xóa thành công');
+    } else {
+        NotificationHelper::error('delete', 'Xóa thất bại');
+    }
+    header("location: /products/{$_POST['product_id']}");
+}
+public static function edit(int $id)
+    {
+        $comment = new Comment();
+        $data = $comment->getOneCommentJoinProductAndUser($id);
+     
+        if (!$data) {
+            NotificationHelper::error('edit', 'Không thể xem');
+            header('location: /client/comments');
+            exit;
+        }
+       
+    }
 }
 ?>

@@ -71,7 +71,7 @@ class CommentController
             $result = $comment->updateComment($id, $data);
             if ($result) {
                 NotificationHelper::success('update', 'cập nhật thành công');
-                header('location: /admin/comments');
+                header("location: /admin/comments");
             } else {
                 NotificationHelper::error('update', 'Cập nhật thất bại');
                 header("location: /admin/comments/$id");

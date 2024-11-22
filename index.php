@@ -33,6 +33,7 @@ Route::get(url: '/products/categories/{id}', controllerMethod: 'App\Controllers\
 // giỏ hàng
 Route::get(url: '/cart', controllerMethod: 'App\Controllers\Client\CartController@index');
 // bình luận
+Route::put(url: '/comments/{id}', controllerMethod: 'App\Controllers\Client\CommentController@edit');
 
 Route::post(url: '/comments', controllerMethod: 'App\Controllers\Client\CommentController@store');
 Route::put(url: '/comments/{id}', controllerMethod: 'App\Controllers\Client\CommentController@update');
