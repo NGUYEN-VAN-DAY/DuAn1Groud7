@@ -41,25 +41,25 @@
                         endif;
                         ?>
 
-                    <div class="product-detail">
-                        <!-- <h2 class="product-name">Tên sản phẩm</h2> -->
-                        <!-- <p class="product-price" id="price">2000,00 VND</p> -->
-                        <div class="quantity-control">
-                            <button onclick="decreaseQuantity()" id="btn-">-</button>
-                            <input  type="text" id="quantity" value="1" min="1" onchange="updatePrice()" />
-                            <!-- <span id="quantity" onchange="updatePrice()"> 1</span> -->
-                            <button onclick="increaseQuantity()" id="btn">+</button>
+                        <div class="product-detail">
+                            <!-- <h2 class="product-name">Tên sản phẩm</h2> -->
+                            <!-- <p class="product-price" id="price">2000,00 VND</p> -->
+                            <div class="quantity-control">
+                                <button onclick="decreaseQuantity()" id="btn-">-</button>
+                                <input  type="text" id="quantity" value="1" min="1" onchange="updatePrice()" />
+                                <!-- <span id="quantity" onchange="updatePrice()"> 1</span> -->
+                                <button onclick="increaseQuantity()" id="btn">+</button>
+                            </div>
                         </div>
-                    </div>
-                    <script>
-                        var basePrice = <?php echo $data['product']['price'] - $data['product']['discount_price'] ?> ; // Giá cơ bản cho 1 sản phẩm
-                        console.log(basePrice);
-                        
-                        function updatePrice() {
-                            var quantity = document.getElementById("quantity").value;
-                            var price = basePrice * quantity;
-                            document.getElementById("price").innerText = price.toLocaleString() + " VND /kg";
-                        }
+                        <script>
+                            var basePrice = <?php echo $data['product']['price'] - $data['product']['discount_price'] ?> ; // Giá cơ bản cho 1 sản phẩm
+                            console.log(basePrice);
+                            
+                            function updatePrice() {
+                                var quantity = document.getElementById("quantity").value;
+                                var price = basePrice * quantity;
+                                document.getElementById("price").innerText = price.toLocaleString() + " VND /kg";
+                            }
 
                             function increaseQuantity() {
                                 let quantityInput = document.getElementById("quantity");
@@ -112,13 +112,13 @@
                         <span>Nếu bạn có dị ứng với bất kỳ thành phần nào của sản phẩm, hãy ngừng sử dụng và tham khảo ý kiến bác sĩ.</span>
                     </div>
 
-                <div class="col-md-12 mt-5">
-                    <hr>
-                    <h3>Mô tả sản phẩm</h3>
-                    <!-- <hr> -->
-                    <?= $data['product']['logDescription'] ?>
-                </div>
-                <br>
+                    <div class="col-md-12 mt-5">
+                        <hr>
+                        <h3>Mô tả sản phẩm</h3>
+                        <!-- <hr> -->
+                        <?= $data['product']['logDescription'] ?>
+                    </div>
+                    <br>
 
                 </div>
                 <!-- -------------- -->
@@ -213,16 +213,16 @@
                                             ?>
                                                 <img src="<?= APP_URL ?>/public/uploads/users/user1.jpeg" alt="user" width="50" class="rounded-circle">
 
-                                        <?php
-                                        endif;
-                                        ?>
-                                    </div>
-                                    <div class="comment-text w-100">
-                                        <h6 class="font-medium"><?= $_SESSION['user']['name'] ?> <?= $_SESSION['user']['username'] ?></h6>
-                                        <form action="/comments" method="post">
-                                            <input type="hidden" name="method" value="POST" id="">
-                                            <input type="hidden" name="product_id" value="<?= $data['product']['id'] ?>" id="product_id">
-                                            <input type="hidden" name="user_id" value="<?= $_SESSION['user']['id'] ?>" id="user_id">
+                                            <?php
+                                            endif;
+                                            ?>
+                                        </div>
+                                        <div class="comment-text w-100">
+                                            <h6 class="font-medium"><?= $_SESSION['user']['name'] ?> <?= $_SESSION['user']['username'] ?></h6>
+                                            <form action="/comments" method="post">
+                                                <input type="hidden" name="method" value="POST" id="">
+                                                <input type="hidden" name="product_id" value="<?= $data['product']['id'] ?>" id="product_id">
+                                                <input type="hidden" name="user_id" value="<?= $_SESSION['user']['id'] ?>" id="user_id">
 
                                                 <div class="form-group">
                                                     <label for="">Bình luận</label>
