@@ -59,7 +59,7 @@ class ProductController
             'status' => $_POST['status'],
             'category_id' => $_POST['category_id'],
             'description' => $_POST['description'],
-            'logDescription' => $_POST['logDescription']
+            'long_description' => $_POST['long_description']
         ];
         $is_upload = ProductValidation::uploadImage();
         if ($is_upload) {
@@ -124,7 +124,8 @@ class ProductController
             'status' => $_POST['status'],
             'category_id' => $_POST['category_id'],
             'description' => $_POST['description'],
-            'logDescription' => $_POST['logDescription']
+            'long_description' => $_POST['long_description']
+
 
         ];
 

@@ -59,10 +59,7 @@ class Edit extends BaseView
                                         <label for="username">Tên đăng nhập</label>
                                         <input type="text" class="form-control" id="username" name="username" value="<?= $data['username'] ?>" disabled>
                                     </div>
-                                    <div class="form-group">
-                                        <label for="name">Họ và tên*</label>
-                                        <input type="text" class="form-control" id="name" placeholder="Nhập Họ và tên" name="name" value="<?= $data['name'] ?>">
-                                    </div>
+                                    
                                     <div class="form-group">
                                         <label for="email">Email*</label>
                                         <input type="email" class="form-control" id="email" placeholder="Nhập tên email" name="email" value="<?= $data['email'] ?>">

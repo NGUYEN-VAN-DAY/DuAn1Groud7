@@ -113,7 +113,7 @@ class Home extends BaseView
         <h2>Sản Phẩm Nổi Bật</h2>
         <div class="product-grid">
             <!-- Các sản phẩm hàng trên -->
-            <div class="product-item">
+            <!-- <div class="product-item">
                 <img src="./public/uploads/products/Táo đỏ Mỹ.jpg" alt="Táo đỏ">
                 <div class="product-info">
                     <h3>Táo đỏ Mỹ</h3>
@@ -144,7 +144,7 @@ class Home extends BaseView
                     <p>Nho tươi ngọt, thích hợp cho mọi lứa tuổi.</p>
                     <p class="product-price">180,000 VNĐ/kg</p>
                 </div>
-            </div>
+            </div> -->
 
             <!-- Các sản phẩm hàng dưới -->
             

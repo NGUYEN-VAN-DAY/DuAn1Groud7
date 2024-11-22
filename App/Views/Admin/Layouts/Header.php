@@ -20,7 +20,7 @@ class Header extends BaseView
             <meta name="viewport" content="width=device-width, initial-scale=1">
             <title>Admin</title>
             <!-- Favicon icon -->
-            <link rel="icon" type="image/png" sizes="16x16" href="<?= APP_URL ?>/public/assets/admin/images/favicon.png">
+            <link rel="icon" type="image/png" sizes="16x16" href="<?= APP_URL ?>/public/assets/client/images/tong_hop.png">
             <!-- CSS -->
             <link href="<?= APP_URL ?>/public/assets/admin/libs/flot/css/float-chart.css" rel="stylesheet">
             <link rel="stylesheet" type="text/css" href="<?= APP_URL ?>/public/assets/admin/extra-libs/multicheck/multicheck.css">
@@ -177,8 +177,32 @@ class Header extends BaseView
                                         </li>
                                     </ul>
                                 </li>
+                                <li class="sidebar-item">
+                                    <a class="sidebar-link has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false"><i class="mdi mdi-receipt"></i><span class="hide-menu">Comment </span></a>
+                                    <ul aria-expanded="false" class="collapse  first-level">
+                                        <li class="sidebar-item">
+                                            <a href="/admin/comments" class="sidebar-link"><i class="mdi mdi-note-outline"></i><span class="hide-menu"> Danh sách </span></a>
+                                        </li>
 
+                                    </ul>
+                                </li><li class="sidebar-item">
+                                    <a class="sidebar-link has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false"><i class="mdi mdi-receipt"></i><span class="hide-menu">Bài viết </span></a>
+                                    <ul aria-expanded="false" class="collapse  first-level">
+                                        <li class="sidebar-item">
+                                            <a href="/admin/posts" class="sidebar-link"><i class="mdi mdi-note-outline"></i><span class="hide-menu"> Danh sách </span></a>
+                                        </li>
 
+                                    </ul>
+                                </li>
+                                <li class="sidebar-item">
+                                    <a class="sidebar-link has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false"><i class="mdi mdi-receipt"></i><span class="hide-menu">Lịch sử mua hàng </span></a>
+                                    <ul aria-expanded="false" class="collapse  first-level">
+                                        <li class="sidebar-item">
+                                            <a href="/admin/historys" class="sidebar-link"><i class="mdi mdi-note-outline"></i><span class="hide-menu"> Danh sách </span></a>
+                                        </li>
+
+                                    </ul>
+                                </li>
                             </ul>
                         </nav>
                         <!-- End Sidebar navigation -->

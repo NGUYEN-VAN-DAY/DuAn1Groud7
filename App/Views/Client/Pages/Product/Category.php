@@ -36,15 +36,13 @@ class Category extends BaseView
                                     <div class="col-md-9">
                                         <h3 class="container"><?= $data['products'][0]['category_name'] ?></h3>
                                     </div>
-                                    <div class="col-md-3 text-right  ">
-                                        <label for="fruits">Sắp xếp theo mặc định:</label>
+                                    <div class="col-md-3 text-right">
+                                        <label for="fruits">Default Sorting:</label>
                                         <select id="fruits" name="fruitlist" class="border-0 form-select-sm bg-light  " form="fruitform">
-                                            <option value="volvo">Từ thấp tới cao</option>
-                                            <option value="saab">Từ cao tới thấp</option>
-                                            <option value="opel">Sản phẩm nổi bật</option>
-                                            <option value="opel">Mới nhất</option>
-                                            <option value="opel">Cũ nhất</option>
-
+                                            <option value="volvo">Nothing</option>
+                                            <option value="saab">Popularity</option>
+                                            <option value="opel">Organic</option>
+                                            <option value="audi">Fantastic</option>
                                         </select>
                                     </div>
                                 </div>

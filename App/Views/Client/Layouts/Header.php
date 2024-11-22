@@ -28,6 +28,7 @@ class Header extends BaseView
             <meta name="description" content="" />
             <meta name="author" content="" />
             <link rel="shortcut icon" href="images/bivicon.png" type="image/x-icon">
+            <link rel="icon" type="image/png" sizes="16x16" href="<?= APP_URL ?>/public/assets/client/images/tong_hop.png">
 
             <title>
                 Cửa hàng trái cây
@@ -90,7 +91,7 @@ class Header extends BaseView
                                     <a class="nav-link" href="/contact">Liên hệ</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#">Bài viết</a>
+                                    <a class="nav-link" href="/post">Bài viết</a>
                                 </li>
 
                                 <div class="user_option" style="z-index: 100000000000;">
@@ -128,7 +129,7 @@ class Header extends BaseView
                                     </a>
                                 </div>
                                 <li class="nav-item">
-                                    <a class="nav-link bi bi-cart2" href="#">
+                                    <a class="nav-link bi bi-cart2" href="/cart">
                                     </a>
                                 </li>
                         </div>

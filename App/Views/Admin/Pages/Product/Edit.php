@@ -77,8 +77,8 @@ class Edit extends BaseView
                                         
                                     </div>
                                     <div class="form-group">
-                                        <label for="logDescription">Mô tả dài</label>
-                                        <textarea class="form-control editsto2" id="logDescription" placeholder="Nhập mô tả" name="logDescription"> <?= $data['product']['logDescription'] ?></textarea>
+                                        <label for="long_description">Mô tả dài</label>
+                                        <textarea class="form-control editsto2" id="long_description" placeholder="Nhập mô tả" name="long_description"> <?= $data['product']['long_description'] ?></textarea>
                                         
                                     </div>
 

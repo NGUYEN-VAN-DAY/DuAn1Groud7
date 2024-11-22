@@ -54,8 +54,9 @@ class Index extends BaseView
                                                     <th>ID</th>
                                                     <th>Ảnh đại diện</th>
                                                     <th>Tên đăng nhập</th>
-                                                    <th>Họ và tên</th>
                                                     <th>Email</th>
+                                                    <th>Địa chỉ</th>
+                                                    <th>Số điện thoại</th>
                                                     <th>Quyền</th>
                                                     <th>Trạng thái</th>
                                                     <th></th>
@@ -71,8 +72,9 @@ class Index extends BaseView
                                                             <img class="avatar_user" src="<?= APP_URL ?>/public/uploads/users/<?= $item['avatar'] ?>" alt="" width="100px">
                                                         </td>
                                                         <td><?= $item['username'] ?></td>
-                                                        <td><?= $item['name'] ?></td>
                                                         <td><?= $item['email'] ?></td>
+                                                        <td><?= $item['address'] ?></td>
+                                                        <td><?= $item['phone'] ?></td>
                                                         <td><?= ($item['role'] == 1) ? 'Quản trị' : 'Khách hàng' ?></td>
                                                         <td><?= ($item['status'] == 1) ? 'Hoạt động' : 'Đã khóa' ?></td>
                                                         <td>

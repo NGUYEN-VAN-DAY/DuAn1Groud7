@@ -52,10 +52,7 @@ class Create extends BaseView
                                         <label for="username">Tên đăng nhập*</label>
                                         <input type="text" class="form-control" id="username" placeholder="Nhập tên đăng nhập" name="username">
                                     </div>
-                                    <div class="form-group">
-                                        <label for="name">Họ và tên*</label>
-                                        <input type="text" class="form-control" id="name" placeholder="Nhập họ và tên" name="name">
-                                    </div>
+                                    
                                     <div class="form-group">
                                         <label for="email">Email*</label>
                                         <input type="email" class="form-control" id="email" placeholder="Nhập tên email" name="email">

@@ -50,9 +50,10 @@ class UserController
         }
         $data = [
             'username' => $username,
-            'name' => $_POST['name'],
             'password' => password_hash($_POST['password'], PASSWORD_DEFAULT),
             'status' => $_POST['status'],
+            'address' => $_POST['address'],
+            'phone' => $_POST['phone'],
             'email' => $_POST['email']
         ];
         $is_upload = UserValidation::uploadAvatar();
@@ -95,7 +96,8 @@ class UserController
         $user = new User();
         $data = [
             'email' => $_POST['email'],
-            'name' => $_POST['name'],
+            'address' => $_POST['address'],
+            'phone' => $_POST['phone'],
             'status' => $_POST['status']
         ];
         if ($_POST['password'] !== '') {

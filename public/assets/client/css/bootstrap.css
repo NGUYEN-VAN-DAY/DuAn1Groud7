@@ -11263,3 +11263,10 @@ hr.my-0 {
   width: 90%; /* Độ dài của đường gạch ngang */
   margin: 0 auto; /* Căn giữa */
 }
+
+
+.card.mb-4.shadow-sm {
+  height: 180px;
+  padding: 30px;
+  margin: -5px;
+}

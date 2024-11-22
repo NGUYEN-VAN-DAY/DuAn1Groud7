@@ -64,13 +64,17 @@ class Create extends BaseView
                                         <label for="discount_price">Giá giảm*</label>
                                         <input type="number" class="form-control" id="discount_price" placeholder="Nhập giá giảm" name="discount_price">
                                     </div>
+                                    <!-- <div class="form-group">
+                                        <label for="date">Ngày nhập hàng</label>
+                                        <input type="date" class="form-control" id="date" placeholder="Nhập ngày nhập hàng" name="date">
+                                    </div> -->
                                     <div class="form-group">
-                                        <label for="description">Mô tả</label>
-                                        <textarea class="form-control editsto" id="description" placeholder="Nhập mô tả" name="description"></textarea>
+                                        <label for="description">Mô tả ngắn</label>
+                                        <textarea class="form-control editsto" id="description" placeholder="Nhập mô tả ngắn" name="description"></textarea>
                                     </div>
                                     <div class="form-group">
-                                        <label for="logDescription">Mô tả</label>
-                                        <textarea class="form-control editsto2" id="logDescription" placeholder="Nhập mô tả" name="logDescription"></textarea>
+                                        <label for="long_description">Mô tả</label>
+                                        <textarea class="form-control editsto2" id="long_description" placeholder="Nhập mô tả" name="long_description"></textarea>
                                     </div>
                                     <div class="form-group">
                                         <label for="category_id">Loại sản phẩm*</label>

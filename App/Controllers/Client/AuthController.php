@@ -37,12 +37,10 @@ class AuthController
         $password = $_POST['password'];
         $hash_password = password_hash($password, PASSWORD_DEFAULT);
         $email = $_POST['email'];
-        $name = $_POST['name'];
         $data = [
             'username' => $username,
             'password' => $hash_password,
             'email' => $email,
-            'name' => $name,
 
         ];
         $result = AuthHelper::register($data);
@@ -71,7 +69,6 @@ class AuthController
         $data = [
             'username' => $_POST['username'],
             'password' => $_POST['password'],
-            'name' => $_POST['name'],
             'remember' => isset($_POST['remember'])
         ];
         $result = AuthHelper::login($data);
@@ -119,7 +116,6 @@ class AuthController
         }
         $data = [
             'email' => $_POST['email'],
-            'name' => $_POST['name'],
         ];
         $is_upload = AuthValidation::uploadAvatar();
         if ($is_upload) {

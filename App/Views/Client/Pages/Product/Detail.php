@@ -41,25 +41,25 @@
                         endif;
                         ?>
 
-                        <div class="product-detail">
-                            <!-- <h2 class="product-name">Tên sản phẩm</h2> -->
-                            <!-- <p class="product-price" id="price">2000,00 VND</p> -->
-                            <div class="quantity-control">
-                                <button onclick="decreaseQuantity()" id="btn-">-</button>
-                                <input  type="text" id="quantity" value="1" min="1" onchange="updatePrice()" />
-                                <!-- <span id="quantity" onchange="updatePrice()"> 1</span> -->
-                                <button onclick="increaseQuantity()" id="btn">+</button>
-                            </div>
+                    <div class="product-detail">
+                        <!-- <h2 class="product-name">Tên sản phẩm</h2> -->
+                        <!-- <p class="product-price" id="price">2000,00 VND</p> -->
+                        <div class="quantity-control">
+                            <button onclick="decreaseQuantity()" id="btn-">-</button>
+                            <input  type="text" id="quantity" value="1" min="1" onchange="updatePrice()" />
+                            <!-- <span id="quantity" onchange="updatePrice()"> 1</span> -->
+                            <button onclick="increaseQuantity()" id="btn">+</button>
                         </div>
-                        <script>
-                            var basePrice = <?php echo $data['product']['price'] - $data['product']['discount_price'] ?> ; // Giá cơ bản cho 1 sản phẩm
-                            console.log(basePrice);
-                            
-                            function updatePrice() {
-                                var quantity = document.getElementById("quantity").value;
-                                var price = basePrice * quantity;
-                                document.getElementById("price").innerText = price.toLocaleString() + " VND /kg";
-                            }
+                    </div>
+                    <script>
+                        var basePrice = <?php echo $data['product']['price'] - $data['product']['discount_price'] ?> ; // Giá cơ bản cho 1 sản phẩm
+                        console.log(basePrice);
+                        
+                        function updatePrice() {
+                            var quantity = document.getElementById("quantity").value;
+                            var price = basePrice * quantity;
+                            document.getElementById("price").innerText = price.toLocaleString() + " VND /kg";
+                        }
 
                             function increaseQuantity() {
                                 let quantityInput = document.getElementById("quantity");
@@ -112,13 +112,13 @@
                         <span>Nếu bạn có dị ứng với bất kỳ thành phần nào của sản phẩm, hãy ngừng sử dụng và tham khảo ý kiến bác sĩ.</span>
                     </div>
 
-                    <div class="col-md-12 mt-5">
-                        <hr>
-                        <h3>Mô tả sản phẩm</h3>
-                        <!-- <hr> -->
-                        <?= $data['product']['logDescription'] ?>
-                    </div>
-                    <br>
+                <div class="col-md-12 mt-5">
+                    <hr>
+                    <h3>Mô tả sản phẩm</h3>
+                    <!-- <hr> -->
+                    <?= $data['product']['logDescription'] ?>
+                </div>
+                <br>
 
                 </div>
                 <!-- -------------- -->

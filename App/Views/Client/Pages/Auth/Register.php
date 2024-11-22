@@ -9,6 +9,7 @@ class Register extends BaseView
     public static function render($data = null)
     {
 ?>
+
         <div class="container mt-5">
             <div class="row">
                 <div class="offset-md-3 col-md-6">
@@ -33,10 +34,7 @@ class Register extends BaseView
                                 <label for="email">Email*</label>
                                 <input type="text" class="form-control" id="email" placeholder="Nhập email.........." name="email">
                             </div>
-                            <div class="form-group mt-4">
-                                <label for="name">Họ và tên*</label>
-                                <input type="text" class="form-control" id="name" placeholder="Họ và tên.........." name="name">
-                            </div>
+                            
                             <button type="reset" class="btn btn-outline-danger">nhập lại</button>
                             <button type="submit" class="btn btn-outline-info">đăng ký</button>
 
