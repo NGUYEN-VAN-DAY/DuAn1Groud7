@@ -218,7 +218,7 @@
                                             ?>
                                         </div>
                                         <div class="comment-text w-100">
-                                            <h6 class="font-medium"><?= $_SESSION['user']['name'] ?> <?= $_SESSION['user']['username'] ?></h6>
+                                            <h6 class="font-medium"> <?= $_SESSION['user']['username'] ?></h6>
                                             <form action="/comments" method="post">
                                                 <input type="hidden" name="method" value="POST" id="">
                                                 <input type="hidden" name="product_id" value="<?= $data['product']['id'] ?>" id="product_id">

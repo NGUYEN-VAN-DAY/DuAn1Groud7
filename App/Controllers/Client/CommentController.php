@@ -1,30 +1,44 @@
 <?php
+
 namespace App\Controllers\Client;
 
+use App\Helpers\NotificationHelper;
 use App\Models\Comment;
+use App\Validations\CommentValidation;
+
 
 class CommentController
 {
-    public function store()
-    {
-        if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-            $commentModel = new Comment();
-            $data = [
-                'content' => $_POST['content'],
-                'user_id' => $_POST['user_id'],
-                'product_id' => $_POST['product_id'],
-                'status' => 1, // 1 = enabled
-                'date' => date('Y-m-d H:i:s')
-            ];
-            $result = $commentModel->createComment(data: $data);
-
-            if ($result) {
-                header(header: 'Location: ' . $_SERVER['HTTP_REFERER']); 
-                exit;
-            } else {
-                die('Lỗi khi thêm bình luận.');
-            }
-        }
+    public static function store()
+{
+    if (!isset($_POST['product_id']) || !$_POST['product_id']) {
+        NotificationHelper::error('store', 'Product ID is missing.');
+        header("location: /products");
+        exit;
     }
+
+    $is_valid = CommentValidation::createClient();
+    if (!$is_valid) {
+        NotificationHelper::error('store', 'Thêm bình luận thất bại');
+        header("location: /products/{$_POST['product_id']}");
+        exit;
+    }
+
+    $product_id = $_POST['product_id'];
+    $data = [
+        'content' => $_POST['content'],
+        'product_id' => $product_id,
+        'user_id' => $_POST['user_id'],
+    ];
+
+    $comment = new Comment();
+    $result = $comment->createComment($data);
+    if ($result) {
+        NotificationHelper::success('store', 'Thêm bình luận thành công');
+    } else {
+        NotificationHelper::error('store', 'Thêm bình luận thất bại');
+    }
+    header("location: /products/$product_id");
+}
 }
 ?>

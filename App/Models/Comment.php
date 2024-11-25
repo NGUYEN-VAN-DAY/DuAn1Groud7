@@ -34,33 +34,17 @@ class Comment extends BaseModel
         return $this->delete($id);
     }
 
-    public function get5CommentNewestByProductAndStatus($id)
-{
-    $sql = "SELECT comments.*, users.username, users.name, users.avatar 
-            FROM comments 
-            INNER JOIN users ON comments.user_id=users.id 
-            WHERE comments.product_id=? AND comments.status=1 
-            ORDER BY date DESC LIMIT 5";
-
-    $conn = $this->_conn->MySQLi();
-    $stmt = $conn->prepare($sql);
-    $stmt->bind_param('i', $id);
-    $stmt->execute();
-    return $stmt->get_result()->fetch_all(MYSQLI_ASSOC);
-}
-
-
-    public function getAllProductJoinCategory()
+    public function getAllProductJoinComment()
     {
         $result = [];
         try {
-            $sql = "SELECT products.*, categories.name AS category_name 
-                FROM products INNER JOIN categories ON products.category_id = categories.id";
+            $sql = "SELECT products.*, comments.name AS comment_name 
+                FROM products INNER JOIN comments ON products.comment_id = comments.id";
             $result = $this->_conn->MySQLi()->query($sql);
             return $result->fetch_all(MYSQLI_ASSOC);
         } catch (\Throwable $th) {
             error_log('Lỗi khi hiển thị tất cả dữ liệu: ' . $th->getMessage());
-            NotificationHelper::error('getAllProductJoinCategory', 'Lỗi khi hiển thị tất cả dữ liệu');
+            NotificationHelper::error('getAllProductJoinComment', 'Lỗi khi hiển thị tất cả dữ liệu');
             return $result;
         }
     }
@@ -69,9 +53,9 @@ class Comment extends BaseModel
     {
         $result = [];
         try {
-            $sql = "SELECT comments.*, products.name AS product_name, users.username FROM comments 
-        INNER JOIN products ON comments.product_id=products.id 
-        INNER JOIN users ON comments.user_id=users.id";
+            $sql = "SELECT comments.*, products.name AS product_name, users.username 
+            FROM comments INNER JOIN products ON comments.product_id=products.id 
+            INNER JOIN users ON comments.user_id=users.id;";
             $result = $this->_conn->MySQLi()->query($sql);
             return $result->fetch_all(MYSQLI_ASSOC);
         } catch (\Throwable $th) {
@@ -79,15 +63,19 @@ class Comment extends BaseModel
             NotificationHelper::error('getAllCommentJoinProductAndUser', 'Lỗi khi hiển thị tất cả dữ liệu');
             return $result;
         }
+
     }
-    public function getOneCommentJoinProductAndUser($id)
+
+    public function getOneCommentJoinProductAndUser(int $id)
     {
         $result = [];
         try {
-            $sql = "SELECT comments.*, products.name AS product_name, users.username FROM comments 
-            INNER JOIN products ON comments.product_id=products.id 
-            INNER JOIN users ON comments.user_id=users.id
-            WHERE comments.id=?";
+            $sql = "SELECT comments.*, products.name AS product_name, users.username 
+        FROM comments 
+        INNER JOIN products ON comments.product_id = products.id 
+        INNER JOIN users ON comments.user_id = users.id 
+        WHERE comments.id = ?
+        ";
             $conn = $this->_conn->MySQLi();
             $stmt = $conn->prepare($sql);
 
@@ -100,4 +88,26 @@ class Comment extends BaseModel
             return $result;
         }
     }
+   public function get5CommentNewestByProductAndStatus(int $id)
+{
+    $result = [];
+    try {
+        $sql = "SELECT comments.*, users.username, users.name, users.avatar
+                FROM comments 
+                JOIN users ON comments.user_id = users.id 
+                WHERE comments.product_id = ? AND comments.status = " . self::STATUS_ENABLE . "
+                ORDER BY comments.date DESC LIMIT 5;";
+
+        $conn = $this->_conn->MySQLi();
+        $stmt = $conn->prepare($sql);
+        $stmt->bind_param('i', $id);
+        $stmt->execute();
+        $result = $stmt->get_result()->fetch_all(MYSQLI_ASSOC);
+    } catch (\Throwable $th) {
+        error_log('Lỗi khi hiển thị tất cả dữ liệu: ' . $th->getMessage());
+        NotificationHelper::error('get5CommentNewestByProductAndStatus', 'Lỗi khi hiển thị tất cả dữ liệu');
+    }
+    return $result;
 }
+
+    }

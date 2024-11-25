@@ -16,7 +16,7 @@ class index extends BaseView
             <div class="page-breadcrumb">
                 <div class="row">
                     <div class="col-12 d-flex no-block align-items-center">
-                        <h4 class="page-title">QUẢN LÝ COMMENT</h4>
+                        <h4 class="page-title">QUẢN LÝ BÌNH LUẬN</h4>
                         <div class="ms-auto text-end">
                             <nav aria-label="breadcrumb">
                                 <ol class="breadcrumb">
@@ -43,7 +43,7 @@ class index extends BaseView
 
                         <div class="card">
                             <div class="card-body">
-                                <h5 class="card-title">Danh sách loại sản phẩm</h5>
+                                <h5 class="card-title">Danh sách bình luận</h5>
                                 <?php
                                 if (count($data)) :
                                 ?>
@@ -52,7 +52,10 @@ class index extends BaseView
                                             <thead>
                                                 <tr>
                                                     <th>ID</th>
-                                                    <th>Tên</th>
+                                                    <th>Tài khoản</th>
+                                                    <th>Sản phẩm</th>
+                                                    <th>Nội dung</th>
+                                                    <th>Thời gian</th>
                                                     <th>Trạng thái</th>
                                                     <th></th>
                                                 </tr>
@@ -62,12 +65,20 @@ class index extends BaseView
                                                 foreach ($data as $item) :
                                                 ?>
                                                     <tr>
-                                                        <td><?= $item['id'] ?></td>
-                                                        <td><?= $item['name'] ?></td>
+                                                        <td>
+                                                            <?= $item['id'] ?>
+                                                    </td>
+                                                            <td><a href="/admin/users/<?= $item['user_id']?>"> <?= $item['username'] ?></a>
+                                                        </td>
+                                                        <td>
+                                                        <td><a href="/admin/products/<?= $item['product_id']?>"> <?= $item['product_name'] ?></a>
+                                                        </td>
+                                                        <td><?= $item['content'] ?></td>
+                                                        <td><?= $item['date'] ?></td>
                                                         <td><?= ($item['status'] == 1) ? 'Hiển thị' : 'Ẩn' ?></td>
                                                         <td>
-                                                            <a href="/admin/categories/<?= $item['id'] ?>" class="btn btn-primary ">Sửa</a>
-                                                            <form action="/admin/categories/<?= $item['id'] ?>" method="post" style="display: inline-block;" onsubmit="return confirm('Bạn Chắc Không?')">
+                                                            <a href="/admin/comments/<?= $item['id'] ?>" class="btn btn-primary ">Sửa</a>
+                                                            <form action="/admin/comments/<?= $item['id'] ?>" method="post" style="display: inline-block;" onsubmit="return confirm('Bạn Chắc Không?')">
                                                                 <input type="hidden" name="method" value="DELETE" id="">
                                                                 <button type="submit" class="btn btn-danger text-white">Xoá</button>
                                                             </form>
