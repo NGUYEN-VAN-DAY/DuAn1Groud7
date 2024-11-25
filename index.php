@@ -83,9 +83,16 @@ Route::get('/admin/users/{id}', 'App\Controllers\Admin\UserController@edit');
 Route::put('/admin/users/{id}', 'App\Controllers\Admin\UserController@update');
 Route::delete('/admin/users/{id}', 'App\Controllers\Admin\UserController@delete');
 //Comment
-Route::post('/admin/comments', 'App\Controllers\Admin\CommentController@index');
-//history
+Route::get('/admin/comments', 'App\Controllers\Admin\CommentController@index');
+
+Route::get('/admin/comments/{id}', 'App\Controllers\Admin\CommentController@edit');
+
+Route::put('/admin/comments/{id}', 'App\Controllers\Admin\CommentController@update');
+
+Route::delete('/admin/comments/{id}', 'App\Controllers\Admin\CommentController@delete');
+
 Route::post('/admin/historys', 'App\Controllers\Admin\HistoryController@index');
+//history
 //post
 Route::post('/admin/posts', 'App\Controllers\Admin\PostController@index');
 
