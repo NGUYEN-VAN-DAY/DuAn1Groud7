@@ -19,6 +19,9 @@ AuthHelper::middLeware();
 
 //Client
 Route::get(url: '/', controllerMethod: 'App\Controllers\Client\HomeController@index');
+
+Route::get(url: '/post', controllerMethod: 'App\Controllers\Client\PostController@index'); 
+
 //Liên hệ
 Route::get(url: '/contact', controllerMethod: 'App\Controllers\Client\ContactController@index');
 Route::get(url: '/post', controllerMethod: 'App\Controllers\Client\PostController@index');
