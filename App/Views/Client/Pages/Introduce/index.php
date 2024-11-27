@@ -10,7 +10,7 @@ class index extends BaseView
     {
 ?>
 
-        <style>
+        <!-- <style>
             .body {
                 font-family: 'Poppins', sans-serif;
                 background-color: #f4f4f4;
@@ -130,7 +130,7 @@ class index extends BaseView
                     height: 120px;
                 }
             }
-        </style>
+        </style> -->
         </head>
 
         <body>
