@@ -49,6 +49,34 @@ class Header extends BaseView
             <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
             <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
             <link rel="stylesheet" href="<?= APP_URL ?>/public/assets/client/css/style.css">
+            <link href="//maps.googleapis.com" rel="dns-prefetch">
+            <link href="//maps.gstatic.com/" rel="dns-prefetch">
+            <link href="//www.facebook.com" rel="dns-prefetch">
+            <link href="//plus.google.com" rel="dns-prefetch">
+            <link href="//csi.gstatic.com" rel="dns-prefetch">
+            <link href="//www.youtube.com" rel="dns-prefetch">
+            <link href="//feedburner.google.com" rel="dns-prefetch">
+            <link href="//scontent.fsgn3-1.fna.fbcdn.net" rel="dns-prefetch">
+            <link href="//googleads.g.doubleclick.net" rel="dns-prefetch">
+            <link href="//static.doubleclick.net" rel="dns-prefetch">
+            <link href="//apis.google.com" rel="dns-prefetch">
+            <link href="//maps.google.com" rel="dns-prefetch">
+            <link href="//connect.facebook.net" rel="dns-prefetch">
+            <link href="//www.google-analytics.com" rel="dns-prefetch">
+            <link href="//www.googletagmanager.com/" rel="dns-prefetch">
+            <link rel="schema.DC" href="//purl.org/dc/elements/1.1/">
+            <link href="css/reset.css" type="text/css" rel="stylesheet">
+            <link href="css/css.css" type="text/css" rel="stylesheet">
+            <link href="css/default.css" type="text/css" rel="stylesheet">
+            <link href="css/slick.css" type="text/css" rel="stylesheet">
+            <link href="css/slick-theme.css" type="text/css" rel="stylesheet">
+            <link href="font-awesome-4.6.0/css/font-awesome.min.css" type="text/css" rel="stylesheet">
+            <link href="bootstrap/css/bootstrap.min.css" type="text/css" rel="stylesheet">
+            <link rel="stylesheet" href="css/jquery.simplyscroll.css" media="all" type="text/css">
+            <link href="css/LobiBox.min.css" type="text/css" rel="stylesheet">
+            <link href="css/nprogress.css" type="text/css" rel="stylesheet">
+            <link href="style.css?v=1731303970" type="text/css" rel="stylesheet">
+            <meta name="google-site-verification" content="googled84dfd607262956f.html">
         </head>
 
         <body>
@@ -85,7 +113,7 @@ class Header extends BaseView
                                     <a class="nav-link" href="/contact">Liên hệ</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#">Bài viết</a>
+                                    <a class="nav-link" href="/post">Bài viết</a>
                                 </li>
 
                                 <div class="user_option" style="z-index: 100000000000;">

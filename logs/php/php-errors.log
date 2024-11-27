@@ -3525,3 +3525,131 @@ Stack trace:
   thrown in D:\FPT_POLYTECHNIC\FALL_2024\block2\du_an_1\asm1\App\Models\Database.php on line 51
 [11-Nov-2024 12:08:09 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "name" in D:\FPT_POLYTECHNIC\FALL_2024\block2\du_an_1\asm1\App\Controllers\Client\AuthController.php on line 74
 [11-Nov-2024 12:08:27 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "status" in D:\FPT_POLYTECHNIC\FALL_2024\block2\du_an_1\asm1\App\Views\Admin\Pages\Product\Edit.php on line 112
+[11-Nov-2024 06:55:23 UTC] PHP Fatal error:  Uncaught Dotenv\Exception\InvalidPathException: Unable to read any of the environment file(s) at [E:\DA1_Group7\DuAn1Groud7\.env]. in E:\DA1_Group7\DuAn1Groud7\vendor\vlucas\phpdotenv\src\Store\FileStore.php:68
+Stack trace:
+#0 E:\DA1_Group7\DuAn1Groud7\vendor\vlucas\phpdotenv\src\Dotenv.php(222): Dotenv\Store\FileStore->read()
+#1 E:\DA1_Group7\DuAn1Groud7\index.php(15): Dotenv\Dotenv->load()
+#2 {main}
+  thrown in E:\DA1_Group7\DuAn1Groud7\vendor\vlucas\phpdotenv\src\Store\FileStore.php on line 68
+[11-Nov-2024 06:55:56 UTC] PHP Fatal error:  Uncaught Dotenv\Exception\InvalidPathException: Unable to read any of the environment file(s) at [E:\DA1_Group7\DuAn1Groud7\.env]. in E:\DA1_Group7\DuAn1Groud7\vendor\vlucas\phpdotenv\src\Store\FileStore.php:68
+Stack trace:
+#0 E:\DA1_Group7\DuAn1Groud7\vendor\vlucas\phpdotenv\src\Dotenv.php(222): Dotenv\Store\FileStore->read()
+#1 E:\DA1_Group7\DuAn1Groud7\index.php(15): Dotenv\Dotenv->load()
+#2 {main}
+  thrown in E:\DA1_Group7\DuAn1Groud7\vendor\vlucas\phpdotenv\src\Store\FileStore.php on line 68
+[11-Nov-2024 06:55:57 UTC] PHP Fatal error:  Uncaught Dotenv\Exception\InvalidPathException: Unable to read any of the environment file(s) at [E:\DA1_Group7\DuAn1Groud7\.env]. in E:\DA1_Group7\DuAn1Groud7\vendor\vlucas\phpdotenv\src\Store\FileStore.php:68
+Stack trace:
+#0 E:\DA1_Group7\DuAn1Groud7\vendor\vlucas\phpdotenv\src\Dotenv.php(222): Dotenv\Store\FileStore->read()
+#1 E:\DA1_Group7\DuAn1Groud7\index.php(15): Dotenv\Dotenv->load()
+#2 {main}
+  thrown in E:\DA1_Group7\DuAn1Groud7\vendor\vlucas\phpdotenv\src\Store\FileStore.php on line 68
+[11-Nov-2024 06:55:57 UTC] PHP Fatal error:  Uncaught Dotenv\Exception\InvalidPathException: Unable to read any of the environment file(s) at [E:\DA1_Group7\DuAn1Groud7\.env]. in E:\DA1_Group7\DuAn1Groud7\vendor\vlucas\phpdotenv\src\Store\FileStore.php:68
+Stack trace:
+#0 E:\DA1_Group7\DuAn1Groud7\vendor\vlucas\phpdotenv\src\Dotenv.php(222): Dotenv\Store\FileStore->read()
+#1 E:\DA1_Group7\DuAn1Groud7\index.php(15): Dotenv\Dotenv->load()
+#2 {main}
+  thrown in E:\DA1_Group7\DuAn1Groud7\vendor\vlucas\phpdotenv\src\Store\FileStore.php on line 68
+[11-Nov-2024 06:55:57 UTC] PHP Fatal error:  Uncaught Dotenv\Exception\InvalidPathException: Unable to read any of the environment file(s) at [E:\DA1_Group7\DuAn1Groud7\.env]. in E:\DA1_Group7\DuAn1Groud7\vendor\vlucas\phpdotenv\src\Store\FileStore.php:68
+Stack trace:
+#0 E:\DA1_Group7\DuAn1Groud7\vendor\vlucas\phpdotenv\src\Dotenv.php(222): Dotenv\Store\FileStore->read()
+#1 E:\DA1_Group7\DuAn1Groud7\index.php(15): Dotenv\Dotenv->load()
+#2 {main}
+  thrown in E:\DA1_Group7\DuAn1Groud7\vendor\vlucas\phpdotenv\src\Store\FileStore.php on line 68
+[11-Nov-2024 06:56:02 UTC] PHP Fatal error:  Uncaught Dotenv\Exception\InvalidPathException: Unable to read any of the environment file(s) at [E:\DA1_Group7\DuAn1Groud7\.env]. in E:\DA1_Group7\DuAn1Groud7\vendor\vlucas\phpdotenv\src\Store\FileStore.php:68
+Stack trace:
+#0 E:\DA1_Group7\DuAn1Groud7\vendor\vlucas\phpdotenv\src\Dotenv.php(222): Dotenv\Store\FileStore->read()
+#1 E:\DA1_Group7\DuAn1Groud7\index.php(15): Dotenv\Dotenv->load()
+#2 {main}
+  thrown in E:\DA1_Group7\DuAn1Groud7\vendor\vlucas\phpdotenv\src\Store\FileStore.php on line 68
+[13-Nov-2024 12:56:36 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught Error: Class "App\Controllers\Client\index" not found in E:\DA1_Group7\DuAn1Groud7\App\Controllers\Client\PostController.php:21
+Stack trace:
+#0 E:\DA1_Group7\DuAn1Groud7\App\Route.php(82): App\Controllers\Client\PostController::index()
+#1 E:\DA1_Group7\DuAn1Groud7\index.php(87): App\Route::dispatch()
+#2 {main}
+  thrown in E:\DA1_Group7\DuAn1Groud7\App\Controllers\Client\PostController.php on line 21
+[13-Nov-2024 12:56:50 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: YES) in E:\DA1_Group7\DuAn1Groud7\App\Models\Database.php:51
+Stack trace:
+#0 E:\DA1_Group7\DuAn1Groud7\App\Models\Database.php(51): mysqli->__construct()
+#1 E:\DA1_Group7\DuAn1Groud7\App\Models\BaseModel.php(115): App\Models\Database->MySQLi()
+#2 E:\DA1_Group7\DuAn1Groud7\App\Models\Product.php(31): App\Models\BaseModel->getAllByStatus()
+#3 E:\DA1_Group7\DuAn1Groud7\App\Controllers\Client\ProductController.php(21): App\Models\Product->getAllProductByStatus()
+#4 E:\DA1_Group7\DuAn1Groud7\App\Route.php(82): App\Controllers\Client\ProductController::index()
+#5 E:\DA1_Group7\DuAn1Groud7\index.php(87): App\Route::dispatch()
+#6 {main}
+  thrown in E:\DA1_Group7\DuAn1Groud7\App\Models\Database.php on line 51
+[13-Nov-2024 12:56:56 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: YES) in E:\DA1_Group7\DuAn1Groud7\App\Models\Database.php:51
+Stack trace:
+#0 E:\DA1_Group7\DuAn1Groud7\App\Models\Database.php(51): mysqli->__construct()
+#1 E:\DA1_Group7\DuAn1Groud7\App\Models\BaseModel.php(115): App\Models\Database->MySQLi()
+#2 E:\DA1_Group7\DuAn1Groud7\App\Models\Product.php(31): App\Models\BaseModel->getAllByStatus()
+#3 E:\DA1_Group7\DuAn1Groud7\App\Controllers\Client\ProductController.php(21): App\Models\Product->getAllProductByStatus()
+#4 E:\DA1_Group7\DuAn1Groud7\App\Route.php(82): App\Controllers\Client\ProductController::index()
+#5 E:\DA1_Group7\DuAn1Groud7\index.php(87): App\Route::dispatch()
+#6 {main}
+  thrown in E:\DA1_Group7\DuAn1Groud7\App\Models\Database.php on line 51
+[13-Nov-2024 12:56:58 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: YES) in E:\DA1_Group7\DuAn1Groud7\App\Models\Database.php:51
+Stack trace:
+#0 E:\DA1_Group7\DuAn1Groud7\App\Models\Database.php(51): mysqli->__construct()
+#1 E:\DA1_Group7\DuAn1Groud7\App\Models\BaseModel.php(115): App\Models\Database->MySQLi()
+#2 E:\DA1_Group7\DuAn1Groud7\App\Models\Product.php(31): App\Models\BaseModel->getAllByStatus()
+#3 E:\DA1_Group7\DuAn1Groud7\App\Controllers\Client\ProductController.php(21): App\Models\Product->getAllProductByStatus()
+#4 E:\DA1_Group7\DuAn1Groud7\App\Route.php(82): App\Controllers\Client\ProductController::index()
+#5 E:\DA1_Group7\DuAn1Groud7\index.php(87): App\Route::dispatch()
+#6 {main}
+  thrown in E:\DA1_Group7\DuAn1Groud7\App\Models\Database.php on line 51
+[13-Nov-2024 12:56:59 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: YES) in E:\DA1_Group7\DuAn1Groud7\App\Models\Database.php:51
+Stack trace:
+#0 E:\DA1_Group7\DuAn1Groud7\App\Models\Database.php(51): mysqli->__construct()
+#1 E:\DA1_Group7\DuAn1Groud7\App\Models\BaseModel.php(115): App\Models\Database->MySQLi()
+#2 E:\DA1_Group7\DuAn1Groud7\App\Models\Product.php(31): App\Models\BaseModel->getAllByStatus()
+#3 E:\DA1_Group7\DuAn1Groud7\App\Controllers\Client\ProductController.php(21): App\Models\Product->getAllProductByStatus()
+#4 E:\DA1_Group7\DuAn1Groud7\App\Route.php(82): App\Controllers\Client\ProductController::index()
+#5 E:\DA1_Group7\DuAn1Groud7\index.php(87): App\Route::dispatch()
+#6 {main}
+  thrown in E:\DA1_Group7\DuAn1Groud7\App\Models\Database.php on line 51
+[13-Nov-2024 12:56:59 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: YES) in E:\DA1_Group7\DuAn1Groud7\App\Models\Database.php:51
+Stack trace:
+#0 E:\DA1_Group7\DuAn1Groud7\App\Models\Database.php(51): mysqli->__construct()
+#1 E:\DA1_Group7\DuAn1Groud7\App\Models\BaseModel.php(115): App\Models\Database->MySQLi()
+#2 E:\DA1_Group7\DuAn1Groud7\App\Models\Product.php(31): App\Models\BaseModel->getAllByStatus()
+#3 E:\DA1_Group7\DuAn1Groud7\App\Controllers\Client\ProductController.php(21): App\Models\Product->getAllProductByStatus()
+#4 E:\DA1_Group7\DuAn1Groud7\App\Route.php(82): App\Controllers\Client\ProductController::index()
+#5 E:\DA1_Group7\DuAn1Groud7\index.php(87): App\Route::dispatch()
+#6 {main}
+  thrown in E:\DA1_Group7\DuAn1Groud7\App\Models\Database.php on line 51
+[13-Nov-2024 13:05:34 Asia/Ho_Chi_Minh] PHP Warning:  Undefined variable $part1 in E:\DA1_Group7\DuAn1Groud7\App\Route.php on line 85
+[13-Nov-2024 13:05:42 Asia/Ho_Chi_Minh] PHP Warning:  Undefined variable $part1 in E:\DA1_Group7\DuAn1Groud7\App\Route.php on line 85
+[13-Nov-2024 13:06:02 Asia/Ho_Chi_Minh] PHP Warning:  Undefined variable $part1 in E:\DA1_Group7\DuAn1Groud7\App\Route.php on line 85
+[13-Nov-2024 13:06:02 Asia/Ho_Chi_Minh] PHP Warning:  Undefined variable $part1 in E:\DA1_Group7\DuAn1Groud7\App\Route.php on line 85
+[13-Nov-2024 13:06:03 Asia/Ho_Chi_Minh] PHP Warning:  Undefined variable $part1 in E:\DA1_Group7\DuAn1Groud7\App\Route.php on line 85
+[13-Nov-2024 13:06:04 Asia/Ho_Chi_Minh] PHP Warning:  Undefined variable $part1 in E:\DA1_Group7\DuAn1Groud7\App\Route.php on line 85
+[19-Nov-2024 21:16:35 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught Error: Class "App\Views\Client\Pages\Post\Post" not found in E:\Học\DA1_Group7\DuAn1Groud7\App\Controllers\Client\PostController.php:19
+Stack trace:
+#0 E:\Học\DA1_Group7\DuAn1Groud7\App\Route.php(82): App\Controllers\Client\PostController::index()
+#1 E:\Học\DA1_Group7\DuAn1Groud7\index.php(87): App\Route::dispatch()
+#2 {main}
+  thrown in E:\Học\DA1_Group7\DuAn1Groud7\App\Controllers\Client\PostController.php on line 19
+[22-Nov-2024 12:31:35 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: YES) in E:\Học\DA1_Group7\DuAn1Groud7\App\Models\Database.php:51
+Stack trace:
+#0 E:\Học\DA1_Group7\DuAn1Groud7\App\Models\Database.php(51): mysqli->__construct()
+#1 E:\Học\DA1_Group7\DuAn1Groud7\App\Models\BaseModel.php(115): App\Models\Database->MySQLi()
+#2 E:\Học\DA1_Group7\DuAn1Groud7\App\Models\Product.php(31): App\Models\BaseModel->getAllByStatus()
+#3 E:\Học\DA1_Group7\DuAn1Groud7\App\Controllers\Client\ProductController.php(21): App\Models\Product->getAllProductByStatus()
+#4 E:\Học\DA1_Group7\DuAn1Groud7\App\Route.php(82): App\Controllers\Client\ProductController::index()
+#5 E:\Học\DA1_Group7\DuAn1Groud7\index.php(87): App\Route::dispatch()
+#6 {main}
+  thrown in E:\Học\DA1_Group7\DuAn1Groud7\App\Models\Database.php on line 51
+[25-Nov-2024 12:26:59 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: YES) in E:\Học\DA1_Group7\DuAn1Groud7\App\Models\Database.php:51
+Stack trace:
+#0 E:\Học\DA1_Group7\DuAn1Groud7\App\Models\Database.php(51): mysqli->__construct()
+#1 E:\Học\DA1_Group7\DuAn1Groud7\App\Models\BaseModel.php(115): App\Models\Database->MySQLi()
+#2 E:\Học\DA1_Group7\DuAn1Groud7\App\Models\Product.php(31): App\Models\BaseModel->getAllByStatus()
+#3 E:\Học\DA1_Group7\DuAn1Groud7\App\Controllers\Client\ProductController.php(21): App\Models\Product->getAllProductByStatus()
+#4 E:\Học\DA1_Group7\DuAn1Groud7\App\Route.php(82): App\Controllers\Client\ProductController::index()
+#5 E:\Học\DA1_Group7\DuAn1Groud7\index.php(87): App\Route::dispatch()
+#6 {main}
+  thrown in E:\Học\DA1_Group7\DuAn1Groud7\App\Models\Database.php on line 51
+[25-Nov-2024 12:30:58 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "name" in E:\Học\DA1_Group7\DuAn1Groud7\App\Controllers\Client\AuthController.php on line 74
+[25-Nov-2024 12:30:58 Asia/Ho_Chi_Minh] Lỗi : Access denied for user 'root'@'localhost' (using password: YES)
+[25-Nov-2024 12:31:19 Asia/Ho_Chi_Minh] Lỗi : Access denied for user 'root'@'localhost' (using password: YES)
+[25-Nov-2024 12:31:19 Asia/Ho_Chi_Minh] Lỗi khi thêm dữ liệu: Access denied for user 'root'@'localhost' (using password: YES)

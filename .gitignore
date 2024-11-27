@@ -1,0 +1,18 @@
+### Composer ###
+composer.phar
+/vendor/
+composer.lock
+
+/public/uploads/
+/logs/php/php-errors.log
+### Ampps ###
+cgi-bin
+
+
+.env
+node_modules/
+verdor/
+composer-lock.json
+package-lock.json
+.idea/
+.vscode/
