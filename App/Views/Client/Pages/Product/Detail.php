@@ -150,14 +150,15 @@
                                                 ?>
                                             </div>
                                             <div class="product_review_form">
-                                                <h6 class="font-medium"><?= $item['name'] ?> <?= $item['username'] ?></h6>
+                                                <h6 class="font-medium"><?= $item['username'] ?></h6>
                                                 <span class="m-b-15 d-block"><?= $item['content'] ?></span>
                                                 <div class="comment-footer">
                                                     <span class="text-muted float-right"><?= $item['date'] ?></span>
                                                     <?php
                                                     if (isset($data) && isset($data['is_login']) && $data['is_login'] && ($_SESSION['user']['id'] == $item['user_id'])) :
                                                     ?>
-                                                        <button type="button" class="btn btn-cyan btn-sm" data-toggle="collapse" data-target="#<?= $item['username'] ?><?= $item['id'] ?>" aria-expanded="false" aria-controls="<?= $item['username'] ?><?= $item['id'] ?>">Sửa</button>
+                                                        <button type="button" class="btn btn-cyan btn-sm" data-toggle="collapse" data-target="#<?= $item['username'] ?><?= $item['id'] ?>" 
+                                                        aria-expanded="false" aria-controls="<?= $item['username'] ?><?= $item['id'] ?>">Sửa</button>
 
                                                         <form action="/comments/<?= $item['id'] ?>" method="post" onsubmit="return confirm('Chắc chưa?')" style="display: inline-block">
                                                             <input type="hidden" name="method" value="DELETE" id="">

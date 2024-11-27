@@ -92,7 +92,7 @@ class Comment extends BaseModel
 {
     $result = [];
     try {
-        $sql = "SELECT comments.*, users.username, users.name, users.avatar
+        $sql = "SELECT comments.*, users.username, users.avatar
                 FROM comments 
                 JOIN users ON comments.user_id = users.id 
                 WHERE comments.product_id = ? AND comments.status = " . self::STATUS_ENABLE . "
