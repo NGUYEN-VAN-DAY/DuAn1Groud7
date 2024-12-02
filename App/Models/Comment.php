@@ -24,11 +24,7 @@ class Comment extends BaseModel
         return $this->create($data);
     }
 
-    public function updateComment($id, $data)
-    {
-        return $this->update($id, $data);
-    }
-
+   
     public function deleteComment($id)
     {
         return $this->delete($id);
@@ -60,7 +56,7 @@ class Comment extends BaseModel
             return $result->fetch_all(MYSQLI_ASSOC);
         } catch (\Throwable $th) {
             error_log('Lỗi khi hiển thị tất cả dữ liệu: ' . $th->getMessage());
-            NotificationHelper::error('getAllProductJoinCategory', 'Lỗi khi hiển thị tất cả dữ liệu');
+            NotificationHelper::error('getAllProductJoinComment', 'Lỗi khi hiển thị tất cả dữ liệu');
             return $result;
         }
     }
@@ -69,9 +65,9 @@ class Comment extends BaseModel
     {
         $result = [];
         try {
-            $sql = "SELECT comments.*, products.name AS product_name, users.username FROM comments 
-        INNER JOIN products ON comments.product_id=products.id 
-        INNER JOIN users ON comments.user_id=users.id";
+            $sql = "SELECT comments.*, products.name AS product_name, users.username 
+            FROM comments INNER JOIN products ON comments.product_id=products.id 
+            INNER JOIN users ON comments.user_id=users.id;";
             $result = $this->_conn->MySQLi()->query($sql);
             return $result->fetch_all(MYSQLI_ASSOC);
         } catch (\Throwable $th) {
@@ -79,15 +75,19 @@ class Comment extends BaseModel
             NotificationHelper::error('getAllCommentJoinProductAndUser', 'Lỗi khi hiển thị tất cả dữ liệu');
             return $result;
         }
+
     }
-    public function getOneCommentJoinProductAndUser($id)
+
+    public function getOneCommentJoinProductAndUser(int $id)
     {
         $result = [];
         try {
-            $sql = "SELECT comments.*, products.name AS product_name, users.username FROM comments 
-            INNER JOIN products ON comments.product_id=products.id 
-            INNER JOIN users ON comments.user_id=users.id
-            WHERE comments.id=?";
+            $sql = "SELECT comments.*, products.name AS product_name, users.username 
+        FROM comments 
+        INNER JOIN products ON comments.product_id = products.id 
+        INNER JOIN users ON comments.user_id = users.id 
+        WHERE comments.id = ?
+        ";
             $conn = $this->_conn->MySQLi();
             $stmt = $conn->prepare($sql);
 
@@ -100,4 +100,42 @@ class Comment extends BaseModel
             return $result;
         }
     }
+   public function get5CommentNewestByProductAndStatus(int $id)
+{
+    $result = [];
+    try {
+        $sql = "SELECT comments.*, users.username, users.avatar
+                FROM comments 
+                JOIN users ON comments.user_id = users.id 
+                WHERE comments.product_id = ? AND comments.status = " . self::STATUS_ENABLE . "
+                ORDER BY comments.date DESC LIMIT 5;";
+
+        $conn = $this->_conn->MySQLi();
+        $stmt = $conn->prepare($sql);
+        $stmt->bind_param('i', $id);
+        $stmt->execute();
+        $result = $stmt->get_result()->fetch_all(MYSQLI_ASSOC);
+    } catch (\Throwable $th) {
+        error_log('Lỗi khi hiển thị tất cả dữ liệu: ' . $th->getMessage());
+        NotificationHelper::error('get5CommentNewestByProductAndStatus', 'Lỗi khi hiển thị tất cả dữ liệu');
+    }
+    return $result;
 }
+public function updateComment($id, $data)
+{
+    try {
+        $sql = "UPDATE comments 
+                SET content = ?, status = ?, updated_at = NOW()
+                WHERE id = ?";
+        $stmt = $this->_conn->MySQLi()->prepare($sql);
+        $stmt->bind_param('sii', $data['content'], $data['status'], $id);
+        return $stmt->execute();
+    } catch (\Throwable $th) {
+        error_log('Lỗi khi cập nhật bình luận: ' . $th->getMessage());
+        return false;
+    }
+}
+
+
+
+    }

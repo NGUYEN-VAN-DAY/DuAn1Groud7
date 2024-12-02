@@ -41,6 +41,9 @@ Route::get(url: '/cart', controllerMethod: 'App\Controllers\Client\CartControlle
 Route::post('/cart/add', 'App\Controllers\Client\CartController@add');
 Route::get('/cart/remove/{id}', 'App\Controllers\Client\CartController@remove');
 // bình luận
+// Route::get(url: '/comments/{id}', controllerMethod: 'App\Controllers\Client\CommentController@edit');
+Route::put(url: '/comments/{id}', controllerMethod: 'App\Controllers\Client\CommentController@edit');
+
 Route::post(url: '/comments', controllerMethod: 'App\Controllers\Client\CommentController@store');
 Route::put(url: '/comments/{id}', controllerMethod: 'App\Controllers\Client\CommentController@update');
 Route::delete(url: '/comments/{id}', controllerMethod: 'App\Controllers\Client\CommentController@delete');
