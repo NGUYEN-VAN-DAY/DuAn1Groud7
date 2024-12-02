@@ -24,11 +24,7 @@ class Comment extends BaseModel
         return $this->create($data);
     }
 
-    public function updateComment($id, $data)
-    {
-        return $this->update($id, $data);
-    }
-
+   
     public function deleteComment($id)
     {
         return $this->delete($id);
@@ -109,5 +105,21 @@ class Comment extends BaseModel
     }
     return $result;
 }
+public function updateComment($id, $data)
+{
+    try {
+        $sql = "UPDATE comments 
+                SET content = ?, status = ?, updated_at = NOW()
+                WHERE id = ?";
+        $stmt = $this->_conn->MySQLi()->prepare($sql);
+        $stmt->bind_param('sii', $data['content'], $data['status'], $id);
+        return $stmt->execute();
+    } catch (\Throwable $th) {
+        error_log('Lỗi khi cập nhật bình luận: ' . $th->getMessage());
+        return false;
+    }
+}
+
+
 
     }

@@ -33,4 +33,13 @@ class CommentValidation
         }
         return $is_valid;
     }
+    public static function editClient(): bool
+    {
+        $is_valid = true;
+        if (!isset($_POST['content']) || $_POST['content'] === '') {
+            NotificationHelper::error('content', 'Vui lòng không để trống nội dung bình luận');
+            $is_valid = false;
+        }
+        return $is_valid;
+    }
 }
