@@ -45,10 +45,10 @@
                             <!-- <h2 class="product-name">Tên sản phẩm</h2> -->
                             <!-- <p class="product-price" id="price">2000,00 VND</p> -->
                             <div class="quantity-control">
-                                <button onclick="decreaseQuantity()" id="btn-">-</button>
+                                <button onclick="decreaseQuantity()" id="btn-" class="btn btn-secondary">-</button>
                                 <input  type="text" id="quantity" value="1" min="1" onchange="updatePrice()" />
                                 <!-- <span id="quantity" onchange="updatePrice()"> 1</span> -->
-                                <button onclick="increaseQuantity()" id="btn">+</button>
+                                <button onclick="increaseQuantity()" id="btn" class="btn btn-secondary">+</button>
                             </div>
                         </div>
                         <script>
@@ -116,7 +116,7 @@
                         <hr>
                         <h3>Mô tả sản phẩm</h3>
                         <!-- <hr> -->
-                        <?= $data['product']['logDescription'] ?>
+                        <?= $data['product']['long_description'] ?>
                     </div>
                     <br>
 
