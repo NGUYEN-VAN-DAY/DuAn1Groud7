@@ -154,7 +154,7 @@ class Detail extends BaseView
                                     ?>
                                     <!-- Comment Row -->
                                     <div class="d-flex flex-row comment-row m-t-0">
-                                        <div class="p-4">
+                                        <div class="p-2">
                                             <?php
                                             if ($item['avatar']):
                                                 ?>
@@ -169,21 +169,19 @@ class Detail extends BaseView
                                                 <?php
                                             endif;
                                             ?>
+                                                <?php if (isset($data) && isset($data['is_login']) && $data['is_login'] && ($_SESSION['user']['id'] == $item['user_id'])): ?>
                                         </div>
-                                        <div class="product_review_form">
-                                            <div class="d-flex justify-content-between align-items-center">
+                                        <div class="comment-text w-100">
                                                 <div class="comment-content">
                                                     <h6 class="font-medium"><?= $item['username'] ?></h6>
                                                     <span class="m-b-15 d-block"><?= $item['content'] ?></span>
-                                                    <span class="text-muted"><?= $item['date'] ?></span>
-                                                </div>
 
-                                                <?php if (isset($data) && isset($data['is_login']) && $data['is_login'] && ($_SESSION['user']['id'] == $item['user_id'])): ?>
+                                                    <div class="comment-footer">
+                                                    <span class="text-muted float-right"><?= $item['date'] ?></span>
+
                                                 
                                                 </div>
-                                                <div class="action-buttons text-right" >
-                                                    <button type="button" class="btn btn-cyan btn-sm" data-toggle="collapse"
-                                                        data-target="#<?= $item['username'] ?><?= $item['id'] ?>" aria-expanded="false"
+                                                    <button type="button" class="btn btn-cyan btn-sm" data-toggle="collapse" data-target="#<?= $item['username'] ?><?= $item['id'] ?>" aria-expanded="false"
                                                         aria-controls="<?= $item['username'] ?><?= $item['id'] ?>">Sửa</button>
 
                                                     <form action="/comments/<?= $item['id'] ?>" method="post"
@@ -194,10 +192,9 @@ class Detail extends BaseView
                                                     </form>
                                                 </div>
                                                 
-                                            <?php endif; ?>
-                                        </div>
-                                    </div>
+                                    <?php endif; ?>
 
+                                    </div>
 
                                 </div>
                                 <?php
@@ -216,7 +213,7 @@ class Detail extends BaseView
                             ?>
                             <div class="d-flex flex-row comment-row">
 
-                                <div class="p-4">
+                                <div class="p-2">
                                     <?php
                                     if ($_SESSION['user']['avatar']):
                                         ?>
@@ -249,35 +246,24 @@ class Detail extends BaseView
                                             <button type="submit" class="btn btn-cyan btn-sm">Gửi</button>
                                         </div>
                                     </form>
-
-
                                 </div>
                             </div>
-                            <?php
+                             <?php
                         else:
                             ?>
-                            <a href="/login">
+                             <a href="/login">
                                 <h6 class="text-center text-danger">
                                     Vui lòng đăng nhập để bình luận
                                 </h6>
                             </a>
-
                             <?php
                         endif;
-                        ?>
+                        ?> 
                     </div>
-
-
                 </div>
-
-
             </div>
         </div>
         </div>
-        </div>
-
-
-
         <?php
 
     }
