@@ -83,6 +83,7 @@ class Index extends BaseView
                                                 <div class="box" id="box">
                                                     <a href="/products/<?= $item['id'] ?>" class="">
                                                         <div class="card mb-4 shadow-sm">
+                                                           
                                                             <img class="img-index" src="<?= APP_URL ?>/public/uploads/products/<?= $item['image'] ?>" class="card-img-top" alt="" data-holder-rendered="true">
                                                         </div>
                                                         <div class="">

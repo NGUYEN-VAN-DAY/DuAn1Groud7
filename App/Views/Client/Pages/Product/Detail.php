@@ -22,7 +22,7 @@ class Detail extends BaseView
                 </div>
                 <div class="col-md-4">
 
-                    <h1 class="fs-1"><?= $data['product']['name'] ?></h1>
+                    <h1 class="fs-1 text-danger"><?= $data['product']['name'] ?></h1>
                     <!-- <h4>trạng thái: <button class="btn btn-success">còn hàng</button></h4> -->
                     <h5>Mô tả: <?= $data['product']['description'] ?></h5>
 
@@ -44,18 +44,24 @@ class Detail extends BaseView
                     <div class="product-detail">
                         <!-- <h2 class="product-name">Tên sản phẩm</h2> -->
                         <!-- <p class="product-price" id="price">2000,00 VND</p> -->
-                        <div class="quantity-control">
-                            <button onclick="decreaseQuantity()" id="btn-">-</button>
-                            <input type="text" id="quantity" value="1" min="1" onchange="updatePrice()" />
-                            <!-- <span id="quantity" onchange="updatePrice()"> 1</span> -->
-                            <button onclick="increaseQuantity()" id="btn">+</button>
-                        </div>
+                        <!-- <form action="" method="get"> -->
+                            <!-- <input type="hidden" value="GET"> -->
+                            <div class="quantity-control">
+                                <button onclick="decreaseQuantity()" id="btn-">-</button>
+                                <input type="text" id="quantity" value="1" min="1" onchange="updatePrice()" />
+                                <!-- <span id="quantity" onchange="updatePrice()"> 1</span> -->
+                                <button onclick="increaseQuantity()" id="btn">+</button>
+                            </div>
+                        <!-- </form> -->
                     </div>
                     <script>
                         var basePrice = <?php echo $data['product']['price'] - $data['product']['discount_price'] ?>; // Giá cơ bản cho 1 sản phẩm
                         console.log(basePrice);
 
                         function updatePrice() {
+                            // <?php $quantity = $data['product']['quantity'] ;
+                            // echo $quantity =?>  quantity;
+                   
                             var quantity = document.getElementById("quantity").value;
                             var price = basePrice * quantity;
                             document.getElementById("price").innerText = price.toLocaleString() + " VND /kg";
@@ -78,9 +84,11 @@ class Detail extends BaseView
                     </script>
 
 
-                    
+
                     <form action="/cart/add" method="post">
                         <input type="hidden" name="method" value="POST">
+                        <input type="hidden" name="product_id" value="<?= $data['product']['quantity'] ?>">
+
                         <input type="hidden" name="product_id" value="<?= $data['product']['id'] ?>">
                         <input type="hidden" name="image" value="<?= $data['product']['image'] ?>">
                         <input type="hidden" name="name" value="<?= $data['product']['name'] ?>">
@@ -89,7 +97,7 @@ class Detail extends BaseView
                         <button type="submit" class="btn tbn-sm btn-success mt-3"></i>Thêm vào giỏ hàng</button>
                         <a class="btn tbn-sm btn-success mt-3 " href="/pay">Mua Ngay</a>
                     </form>
-                    
+
 
 
 
@@ -118,13 +126,13 @@ class Detail extends BaseView
                     <span>Nếu bạn có dị ứng với bất kỳ thành phần nào của sản phẩm, hãy ngừng sử dụng và tham khảo ý kiến bác sĩ.</span>
                 </div>
 
-                    <div class="col-md-12 mt-5">
-                        <hr>
-                        <h3>Mô tả sản phẩm</h3>
-                        <!-- <hr> -->
-                        <?= $data['product']['long_description'] ?>
-                    </div>
-                    <br>
+                <div class="col-md-12 mt-5">
+                    <hr>
+                    <h3>Mô tả sản phẩm</h3>
+                    <!-- <hr> -->
+                    <?= $data['product']['long_description'] ?>
+                </div>
+                <br>
 
             </div>
             <!-- -------------- -->
