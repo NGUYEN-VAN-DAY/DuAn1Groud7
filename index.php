@@ -28,8 +28,11 @@ Route::get(url: '/introduce', controllerMethod: 'App\Controllers\Client\Introduc
 
 //
 Route::get(url: '/products', controllerMethod: 'App\Controllers\Client\ProductController@index');
+Route::get(url: '/products/options', controllerMethod: 'App\Controllers\Client\ProductController@getFilterProduct');
 Route::get(url: '/products/{id}', controllerMethod: 'App\Controllers\Client\ProductController@detail');
 Route::get(url: '/products/categories/{id}', controllerMethod: 'App\Controllers\Client\ProductController@getProductByCategory');
+Route::get(url: '/products/categories/{id}/options', controllerMethod: 'App\Controllers\Client\ProductController@getFilterbycategery');
+Route::get(url: '/products/seach', controllerMethod: 'App\Controllers\Client\ProductController@getSeachProducts');
 // giỏ hàng
 Route::get(url: '/cart', controllerMethod: 'App\Controllers\Client\CartController@index');
 // bình luận

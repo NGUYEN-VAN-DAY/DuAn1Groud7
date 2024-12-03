@@ -97,4 +97,60 @@ class Product extends BaseModel
             return $result;
         }
     }
+    public function getFilterProduct()
+    {
+
+        $result = [];
+        try {
+            if (isset($_GET['order'])) {
+                // Lấy giá trị thứ tự từ form (asc hoặc desc)
+                $order = $_GET['order'];
+
+                // Sắp xếp mảng dựa trên giá trị người dùng chọn
+                if ($order == 'asc') {
+                    $sql = "SELECT * FROM products ORDER BY price asc"; // Sắp xếp tăng dần
+                } elseif ($order == 'desc') {
+                    $sql = "SELECT * FROM products ORDER BY price desc"; // Sắp xếp giảm dần
+                }
+            }
+
+            // Câu truy vấn với sắp xếp động
+
+
+            // $sql = "SELECT*FROM products ORDER BY price ASC";
+            $conn = $this->_conn->MySQLi();
+            $stmt = $conn->prepare($sql);
+            $stmt->execute();
+            return $stmt->get_result()->fetch_all(MYSQLI_ASSOC);
+        } catch (\Throwable $th) {
+            error_log('Lỗi: ' . $th->getMessage());
+            return $result;
+        }
+    }
+    public function getSeachProduct()
+    {
+        $result = [];
+        try {
+            if (isset($_GET['query']) && !empty($_GET['query'])) {
+                $conn = $this->_conn->MySQLi();
+                // var_dump($_GET['query']);
+                $searchQuery = $conn->real_escape_string($_GET['query']); // Tránh SQL injection
+                // var_dump($searchQuery);
+                $sql = "SELECT*FROM products WHERE name LIKE '%$searchQuery%' ";
+                // var_dump($sql);
+                $stmt = $conn->prepare($sql);
+                $stmt->execute();
+                return $stmt->get_result()->fetch_all(MYSQLI_ASSOC);
+               
+            } 
+        } catch (\Throwable $th) {
+            error_log('Lỗi: ' . $th->getMessage());
+            return $result;
+        }
+
+        // ------------
+
+        // Truy vấn tìm kiếm
+     
+    }
 }
