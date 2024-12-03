@@ -23,23 +23,46 @@ class Index extends BaseView
             <table class="table">
                 <thead>
                     <tr>
-                        <th>STT</th>
-                        <th>Mã sản phẩm</th>
-                        <th>Hình ảnh</th>
-                        <th>Tên</th>
-                        <th>Giá tiền</th>
-                        <th>Số lượng</th>
-                        <th>Tổng tiền</th>
-                        <th></th>
+                    <th scope="col">#</th>
+                                <th scope="col">Ảnh sản phẩm</th>
+                                <th scope="col">Tên sản phẩm</th>
+                                <th scope="col">Số lượng</th>
+                                <th scope="col">Giá</th>
+                                <th scope="col">Tống tiền</th>
+                                <th scope="col">Xóa</th>
                     </tr>
                 </thead>
+
                 <tbody>
+                            <?php
+                            $total = 0;
+                            if (isset($_SESSION['cart'])) {
+                                foreach ($_SESSION['cart'] as $key => $item) {
+                                    $total += $item['price'] * $item['quantity'];
+                            ?>
+                                    <tr>
+                                        <th scope="row"><?= $key ?></th>
+                                        <td><img src="<?= APP_URL ?> public/assets/client/images/<? $item ?>" alt="" style="width: 100px; height: 100px;"></td>
+                                        <td><?= $item['name'] ?></td>
+                                        <td><?= $item['quantity'] ?></td>
+                                        <td><?= number_format($item['price']) ?></td>
+                                        <td><?= number_format($item['price'] * $item['quantity']) ?></td>
+                                        <td>
+                                            <a href="/cart/remove/<?= $item['product_id'] ?>" class="btn btn-danger">Xóa</a>
+                                        </td>
+                                    </tr>
+                            <?php
+                                }
+                            }
+                            ?>
+                            <tr>
+                                <td colspan="6" scope="col">Tổng tiền</td>
+                                <td><?= number_format($total) ?> Vnd</td>
+                                
+                            </tr>
+                        </tbody>
 
-                    <tr>
-                        
 
-                    </tr>
-                </tbody>
             </table>
 
 
@@ -47,7 +70,7 @@ class Index extends BaseView
                 <div class="d-flex justify-content-between">
                     <form action="/cart/delete-all" method="post">
                         <input type="hidden" name="method" id="" value="DELETE">
-                        <button class="btn btn-outline-danger" name="delete-cart" type="submit">Xoá giỏ hàng</button>
+
                     </form>
 
                     <?php
