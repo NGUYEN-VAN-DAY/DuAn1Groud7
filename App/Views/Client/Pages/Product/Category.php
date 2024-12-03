@@ -14,6 +14,7 @@ class Category extends BaseView
     {
 
 ?>
+
         <div class="container-fluid">
 
             <section class="shop_section layout_padding">
@@ -34,19 +35,31 @@ class Category extends BaseView
 
                                 <div class="row">
                                     <div class="col-md-9">
-                                        <h3 class="container"><?= $data['products'][0]['category_name'] ?></h3>
+                                        <h3 class="text-danger"><?php if (!empty($data['products'][0]['category_name'])): ?>
+                                                <span><?= $data['products'][0]['category_name'] ?></span>
+                                            <?php else: ?>
+                                                <span>Sản phẩm</span>
+                                            <?php endif; ?>
+                                        </h3>
                                     </div>
-                                    <div class="col-md-3 text-right  ">
-                                        <label for="fruits">Sắp xếp theo mặc định:</label>
-                                        <select id="fruits" name="fruitlist" class="border-0 form-select-sm bg-light  " form="fruitform">
-                                            <option value="volvo">Từ thấp tới cao</option>
-                                            <option value="saab">Từ cao tới thấp</option>
-                                            <option value="opel">Sản phẩm nổi bật</option>
-                                            <option value="opel">Mới nhất</option>
-                                            <option value="opel">Cũ nhất</option>
+                                    <div class="col-md-3 text-right">
 
-                                        </select>
+                                        <form method="GET" action="/products/options">
+
+
+                                            <select name="order" id="order" class="form-select" onchange="this.form.submit()" aria-label="Disabled select example">
+                                                <option value="asc">SẮP XẾP:</option>
+                                                <option value="asc">TĂNG DẦN</option>
+                                                <option value="desc">GIẢM DẦN</option>
+                                            </select>
+                                            <!-- <button type="submit">Lọc giá</button> -->
+                                        </form>
+
                                     </div>
+                                    <script>
+
+                                    </script>
+
                                 </div>
                             </div>
                             <div class="row">
@@ -55,7 +68,7 @@ class Category extends BaseView
                                 ?>
                                     <div class="col-sm-6 col-md-4 col-lg-3">
                                         <div class="box">
-                                            <a href="/products/<?= $item['id'] ?>" class="" style="height: 100px;">
+                                            <a href="/products/<?= $item['id'] ?>" class="">
                                                 <div class="card mb-4 shadow-sm ">
                                                     <img class="img-index" id="img" src="<?= APP_URL ?>/public/uploads/products/<?= $item['image'] ?>" class="card-img-top" alt="" data-holder-rendered="true">
                                                 </div>

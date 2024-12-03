@@ -67,9 +67,49 @@ class Detail extends BaseView
                             updatePrice();
                         }
 
-                        function decreaseQuantity() {
-                            var quantityInput = document.getElementById("quantity");
-                            quantityInput.value = parseInt(quantityInput.value) - 1
+                        <?php
+                        if ($data['product']['discount_price'] > 0) :
+                        ?>
+                            <h5>Giá gốc: <strike><?= number_format($data['product']['price']) ?> đ</strike></h5>
+                            <h5 id="price">Giá giảm: <strong class="text-danger"><?= number_format($data['product']['price'] - $data['product']['discount_price']) ?> đ</strong></h5>
+
+                        <?php
+                        else :
+                        ?>
+                            <h5>Giá tiền: <?= number_format($data['product']['price']) ?> đ</h5>
+                        <?php
+                        endif;
+                        ?>
+
+                        <div class="product-detail">
+                            <!-- <h2 class="product-name">Tên sản phẩm</h2> -->
+                            <!-- <p class="product-price" id="price">2000,00 VND</p> -->
+                            <div class="quantity-control">
+                                <button onclick="decreaseQuantity()" id="btn-" class="btn btn-secondary">-</button>
+                                <input  type="text" id="quantity" value="1" min="1" onchange="updatePrice()" />
+                                <!-- <span id="quantity" onchange="updatePrice()"> 1</span> -->
+                                <button onclick="increaseQuantity()" id="btn" class="btn btn-secondary">+</button>
+                            </div>
+                        </div>
+                        <script>
+                            var basePrice = <?php echo $data['product']['price'] - $data['product']['discount_price'] ?> ; // Giá cơ bản cho 1 sản phẩm
+                            console.log(basePrice);
+                            
+                            function updatePrice() {
+                                var quantity = document.getElementById("quantity").value;
+                                var price = basePrice * quantity;
+                                document.getElementById("price").innerText = price.toLocaleString() + " VND /kg";
+                            }
+
+                            function increaseQuantity() {
+                                let quantityInput = document.getElementById("quantity");
+                                quantityInput.value = parseInt(quantityInput.value) + 1;
+                                updatePrice();
+                            }
+
+                            function decreaseQuantity() {
+                                var quantityInput = document.getElementById("quantity");
+                                quantityInput.value = parseInt(quantityInput.value) - 1
                             console.log(quantityInput.value);
                             quantityInput.value = Math.max(1, quantityInput.value);
 
@@ -106,16 +146,25 @@ class Detail extends BaseView
                         </div> -->
 
                 </div>
-            </div>
-            <hr>
-            <!-- ----------------------- -->
-            <div class="row">
-                <div class="col-md-6">
-                    <h3>Lưu ý khi sử dụng</h3>
-                    <!-- <hr> -->
-                    <span>không sử dụng sản phẩm đã hết hạn</span>
-                    <br><br>
-                    <span>Nếu bạn có dị ứng với bất kỳ thành phần nào của sản phẩm, hãy ngừng sử dụng và tham khảo ý kiến bác sĩ.</span>
+                <hr>
+                <!-- ----------------------- -->
+                <div class="row">
+                    <div class="col-md-6">
+                        <h3>Lưu ý khi sử dụng</h3>
+                        <!-- <hr> -->
+                        <span>không sử dụng sản phẩm đã hết hạn</span>
+                        <br><br>
+                        <span>Nếu bạn có dị ứng với bất kỳ thành phần nào của sản phẩm, hãy ngừng sử dụng và tham khảo ý kiến bác sĩ.</span>
+                    </div>
+
+                    <div class="col-md-12 mt-5">
+                        <hr>
+                        <h3>Mô tả sản phẩm</h3>
+                        <!-- <hr> -->
+                        <?= $data['product']['long_description'] ?>
+                    </div>
+                    <br>
+
                 </div>
 
                 <div class="col-md-12 mt-5">

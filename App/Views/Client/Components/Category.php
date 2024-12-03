@@ -10,14 +10,18 @@ class Category extends BaseView
     {
 ?>
         <div class="col-md-11">
-            <div class="input-group w-100 mx-auto d-flex mb-3">
-                <input type="search" class="form-control p-4" placeholder="keywords" aria-describedby="search-icon-1">
-                <span id="search-icon-1" class="input-group-text p-2"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Search_Icon.svg/20px-Search_Icon.svg.png" alt=""></span>
-            </div>
-            <table class="table table-dark table-striped ">
+            <form action="/products/seach" method="get" >
+                <input type="hidden" name="method" value="GET">
+
+                <div class="input-group w-100 mx-auto d-flex mb-3">
+                    <input type="search" class="form-control " name="query" id="query" placeholder="TÌM KIẾM" aria-describedby="search-icon-1" onchange="this.form.submit()">
+                    <span id="search-icon-1" class="input-group-text p-2"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Search_Icon.svg/20px-Search_Icon.svg.png" alt=""></span>
+                </div>
+            </form>
+            <table class="table table-bordered table-striped " id="table">
                 <tr>
                     <td>
-                        <h5 class="text-center">Danh mục</h5>
+                        <h5 class="text-center text-danger">Danh mục</h5>
                     </td>
                 </tr>
                 <tr>
@@ -84,11 +88,11 @@ class Category extends BaseView
                 <div>
                     <h6 class="mb-2">Big Banana</h6>
                     <div class="d-flex mb-2">
-                    <img src="https://png.pngtree.com/png-clipart/20190614/original/pngtree-star-vector-icon-png-image_3725282.jpg" width="20px" alt="">
-                    <img src="https://png.pngtree.com/png-clipart/20190614/original/pngtree-star-vector-icon-png-image_3725282.jpg" width="20px" alt="">
-                    <img src="https://png.pngtree.com/png-clipart/20190614/original/pngtree-star-vector-icon-png-image_3725282.jpg" width="20px" alt="">
-                    <img src="https://png.pngtree.com/png-clipart/20190614/original/pngtree-star-vector-icon-png-image_3725282.jpg" width="20px" alt="">
-                    <img src="https://png.pngtree.com/png-clipart/20190614/original/pngtree-star-vector-icon-png-image_3725282.jpg" width="20px" alt="">
+                        <img src="https://png.pngtree.com/png-clipart/20190614/original/pngtree-star-vector-icon-png-image_3725282.jpg" width="20px" alt="">
+                        <img src="https://png.pngtree.com/png-clipart/20190614/original/pngtree-star-vector-icon-png-image_3725282.jpg" width="20px" alt="">
+                        <img src="https://png.pngtree.com/png-clipart/20190614/original/pngtree-star-vector-icon-png-image_3725282.jpg" width="20px" alt="">
+                        <img src="https://png.pngtree.com/png-clipart/20190614/original/pngtree-star-vector-icon-png-image_3725282.jpg" width="20px" alt="">
+                        <img src="https://png.pngtree.com/png-clipart/20190614/original/pngtree-star-vector-icon-png-image_3725282.jpg" width="20px" alt="">
                     </div>
                     <div class="d-flex mb-2">
                         <h5 class="fw-bold me-2">2.99 $</h5>
