@@ -135,7 +135,7 @@ class Detail extends BaseView
                         <hr>
                         <h3>Mô tả sản phẩm</h3>
                         <!-- <hr> -->
-                        <?= $data['product']['logDescription'] ?>
+                        <?= $data['product']['long_description'] ?>
                     </div>
                     <br>
 
