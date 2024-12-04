@@ -3940,3 +3940,13 @@ Stack trace:
 [09-Dec-2024 10:23:44 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "status" in D:\Documents\GitHub\DuAn1Groud7\App\Views\Admin\Pages\Product\Edit.php on line 112
 [09-Dec-2024 10:26:45 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "status" in D:\Documents\GitHub\DuAn1Groud7\App\Views\Admin\Pages\Product\Edit.php on line 112
 [09-Dec-2024 10:34:15 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "status" in D:\Documents\GitHub\DuAn1Groud7\App\Views\Admin\Pages\Product\Edit.php on line 112
+[09-Dec-2024 11:37:32 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "quantity" in D:\Documents\GitHub\DuAn1Groud7\App\Views\Client\Pages\Product\Detail.php on line 72
+[09-Dec-2024 11:37:32 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\Documents\GitHub\DuAn1Groud7\App\Views\Client\Pages\Product\Detail.php on line 72
+[09-Dec-2024 11:37:32 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "quantity" in D:\Documents\GitHub\DuAn1Groud7\App\Views\Client\Pages\Product\Detail.php on line 83
+[09-Dec-2024 11:37:37 Asia/Ho_Chi_Minh] Lỗi khi thêm dữ liệu: Field 'date' doesn't have a default value
+[09-Dec-2024 11:37:37 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "quantity" in D:\Documents\GitHub\DuAn1Groud7\App\Views\Client\Pages\Product\Detail.php on line 72
+[09-Dec-2024 11:37:37 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\Documents\GitHub\DuAn1Groud7\App\Views\Client\Pages\Product\Detail.php on line 72
+[09-Dec-2024 11:37:37 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "quantity" in D:\Documents\GitHub\DuAn1Groud7\App\Views\Client\Pages\Product\Detail.php on line 83
+[09-Dec-2024 11:37:54 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "quantity" in D:\Documents\GitHub\DuAn1Groud7\App\Views\Client\Pages\Product\Detail.php on line 72
+[09-Dec-2024 11:37:54 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\Documents\GitHub\DuAn1Groud7\App\Views\Client\Pages\Product\Detail.php on line 72
+[09-Dec-2024 11:37:54 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "quantity" in D:\Documents\GitHub\DuAn1Groud7\App\Views\Client\Pages\Product\Detail.php on line 83
