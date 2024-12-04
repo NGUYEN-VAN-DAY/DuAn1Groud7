@@ -3,6 +3,7 @@
 namespace App\Views\Client\Pages\Product;
 
 use App\Views\BaseView;
+use Dotenv\Parser\Value;
 
 class Detail extends BaseView
 {
@@ -44,28 +45,45 @@ class Detail extends BaseView
                     <div class="product-detail">
                         <!-- <h2 class="product-name">Tên sản phẩm</h2> -->
                         <!-- <p class="product-price" id="price">2000,00 VND</p> -->
-                        <!-- <form action="" method="get"> -->
-                            <!-- <input type="hidden" value="GET"> -->
-                            <div class="quantity-control">
-                                <button onclick="decreaseQuantity()" id="btn-">-</button>
-                                <input type="text" id="quantity" value="1" min="1" onchange="updatePrice()" />
-                                <!-- <span id="quantity" onchange="updatePrice()"> 1</span> -->
-                                <button onclick="increaseQuantity()" id="btn">+</button>
-                            </div>
+                        <!-- <form method="post"> -->
+                        <!-- <input type="hidden" value="POST"> -->
+                        <div class="quantity-control">
+                            <button onclick="decreaseQuantity()" id="btn-">-</button>
+                            <input type="text" id="quantity" value="1" min="1" onchange="updatePrice()" />
+                            <!-- <span id="quantity" onchange="updatePrice()"> 1</span> -->
+                            <button onclick="increaseQuantity()" id="btn">+</button>
+                        </div>
                         <!-- </form> -->
-                    </div>
-                    <script>
-                        var basePrice = <?php echo $data['product']['price'] - $data['product']['discount_price'] ?>; // Giá cơ bản cho 1 sản phẩm
-                        console.log(basePrice);
 
-                        function updatePrice() {
-                            // <?php $quantity = $data['product']['quantity'] ;
-                            // echo $quantity =?>  quantity;
-                   
-                            var quantity = document.getElementById("quantity").value;
-                            var price = basePrice * quantity;
-                            document.getElementById("price").innerText = price.toLocaleString() + " VND /kg";
-                        }
+                    </div>
+
+
+                    <!-- <h1><?php echo ($_SESSION['quantity']['day']) ?></h1> -->
+
+                    <form action="/cart/add" method="post">
+                        <input type="hidden" name="method" value="POST">
+                        <!-- <input type="text" name="quantity" id="quantityy" value="1" min="1" onchange="updatePrice()" /> -->
+
+
+                        <input type="hidden" name="product_id" value="<?= $data['product']['id'] ?>">
+                        <input type="hidden" name="image" value="<?= $data['product']['image'] ?>">
+                        <input type="hidden" name="name" value="<?= $data['product']['name'] ?>">
+                        <input type="hidden" name="price" value="<?= $data['product']['price'] ?>">
+                        <!-- <input type="hidden" name="price" value="<?= $data['product']['quantity'] ?>"> -->
+                        <button type="submit" class="btn tbn-sm btn-success mt-3"></i>Thêm vào giỏ hàng</button>
+                        <a class="btn tbn-sm btn-success mt-3 " href="/pay">Mua Ngay</a>
+                    </form>
+
+
+                    <script>
+                            var basePrice = <?php echo $data['product']['price'] - $data['product']['discount_price'] ?> ; // Giá cơ bản cho 1 sản phẩm
+                            console.log(basePrice);
+                            
+                            function updatePrice() {
+                                var quantity = document.getElementById("quantity").value;
+                                var price = basePrice * quantity;
+                                document.getElementById("price").innerText = price.toLocaleString() + " VND /kg";
+                            }
 
                         function increaseQuantity() {
                             let quantityInput = document.getElementById("quantity");
@@ -82,24 +100,9 @@ class Detail extends BaseView
                             updatePrice();
                         }
                     </script>
-
-
-
-                    <form action="/cart/add" method="post">
-                        <input type="hidden" name="method" value="POST">
-                        <input type="hidden" name="product_id" value="<?= $data['product']['quantity'] ?>">
-
-                        <input type="hidden" name="product_id" value="<?= $data['product']['id'] ?>">
-                        <input type="hidden" name="image" value="<?= $data['product']['image'] ?>">
-                        <input type="hidden" name="name" value="<?= $data['product']['name'] ?>">
-                        <input type="hidden" name="price" value="<?= $data['product']['price'] ?>">
-                        <!-- <input type="hidden" name="price" value="<?= $data['product']['quantity'] ?>"> -->
-                        <button type="submit" class="btn tbn-sm btn-success mt-3"></i>Thêm vào giỏ hàng</button>
-                        <a class="btn tbn-sm btn-success mt-3 " href="/pay">Mua Ngay</a>
-                    </form>
-
-
-
+                    <!-- ------------------------ -->
+                  
+                     <!-- ---------------- -->
 
                     <br>
                     <div class="border border-danger p-3">

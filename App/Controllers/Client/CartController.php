@@ -56,9 +56,3 @@ class CartController
         header('Location: /cart');
     }
 }
-
-
-
-
-
-
