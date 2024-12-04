@@ -3,6 +3,7 @@
 namespace App\Views\Client\Pages\Product;
 
 use App\Views\BaseView;
+use Dotenv\Parser\Value;
 
 class Detail extends BaseView
 {
@@ -56,17 +57,40 @@ class Detail extends BaseView
                     endif;
                     ?>
 
-                        <div class="product-detail">
-                            <!-- <h2 class="product-name">Tên sản phẩm</h2> -->
-                            <!-- <p class="product-price" id="price">2000,00 VND</p> -->
-                            <div class="quantity-control">
-                                <button onclick="decreaseQuantity()" id="btn-">-</button>
-                                <input  type="text" id="quantity" value="1" min="1" onchange="updatePrice()" />
-                                <!-- <span id="quantity" onchange="updatePrice()"> 1</span> -->
-                                <button onclick="increaseQuantity()" id="btn">+</button>
-                            </div>
+                    <div class="product-detail">
+                        <!-- <h2 class="product-name">Tên sản phẩm</h2> -->
+                        <!-- <p class="product-price" id="price">2000,00 VND</p> -->
+                        <!-- <form method="post"> -->
+                        <!-- <input type="hidden" value="POST"> -->
+                        <div class="quantity-control">
+                            <button onclick="decreaseQuantity()" id="btn-">-</button>
+                            <input type="text" id="quantity" value="1" min="1" onchange="updatePrice()" />
+                            <!-- <span id="quantity" onchange="updatePrice()"> 1</span> -->
+                            <button onclick="increaseQuantity()" id="btn">+</button>
                         </div>
-                        <script>
+                        <!-- </form> -->
+
+                    </div>
+
+
+                    <!-- <h1><?php echo ($_SESSION['quantity']['day']) ?></h1> -->
+
+                    <form action="/cart/add" method="post">
+                        <input type="hidden" name="method" value="POST">
+                        <!-- <input type="text" name="quantity" id="quantityy" value="1" min="1" onchange="updatePrice()" /> -->
+
+
+                        <input type="hidden" name="product_id" value="<?= $data['product']['id'] ?>">
+                        <input type="hidden" name="image" value="<?= $data['product']['image'] ?>">
+                        <input type="hidden" name="name" value="<?= $data['product']['name'] ?>">
+                        <input type="hidden" name="price" value="<?= $data['product']['price'] ?>">
+                        <!-- <input type="hidden" name="price" value="<?= $data['product']['quantity'] ?>"> -->
+                        <button type="submit" class="btn tbn-sm btn-success mt-3"></i>Thêm vào giỏ hàng</button>
+                        <a class="btn tbn-sm btn-success mt-3 " href="/pay">Mua Ngay</a>
+                    </form>
+
+
+                    <script>
                             var basePrice = <?php echo $data['product']['price'] - $data['product']['discount_price'] ?> ; // Giá cơ bản cho 1 sản phẩm
                             console.log(basePrice);
                             
@@ -91,16 +115,9 @@ class Detail extends BaseView
                             updatePrice();
                         }
                     </script>
-
-
-                    <form action="#" method="post">
-                        <input type="hidden" name="method" id="" value="POST">
-                        <input type="hidden" name="id" id="" value="<?= $data['product']['id'] ?>" required>
-
-                        <button type="submit" class="btn btn-sm btn-outline-success mt-3 "> Thêm vào giỏ hàng</button>
-
-                        <button type="submit" class="btn btn-sm btn-outline-success mt-3 "> Mua ngay</button>
-                    </form>
+                    <!-- ------------------------ -->
+                  
+                     <!-- ---------------- -->
 
                     <br>
                     <div class="border border-danger p-3">
