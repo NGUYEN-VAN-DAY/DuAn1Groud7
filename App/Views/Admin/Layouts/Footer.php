@@ -42,39 +42,18 @@ class Footer extends BaseView
                                 .then( /* ... */ )
                                 .catch( /* ... */ );
                 </script>
-                <!-- footer -->
-                <!-- ============================================================== -->
                 <footer class="footer text-center">
                         Fruit shop in Can Tho
                 </footer>
-                <!-- ============================================================== -->
-                <!-- End footer -->
-                <!-- ============================================================== -->
                 </div>
-                <!-- ============================================================== -->
-                <!-- End Page wrapper  -->
-                <!-- ============================================================== -->
                 </div>
-                <!-- ============================================================== -->
-                <!-- End Wrapper -->
-                <!-- ============================================================== -->
-                <!-- ============================================================== -->
-                <!-- All Jquery -->
-                <!-- ============================================================== -->
                 <script src="<?= APP_URL ?>/public/assets/admin/libs/jquery/dist/jquery.min.js"></script>
-                <!-- Bootstrap tether Core JavaScript -->
                 <script src="<?= APP_URL ?>/public/assets/admin/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
                 <script src="<?= APP_URL ?>/public/assets/admin/libs/perfect-scrollbar/dist/perfect-scrollbar.jquery.min.js"></script>
                 <script src="<?= APP_URL ?>/public/assets/admin/extra-libs/sparkline/sparkline.js"></script>
-                <!--Wave Effects -->
                 <script src="<?= APP_URL ?>/public/assets/admin/dist/js/waves.js"></script>
-                <!--Menu sidebar -->
                 <script src="<?= APP_URL ?>/public/assets/admin/dist/js/sidebarmenu.js"></script>
-                <!--Custom JavaScript -->
                 <script src="<?= APP_URL ?>/public/assets/admin/dist/js/custom.min.js"></script>
-                <!--This page JavaScript -->
-                <!-- <script src="<?= APP_URL ?>/public/assets/admin/dist/js/pages/dashboards/dashboard1.js"></script> -->
-                <!-- Charts js Files -->
                 <script src="<?= APP_URL ?>/public/assets/admin/libs/flot/excanvas.js"></script>
                 <script src="<?= APP_URL ?>/public/assets/admin/libs/flot/jquery.flot.js"></script>
                 <script src="<?= APP_URL ?>/public/assets/admin/libs/flot/jquery.flot.pie.js"></script>
@@ -83,7 +62,6 @@ class Footer extends BaseView
                 <script src="<?= APP_URL ?>/public/assets/admin/libs/flot/jquery.flot.crosshair.js"></script>
                 <script src="<?= APP_URL ?>/public/assets/admin/libs/flot.tooltip/js/jquery.flot.tooltip.min.js"></script>
                 <script src="<?= APP_URL ?>/public/assets/admin/dist/js/pages/chart/chart-page-init.js"></script>
-
                 <script src="<?= APP_URL ?>/public/assets/admin/extra-libs/multicheck/datatable-checkbox-init.js"></script>
                 <script src="<?= APP_URL ?>/public/assets/admin/extra-libs/multicheck/jquery.multicheck.js"></script>
                 <script src="<?= APP_URL ?>/public/assets/admin/extra-libs/DataTables/datatables.min.js"></script>

@@ -12,7 +12,7 @@ class Header extends BaseView
         $is_login = AuthHelper::checkLogin();
         // var_dump($is_login);
 
-?>
+        ?>
 
 
 
@@ -33,9 +33,11 @@ class Header extends BaseView
             <title>
                 Cửa hàng trái cây
             </title>
-            <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+            <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+                integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
             <!-- slider stylesheet -->
-            <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+            <link rel="stylesheet" type="text/css"
+                href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
             <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 
             <!-- bootstrap core css -->
@@ -48,14 +50,18 @@ class Header extends BaseView
             <link rel="stylesheet" href="public/assets/client/css/gioithieu.css">
             <!-- responsive style -->
             <link href="public/assets/client/css/responsive.css" rel="stylesheet" />
-            <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+            <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+                integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
             <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+            <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
             <link rel="stylesheet" href="<?= APP_URL ?>/public/assets/client/css/style.css">
         </head>
 
         <body>
             <div class="banner">
-                <marquee behavior="" direction="" bgcolor="red" id="banner"> <span>Ưu đãi lên đến 30% cho tất cả sản phẩm mùa hè!</span>
+                <marquee behavior="" direction="" bgcolor="red" id="banner"> <span>Ưu đãi lên đến 30% cho tất cả sản phẩm mùa
+                        hè!</span>
                     <span>Mua 2 tặng 1 cho mọi loại trái cây!</span>
                     <span>Freeship toàn quốc cho đơn hàng từ 300,000 VNĐ!</span>
                 </marquee>
@@ -70,11 +76,13 @@ class Header extends BaseView
                 <header class="header_section">
                     <nav class="navbar navbar-expand-lg custom_nav-container ">
 
-                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="bilse" aria-label="Toggle navigation">
+                        <button class="navbar-toggler" type="button" data-toggle="collapse"
+                            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="bilse"
+                            aria-label="Toggle navigation">
                             <span class=""></span>
                         </button>
                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-<img src="/public/assets/client/images/Remove-bg.ai_1733714603491.png" alt="" width="170px">
+                            <img src="/public/assets/client/images/Remove-bg.ai_1733714603491.png" alt="" width="170px">
 
                             <ul class="navbar-nav  ">
                                 <li class="nav-item ">
@@ -97,25 +105,30 @@ class Header extends BaseView
 
                                 <div class="user_option" style="z-index: 100000000000;">
                                     <?php
-                                    if ($is_login) :
-                                    ?>
+                                    if ($is_login):
+                                        ?>
                                         <li class="nav-item">
                                             <div class="dropdown">
-                                                <a class="btn btn dropdown-toggle nav-link bi bi-person-lines-fill" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="bilse">
+                                                <a class="btn btn dropdown-toggle nav-link bi bi-person-lines-fill" href="#"
+                                                    role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
+                                                    aria-expanded="bilse">
                                                     Tài khoản
                                                 </a>
                                                 <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                                                    <a class="dropdown-item bi bi-person-fill" href="/users/<?= $_SESSION['user']['id'] ?>"> <?= $_SESSION['user']['username'] ?></a>
-                                                    <a class="dropdown-item bi bi-pencil-square" href="/change-password"> Đổi mật khẩu</a>
+                                                    <a class="dropdown-item bi bi-person-fill"
+                                                        href="/users/<?= $_SESSION['user']['id'] ?>">
+                                                        <?= $_SESSION['user']['username'] ?></a>
+                                                    <a class="dropdown-item bi bi-pencil-square" href="/change-password"> Đổi mật
+                                                        khẩu</a>
                                                     <a class="dropdown-item bi bi-box-arrow-right" href="/logout"> Đăng xuất</a>
                                                 </div>
                                             </div>
 
                                         </li>
 
-                                    <?php
-                                    else :
-                                    ?>
+                                        <?php
+                                    else:
+                                        ?>
                                         <li class="nav-item">
                                             <a class="nav-link" href="/login">Đăng nhập</a>
                                         </li>
@@ -123,7 +136,7 @@ class Header extends BaseView
                                             <a class="nav-link" href="/register">Đăng ký</a>
                                         </li>
 
-                                    <?php
+                                        <?php
                                     endif;
                                     ?>
                                     </span>
@@ -145,9 +158,9 @@ class Header extends BaseView
 
 
 
-        <?php
+                <?php
 
     }
 }
 
-        ?>
+?>

@@ -49,5 +49,38 @@ class ProductController
         ProductCategory::render($data);
         Footer::render();
     }
-    
+      public static function getFilterproduct(): void
+    {
+        $product = new Product();
+
+        $data['products'] = $product->getFilterProduct();
+        $category = new Category();
+        $data['categories'] = $category->getAllCategory();
+        Header::render();
+        ProductCategory::render($data);
+        Footer::render();
+    } 
+    // public static function getFilterbycategory(): void
+    // {
+    //     $product = new Product();
+
+    //     $data['products'] = $product->getFilterProduct();
+    //     $category = new Category();
+    //     $data['categories'] = $category->getAllCategory();
+    //     Header::render();
+    //     ProductCategory::render($data);
+    //     Footer::render();
+    // }
+    public static function getSeachProducts(): void
+    {
+        $product = new Product();
+
+        $data['products'] =$product->getSeachProduct();
+        $category = new Category();
+  
+        $data['categories'] = $category->getAllCategory();
+        Header::render();
+        ProductCategory::render($data);
+        Footer::render();
+    }
 }

@@ -39,6 +39,7 @@ class CommentController
         NotificationHelper::success('store', 'Thêm bình luận thành công');
     } else {
         NotificationHelper::error('store', 'Thêm bình luận thất bại');
+
     }
     header("location: /products/$product_id");
 }
@@ -66,5 +67,37 @@ public static function edit(int $id)
         }
        
     }
+    public function update(int $id)
+{
+    // Kiểm tra và xác thực dữ liệu
+    if (empty($_POST['content'])) {
+        NotificationHelper::error('update', 'Nội dung không được để trống.');
+        header("location: /products/{$_POST['product_id']}");
+        exit;
+    }
+
+    // Chuẩn bị dữ liệu để cập nhật
+    $data = [
+        'content' => $_POST['content'],
+        'status' => $_POST['status'] ?? 1, // Trạng thái mặc định là 1
+    ];
+
+    $commentModel = new Comment();
+    $result = $commentModel->updateComment($id, $data);
+
+    // Xử lý kết quả
+    if ($result) {
+        NotificationHelper::success('update', 'Cập nhật bình luận thành công.');
+    } else {
+        NotificationHelper::error('update', 'Cập nhật bình luận thất bại.');
+    }
+
+    // Chuyển hướng về trang sản phẩm
+    header("location: /products/{$_POST['product_id']}");
 }
+
+    
+    
+}
+
 ?>
