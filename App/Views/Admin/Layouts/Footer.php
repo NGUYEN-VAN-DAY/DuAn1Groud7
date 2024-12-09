@@ -45,7 +45,7 @@ class Footer extends BaseView
                 <!-- footer -->
                 <!-- ============================================================== -->
                 <footer class="footer text-center">
-                        Nguyễn Lương Minh Nhựt-PC08486
+                        Fruit shop in Can Tho
                 </footer>
                 <!-- ============================================================== -->
                 <!-- End footer -->

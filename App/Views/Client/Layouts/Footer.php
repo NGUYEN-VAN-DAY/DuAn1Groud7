@@ -63,7 +63,7 @@ class Footer extends BaseView
 
         <!-- Bản quyền -->
         <div class="text-center py-4">
-          <p class="mb-0">&copy; 2024 Cửa Hàng Trái Cây - Bảo Lưu Mọi Quyền</p>
+          <p class="mb-0">&copy; 2024 Fruit shop - Bảo Lưu Mọi Quyền</p>
         </div>
       </div>
     </footer>
