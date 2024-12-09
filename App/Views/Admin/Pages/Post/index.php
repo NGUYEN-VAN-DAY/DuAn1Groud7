@@ -8,7 +8,7 @@ class index extends BaseView
 {
     public static function render($data = null)
     {
-        // Kiểm tra xem $data có phải là mảng không
+        // Kiểm tra xem $data có  phải là mảng không
         $items = isset($data['posts']) ? $data['posts'] : [];
 
 ?>

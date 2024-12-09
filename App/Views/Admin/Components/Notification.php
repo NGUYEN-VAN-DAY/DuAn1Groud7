@@ -37,6 +37,11 @@ class Notification extends BaseView
 
         endif;
     }
+    public static function unset()
+    {
+        // Nếu bạn lưu thông báo trong session, có thể hủy nó như thế nàyyy
+        unset($_SESSION['notification']);
+    }
 }
 
 ?>

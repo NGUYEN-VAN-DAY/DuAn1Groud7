@@ -91,4 +91,15 @@ class Post extends BaseModel
             return $result;
         }
     }
+    // public function getPostById($id)
+    // {
+    //     // Kết nối với cơ sở dữ liệu và lấy bài viết theo IDd
+    //     $query = "SELECT * FROM posts WHERE id = :id LIMIT 1";
+    //     $stmt = Database::getConnection()->prepare($query);
+    //     $stmt->bindParam(':id', $id, PDO::PARAM_INT);
+    //     $stmt->execute();
+
+    //     // Trả về dữ liệu bài viết
+    //     return $stmt->fetch(PDO::FETCH_ASSOC);
+    // }
 }

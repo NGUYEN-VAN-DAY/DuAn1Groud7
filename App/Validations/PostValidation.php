@@ -16,7 +16,7 @@ class PostValidation
             $is_valid = false;
         }
 
-        // Kiểm tra trường contenttt
+        // Kiểm tra trường contentttttt
         if (empty($_POST['content'])) {
             NotificationHelper::error('content', 'Vui lòng không để trống nội dung');
             $is_valid = false;

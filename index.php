@@ -108,8 +108,8 @@
     //post
     // Route::post('/admin/posts', 'App\Controllers\Admin\PostController@index');
 
-    ------
-    // Post Management
+ 
+    // Post Managementt
     Route::get('/admin/posts', 'App\Controllers\Admin\PostController@index'); // View all posts
     
     Route::get('/admin/posts/create', 'App\Controllers\Admin\PostController@create'); // Show form to create a post

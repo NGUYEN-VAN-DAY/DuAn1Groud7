@@ -19,7 +19,7 @@ class PostController
     public static function index()
     {
         $posts = new Post();
-        $data = $posts->getAllPost(); // Lấy tất cả bài viết
+        $data = $posts->getAllPost(); // Lấy tất cả bài viếtt
         Header::render();
         Notification::render();
         Notification::unset();
