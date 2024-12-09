@@ -50,6 +50,8 @@ class Header extends BaseView
             <link href="public/assets/client/css/responsive.css" rel="stylesheet" />
             <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
             <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+            <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
             <link rel="stylesheet" href="<?= APP_URL ?>/public/assets/client/css/style.css">
         </head>
 
@@ -75,6 +77,7 @@ class Header extends BaseView
                         </button>
 
                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <img src="/public/uploads/users/Remove-bg.ai_1733714603491.png" alt="" width="200px">
                             <ul class="navbar-nav  ">
                                 <li class="nav-item ">
                                     <a class="nav-link" href="/">Trang chủ <span class="sr-only">(current)</span></a>
