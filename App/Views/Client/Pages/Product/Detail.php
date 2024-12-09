@@ -121,8 +121,7 @@ class Detail extends BaseView
                         <input type="hidden" name="name" value="<?= $data['product']['name'] ?>">
                         <input type="hidden" name="price" value="<?= $data['product']['price'] ?>">
                         <!-- <input type="hidden" name="price" value="<?= $data['product']['quantity'] ?>"> -->
-                        <button type="submit" class="btn tbn-sm btn-success mt-3"></i>Thêm vào giỏ hàng</button>
-                        <a class="btn tbn-sm btn-success mt-3 " href="/pay">Mua Ngay</a>
+                        
                     </form>
                     
 

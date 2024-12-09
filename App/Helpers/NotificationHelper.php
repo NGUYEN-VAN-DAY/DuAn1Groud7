@@ -1,58 +1,43 @@
 <?php
+
 namespace App\Helpers;
+
 class NotificationHelper
 {
+    // Lưu thông báo thành công vào session
     public static function success($key, $message)
     {
         $_SESSION['success'][$key] = $message;
     }
+
+    // Lưu thông báo lỗi vào session
     public static function error($key, $message)
     {
         $_SESSION['error'][$key] = $message;
     }
+
+    // Xóa thông báo khỏi session
     public static function unset()
     {
         unset($_SESSION['success']);
         unset($_SESSION['error']);
     }
 
-    public static function set($type, $message)
+    // Phương thức hiển thị thông báo
+    public static function display()
     {
-        $_SESSION['notification'] = [
-            'type' => $type,
-            'message' => $message
-        ];
-    }
-    public static function get()
-    {
-        if (isset($_SESSION['notification'])) {
-            $notification = $_SESSION['notification'];
-            unset($_SESSION['notification']);
-            return $notification;
+        // Hiển thị thông báo thành công
+        if (!empty($_SESSION['success']['contact_form'])) {
+            echo '<div class="alert alert-success">' . $_SESSION['success']['contact_form'] . '</div>';
         }
-        return null;
-    }
-    
 
-    public static function render()
-    {
-        $notification = self::get();
-        if ($notification) {
-            $type = $notification['type'];
-            $message = $notification['message'];
-            $class = 'alert alert-' . $type;
-            echo "<div class='$class'>$message</div>";
+        // Hiển thị thông báo lỗi
+        if (!empty($_SESSION['error']['contact_form'])) {
+            echo '<div class="alert alert-danger">' . $_SESSION['error']['contact_form'] . '</div>';
         }
-    }
 
-    public static function renderJS()
-    {
-        $notification = self::get();
-        if ($notification) {
-            $type = $notification['type'];
-            $message = $notification['message'];
-            echo "<script>alert('$message')</script>";
-        }
+        // Xóa thông báo sau khi hiển thị
+        self::unset();
     }
 }
 
