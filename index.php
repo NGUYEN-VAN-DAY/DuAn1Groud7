@@ -38,6 +38,8 @@ Route::get(url: '/products/categories/{id}', controllerMethod: 'App\Controllers\
 Route::get(url: '/products/categories/{id}/options', controllerMethod: 'App\Controllers\Client\ProductController@getFilterbycategery');
 Route::get(url: '/products/seach', controllerMethod: 'App\Controllers\Client\ProductController@getSeachProducts');
 // giỏ hàng
+Route::post('/cart/add', 'App\Controllers\Client\CartController@add');
+    Route::get('/cart/remove/{id}', 'App\Controllers\Client\CartController@remove');
 Route::get(url: '/cart', controllerMethod: 'App\Controllers\Client\CartController@index');
 // bình luận
 // Route::get(url: '/comments/{id}', controllerMethod: 'App\Controllers\Client\CommentController@edit');
