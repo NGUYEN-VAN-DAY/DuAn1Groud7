@@ -70,7 +70,7 @@ class Category extends BaseView
                                         <div class="box">
                                             <a href="/products/<?= $item['id'] ?>" class="">
                                                 <div class="card mb-4 shadow-sm ">
-                                                    <img class="img-index" id="img" src="<?= APP_URL ?>/public/uploads/products/<?= $item['image'] ?>" class="card-img-top" alt="" data-holder-rendered="true">
+                                                    <img class="img-index" id="" src="<?= APP_URL ?>/public/uploads/products/<?= $item['image'] ?>" class="card-img-top" alt="" data-holder-rendered="true">
                                                 </div>
                                                 <div class="">
                                                     <h6>
