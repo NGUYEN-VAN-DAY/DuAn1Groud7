@@ -8,7 +8,7 @@ class Post extends BaseView
 {
     public static function render($data = null)
     {
-        ?>
+?>
         <!DOCTYPE html>
         <html lang="en">
 
@@ -23,53 +23,70 @@ class Post extends BaseView
                 body {
                     background-color: #f8f9fa;
                 }
-/* ---------------------------------------banner------------------------------------------------------------------------ */
- /* Banner toàn màn hình */
-  /* Banner toàn màn hình */
-  .bannerr {
-            position: relative;
-            width: 100%;
-            height: 50vh; /* Chiều cao banner (50% chiều cao màn hình) */
-        }
 
-        .bannerr img {
-            width: 100%; /* Hình ảnh phủ toàn chiều ngang */
-            height: 100%; /* Hình ảnh phủ toàn chiều cao */
-            object-fit: cover; /* Đảm bảo hình ảnh không bị méo */
-        }
+                /* ---------------------------------------banner------------------------------------------------------------------------ */
+                /* Banner toàn màn hình */
+                /* Banner toàn màn hình */
+                .bannerr {
+                    position: relative;
+                    width: 100%;
+                    height: 50vh;
+                    /* Chiều cao banner (50% chiều cao màn hình) */
+                }
 
-        /* Chữ trên ảnh */
-        .bannerr-text {
-            position: absolute;
-            top: 50%; /* Căn giữa dọc */
-            left: 10%; /* Đẩy văn bản sang bên trái */
-            transform: translateY(-50%); /* Căn giữa theo trục dọc */
-            color: white; /* Màu chữ trắng */
-            text-align: left;
-        }
+                .bannerr img {
+                    width: 100%;
+                    /* Hình ảnh phủ toàn chiều ngang */
+                    height: 100%;
+                    /* Hình ảnh phủ toàn chiều cao */
+                    object-fit: cover;
+                    /* Đảm bảo hình ảnh không bị méo */
+                }
 
-        .bannerr-text h1 {
-            font-size: 2.5rem; /* Kích thước tiêu đề */
-            margin: 0 0 10px 0;
-            text-transform: uppercase;
-            color: #2e7d32; /* Màu xanh lá cây */
-        }
+                /* Chữ trên ảnh */
+                .bannerr-text {
+                    position: absolute;
+                    top: 50%;
+                    /* Căn giữa dọc */
+                    left: 10%;
+                    /* Đẩy văn bản sang bên trái */
+                    transform: translateY(-50%);
+                    /* Căn giữa theo trục dọc */
+                    color: white;
+                    /* Màu chữ trắng */
+                    text-align: left;
+                }
 
-        .bannerr-text a {
-            font-size: 1rem; /* Kích thước liên kết */
-            color: #000; /* Màu đen cho liên kết */
-            text-decoration: none; /* Bỏ gạch chân */
-            background-color: rgba(255, 255, 255, 0.8); /* Nền trắng mờ */
-            padding: 5px 10px;
-            border-radius: 5px; /* Bo tròn liên kết */
-        }
+                .bannerr-text h1 {
+                    font-size: 2.5rem;
+                    /* Kích thước tiêu đề */
+                    margin: 0 0 10px 0;
+                    text-transform: uppercase;
+                    color: #2e7d32;
+                    /* Màu xanh lá cây */
+                }
 
-        .bannerr-text a:hover {
-            text-decoration: underline; /* Gạch chân khi hover */
-        }
+                .bannerr-text a {
+                    font-size: 1rem;
+                    /* Kích thước liên kết */
+                    color: #000;
+                    /* Màu đen cho liên kết */
+                    text-decoration: none;
+                    /* Bỏ gạch chân */
+                    background-color: rgba(255, 255, 255, 0.8);
+                    /* Nền trắng mờ */
+                    padding: 5px 10px;
+                    border-radius: 5px;
+                    /* Bo tròn liên kết */
+                }
+
+                .bannerr-text a:hover {
+                    text-decoration: underline;
+                    /* Gạch chân khi hover */
+                }
 
 
-/* ---------------------------------------banner------------------------------------------------------------------------ */
+                /* ---------------------------------------banner------------------------------------------------------------------------ */
                 /* phan cuoi cung */
                 .post-container {
                     max-width: 1200px;
@@ -94,33 +111,50 @@ class Post extends BaseView
                 }
 
                 .card img {
-                    width: 100%; /* Đảm bảo ảnh chiếm toàn bộ chiều rộng thẻ */
-                    height: 200px; /* Đặt chiều cao cố định để đồng đều */
-                    object-fit: cover; /* Giữ tỉ lệ ảnh, cắt phần dư */
-                    border-radius: 8px; /* Thêm góc bo mềm mại (tùy chọn) */
+                    width: 100%;
+                    /* Đảm bảo ảnh chiếm toàn bộ chiều rộng thẻ */
+                    height: 200px;
+                    /* Đặt chiều cao cố định để đồng đều */
+                    object-fit: cover;
+                    /* Giữ tỉ lệ ảnh, cắt phần dư */
+                    border-radius: 8px;
+                    /* Thêm góc bo mềm mại (tùy chọn) */
                 }
 
                 /* phan cuoi cung */
 
                 .card img {
-    width: 100%; /* Đảm bảo ảnh chiếm toàn bộ chiều rộng thẻ */
-    height: 200px; /* Đặt chiều cao cố định để đồng đều */
-    object-fit: cover; /* Giữ tỉ lệ ảnh, cắt phần dư */
-    border-radius: 8px; /* Thêm góc bo mềm mại (tùy chọn) */
-}
-.card img {
-    width: 100%; /* Đảm bảo ảnh chiếm toàn bộ chiều rộng thẻ */
-    height: 200px; /* Đặt chiều cao cố định để đồng đều */
-    object-fit: cover; /* Giữ tỉ lệ ảnh, cắt phần dư */
-    border-radius: 8px; /* Thêm góc bo mềm mại */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Bóng mờ mặc định */
-    transition: box-shadow 0.3s ease, transform 0.3s ease; /* Hiệu ứng chuyển đổi khi di chuột */
-}
+                    width: 100%;
+                    /* Đảm bảo ảnh chiếm toàn bộ chiều rộng thẻ */
+                    height: 200px;
+                    /* Đặt chiều cao cố định để đồng đều */
+                    object-fit: cover;
+                    /* Giữ tỉ lệ ảnh, cắt phần dư */
+                    border-radius: 8px;
+                    /* Thêm góc bo mềm mại (tùy chọn) */
+                }
 
-.card img:hover {
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* Bóng mạnh hơn khi di chuột */
-    transform: scale(1.05); /* Phóng to nhẹ khi di chuột */
-}
+                .card img {
+                    width: 100%;
+                    /* Đảm bảo ảnh chiếm toàn bộ chiều rộng thẻ */
+                    height: 200px;
+                    /* Đặt chiều cao cố định để đồng đều */
+                    object-fit: cover;
+                    /* Giữ tỉ lệ ảnh, cắt phần dư */
+                    border-radius: 8px;
+                    /* Thêm góc bo mềm mại */
+                    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+                    /* Bóng mờ mặc định */
+                    transition: box-shadow 0.3s ease, transform 0.3s ease;
+                    /* Hiệu ứng chuyển đổi khi di chuột */
+                }
+
+                .card img:hover {
+                    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+                    /* Bóng mạnh hơn khi di chuột */
+                    transform: scale(1.05);
+                    /* Phóng to nhẹ khi di chuột */
+                }
 
                 .post-container {
                     max-width: 1200px;
@@ -152,7 +186,8 @@ class Post extends BaseView
                 }
 
                 .card {
-                    flex: 0 0 calc(33.33% - 20px); /* Chia đều 3 card */
+                    flex: 0 0 calc(33.33% - 20px);
+                    /* Chia đều 3 card */
                     transition: transform 0.3s ease, box-shadow 0.3s ease;
                     border: none;
                 }
@@ -223,7 +258,8 @@ class Post extends BaseView
                 }
 
                 .card {
-                    height: 100%; /* Đồng bộ chiều cao các thẻ */
+                    height: 100%;
+                    /* Đồng bộ chiều cao các thẻ */
                     border: none;
                     transition: transform 0.3s ease, box-shadow 0.3s ease;
                 }
@@ -234,8 +270,10 @@ class Post extends BaseView
                 }
 
                 .card img {
-                    height: 200px; /* Đặt chiều cao cố định cho ảnh */
-                    object-fit: cover; /* Giữ ảnh luôn vừa khung mà không méo */
+                    height: 200px;
+                    /* Đặt chiều cao cố định cho ảnh */
+                    object-fit: cover;
+                    /* Giữ ảnh luôn vừa khung mà không méo */
                 }
 
                 .card h6 {
@@ -249,10 +287,11 @@ class Post extends BaseView
                     color: #6c757d;
                 }
 
-                .row-cols-equal > .col {
+                .row-cols-equal>.col {
                     display: flex;
                     flex-direction: column;
                 }
+
                 /* ------------------------------- */
             </style>
         </head>
@@ -260,18 +299,18 @@ class Post extends BaseView
         <body>
             <!-- ---------------------------------------------------------------banner -->
             <div class="bannerr">
-        <!-- Hình ảnh nền -->
-        <img src="public/assets/client/images/a.webp" alt="Banner trái cây">
-        <!-- Chữ trên ảnh -->
-        <div class="bannerr-text">
-            <h1>Tin Tức, Sự Kiện</h1>
-            <a href="">Trang chủ &gt; <a href="">Tin Khuyến Mãi & Sự Kiện</a></a>
-        </div>
-    </div>
-           
-             <!-- ------------------------------------banner -->
+                <!-- Hình ảnh nền -->
+                <img src="public/assets/client/images/a.webp" alt="Banner trái cây">
+                <!-- Chữ trên ảnh -->
+                <div class="bannerr-text">
+                    <h1>Tin Tức, Sự Kiện</h1>
+                    <a href="">Trang chủ &gt; <a href="">Tin Khuyến Mãi & Sự Kiện</a></a>
+                </div>
+            </div>
 
-        >
+            <!-- ------------------------------------banner -->
+
+            >
             <div class="post-container">
                 <!-- Header -->
                 <div class="post-header">
@@ -279,7 +318,7 @@ class Post extends BaseView
                     <h3>Tin & Sự kiện</h3>
                     <p>Các sự kiện hot về cửa hàng chúng tôi</p>
                 </div>
-                
+
 
                 <!-- Posts -->
                 <div class="post-row">
@@ -357,7 +396,7 @@ class Post extends BaseView
                     <div class="col">
                         <div class="card">
                             <img src="public/assets/client/images/bai1.webp" class="card-img-top" alt="Nho nhập khẩu giảm giá">
-                            <div class="card-body">                               
+                            <div class="card-body">
                                 <h5>Halloween tại Bán Trái Cây, bốc thăm trúng thưởng đầy “Ma quái”</h5>
                                 <p>"Halloween, Cơ hội bốc thăm trúng thưởng đầy 'ma quái"! <a href="">xem chi tiết</a></p>
                             </div>
@@ -370,8 +409,8 @@ class Post extends BaseView
                             <img src="public/assets/client/images/bai2.webp" class="card-img-top" alt="Cam nhập khẩu giảm giá">
                             <div class="card-body">
                                 <h6>SINH NHẬT NAM AN: MUA ĐƠN HÀNG WEBSITE – NHẬN VOUCHER GIÁ TRỊ</h6>
-                                <p>- Giá trị đơn hàng từ 800.000VND, 500.000VND, 300.000VNĐ  <a href="">xem chi tiết</a> </p>
-                                
+                                <p>- Giá trị đơn hàng từ 800.000VND, 500.000VND, 300.000VNĐ <a href="">xem chi tiết</a> </p>
+
                             </div>
                         </div>
                     </div>
@@ -449,7 +488,7 @@ class Post extends BaseView
                             <div class="card-body">
                                 <h6>Các loại cherry và hiệu quả mang lại</h6>
                                 <p>
-                                Cherry xanh hiện nay phổ biến với các loại như cherry xanh Rainier <a href="">Xem Thêm</a></p>
+                                    Cherry xanh hiện nay phổ biến với các loại như cherry xanh Rainier <a href="">Xem Thêm</a></p>
                             </div>
                         </div>
                     </div>
@@ -460,7 +499,7 @@ class Post extends BaseView
                             <img src="public/assets/client/images/pa3.jpg" class="card-img-top" alt="Xoài nhập khẩu giảm giá">
                             <div class="card-body">
                                 <h6>Quả Lựu Huyết Rồng</h6>
-                                <p>- Là một nguồn dinh dưỡng dồi dào, giàu vitamin C, A, E, K  <a href="">Xem Thêm</a></p>
+                                <p>- Là một nguồn dinh dưỡng dồi dào, giàu vitamin C, A, E, K <a href="">Xem Thêm</a></p>
                             </div>
                         </div>
                     </div>
@@ -471,7 +510,7 @@ class Post extends BaseView
                             <img src="public/assets/client/images/pa5.jpg" class="card-img-top" alt="Mận giảm giá">
                             <div class="card-body">
                                 <h6>Xuân Đào Út - Đào Trơn Út</h6>
-                                <p>Xuân Đào Út và Đào Trơn Út đều là những loại trái cây ngon và bổ dưỡng  <a href="">Xem Thêm</a> </p>
+                                <p>Xuân Đào Út và Đào Trơn Út đều là những loại trái cây ngon và bổ dưỡng <a href="">Xem Thêm</a> </p>
                             </div>
                         </div>
                     </div>
@@ -483,7 +522,7 @@ class Post extends BaseView
                             <div class="card-body">
                                 <h6>Hồng Giòn Mật Văn Sơn</h6>
                                 <p>
-                                Hồng Giòn Mật Văn Sơn là một giống hồng nổi tiếng với vị ngọt thanh <a href="">Xem Thêm</a></p>
+                                    Hồng Giòn Mật Văn Sơn là một giống hồng nổi tiếng với vị ngọt thanh <a href="">Xem Thêm</a></p>
                             </div>
                         </div>
                     </div>
@@ -495,14 +534,14 @@ class Post extends BaseView
                             <div class="card-body">
                                 <h6>Mận Đỏ Ruột Vàng Family Tree Farms </h6>
                                 <p>
-                                Mận Đỏ Ruột Vàng Family Tree Farms từ Mỹ là một giống mận đặc biệt <a href="">Xem Thêm</a></p>
+                                    Mận Đỏ Ruột Vàng Family Tree Farms từ Mỹ là một giống mận đặc biệt <a href="">Xem Thêm</a></p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
 
-           
+
 
             <!-- phan duoi -->
 
@@ -511,6 +550,6 @@ class Post extends BaseView
         </body>
 
         </html>
-        <?php
+<?php
     }
 }

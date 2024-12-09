@@ -8,7 +8,7 @@ class index extends BaseView
 {
     public static function render($data = null)
     {
-        ?>
+?>
         <!DOCTYPE html>
         <html lang="en">
 
@@ -48,33 +48,50 @@ class index extends BaseView
                 }
 
                 .card img {
-                    width: 100%; /* Đảm bảo ảnh chiếm toàn bộ chiều rộng thẻ */
-                    height: 200px; /* Đặt chiều cao cố định để đồng đều */
-                    object-fit: cover; /* Giữ tỉ lệ ảnh, cắt phần dư */
-                    border-radius: 8px; /* Thêm góc bo mềm mại (tùy chọn) */
+                    width: 100%;
+                    /* Đảm bảo ảnh chiếm toàn bộ chiều rộng thẻ */
+                    height: 200px;
+                    /* Đặt chiều cao cố định để đồng đều */
+                    object-fit: cover;
+                    /* Giữ tỉ lệ ảnh, cắt phần dư */
+                    border-radius: 8px;
+                    /* Thêm góc bo mềm mại (tùy chọn) */
                 }
 
                 /* phan cuoi cung */
 
                 .card img {
-    width: 100%; /* Đảm bảo ảnh chiếm toàn bộ chiều rộng thẻ */
-    height: 200px; /* Đặt chiều cao cố định để đồng đều */
-    object-fit: cover; /* Giữ tỉ lệ ảnh, cắt phần dư */
-    border-radius: 8px; /* Thêm góc bo mềm mại (tùy chọn) */
-}
-.card img {
-    width: 100%; /* Đảm bảo ảnh chiếm toàn bộ chiều rộng thẻ */
-    height: 200px; /* Đặt chiều cao cố định để đồng đều */
-    object-fit: cover; /* Giữ tỉ lệ ảnh, cắt phần dư */
-    border-radius: 8px; /* Thêm góc bo mềm mại */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Bóng mờ mặc định */
-    transition: box-shadow 0.3s ease, transform 0.3s ease; /* Hiệu ứng chuyển đổi khi di chuột */
-}
+                    width: 100%;
+                    /* Đảm bảo ảnh chiếm toàn bộ chiều rộng thẻ */
+                    height: 200px;
+                    /* Đặt chiều cao cố định để đồng đều */
+                    object-fit: cover;
+                    /* Giữ tỉ lệ ảnh, cắt phần dư */
+                    border-radius: 8px;
+                    /* Thêm góc bo mềm mại (tùy chọn) */
+                }
 
-.card img:hover {
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* Bóng mạnh hơn khi di chuột */
-    transform: scale(1.05); /* Phóng to nhẹ khi di chuột */
-}
+                .card img {
+                    width: 100%;
+                    /* Đảm bảo ảnh chiếm toàn bộ chiều rộng thẻ */
+                    height: 200px;
+                    /* Đặt chiều cao cố định để đồng đều */
+                    object-fit: cover;
+                    /* Giữ tỉ lệ ảnh, cắt phần dư */
+                    border-radius: 8px;
+                    /* Thêm góc bo mềm mại */
+                    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+                    /* Bóng mờ mặc định */
+                    transition: box-shadow 0.3s ease, transform 0.3s ease;
+                    /* Hiệu ứng chuyển đổi khi di chuột */
+                }
+
+                .card img:hover {
+                    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+                    /* Bóng mạnh hơn khi di chuột */
+                    transform: scale(1.05);
+                    /* Phóng to nhẹ khi di chuột */
+                }
 
                 .post-container {
                     max-width: 1200px;
@@ -106,7 +123,8 @@ class index extends BaseView
                 }
 
                 .card {
-                    flex: 0 0 calc(33.33% - 20px); /* Chia đều 3 card */
+                    flex: 0 0 calc(33.33% - 20px);
+                    /* Chia đều 3 card */
                     transition: transform 0.3s ease, box-shadow 0.3s ease;
                     border: none;
                 }
@@ -177,7 +195,8 @@ class index extends BaseView
                 }
 
                 .card {
-                    height: 100%; /* Đồng bộ chiều cao các thẻ */
+                    height: 100%;
+                    /* Đồng bộ chiều cao các thẻ */
                     border: none;
                     transition: transform 0.3s ease, box-shadow 0.3s ease;
                 }
@@ -188,8 +207,10 @@ class index extends BaseView
                 }
 
                 .card img {
-                    height: 200px; /* Đặt chiều cao cố định cho ảnh */
-                    object-fit: cover; /* Giữ ảnh luôn vừa khung mà không méo */
+                    height: 200px;
+                    /* Đặt chiều cao cố định cho ảnh */
+                    object-fit: cover;
+                    /* Giữ ảnh luôn vừa khung mà không méo */
                 }
 
                 .card h6 {
@@ -203,10 +224,11 @@ class index extends BaseView
                     color: #6c757d;
                 }
 
-                .row-cols-equal > .col {
+                .row-cols-equal>.col {
                     display: flex;
                     flex-direction: column;
                 }
+
                 /* ------------------------------- */
             </style>
         </head>
@@ -296,7 +318,7 @@ class index extends BaseView
                     <div class="col">
                         <div class="card">
                             <img src="public/assets/client/images/bai1.webp" class="card-img-top" alt="Nho nhập khẩu giảm giá">
-                            <div class="card-body">                               
+                            <div class="card-body">
                                 <h5>Halloween tại Bán Trái Cây, cơ hội bốc thăm trúng thưởng đầy “Ma quái”</h5>
                                 <p>Chào mừng các bạn đến với Nam An Market - nơi mua sắm thực phẩm sạch và tạo nên những trải nghiệm đáng nhớ trong mùa Halloween 2023! Đừng bỏ lỡ cơ hội tham gia chương trình khuyến mãi đặc biệt của chúng tôi - "Halloween tại Nam An, Cơ hội bốc thăm trúng thưởng đầy 'ma quái"!</p>
                             </div>
@@ -323,7 +345,7 @@ class index extends BaseView
                                 <h6>CHƯƠNG TRÌNH BỐC THĂM MAY MẮN KHI MUA HÀNG TẠI NAM AN MARKET</h6>
                                 <p>🌟CHƯƠNG TRÌNH BỐC THĂM MAY MẮN KHI MUA HÀNG TẠI NAM AN MARKET🌟 <br>
 
-Tiếp tục chuỗi chương trình mừng sinh nhật Nam An Market lần thứ 11, với hóa đơn mua sắm từ 800.000VND tại cửa hàng, quý khách sẽ có cơ hội tham gia bốc thăm may mắn và nhận về những phần quà hấp dẫn.</p>
+                                    Tiếp tục chuỗi chương trình mừng sinh nhật Nam An Market lần thứ 11, với hóa đơn mua sắm từ 800.000VND tại cửa hàng, quý khách sẽ có cơ hội tham gia bốc thăm may mắn và nhận về những phần quà hấp dẫn.</p>
                             </div>
                         </div>
                     </div>
@@ -336,7 +358,8 @@ Tiếp tục chuỗi chương trình mừng sinh nhật Nam An Market lần th�
                                 <h6>Ưu đãi Freeship mùa mưa (25/05 - 07/06)</h6>
                                 <p>Đặc biệt, từ ngày 25/05 đến ngày 07/06, khi quý khách hàng đặt hàng trên website Nam An Market với giá trị thanh toán từ 300.000đ sẽ nhận ưu đãi miễn phí vận chuyển (tối đa 30.000VND) trong nội thành TP.HCM (trừ Hóc Môn, Bình Chánh, Củ Chi).
 
-<br> Nhập ngay code “FREESHIP2023” để áp dụng ưu đãi.</p>
+                                    <br> Nhập ngay code “FREESHIP2023” để áp dụng ưu đãi.
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -348,10 +371,10 @@ Tiếp tục chuỗi chương trình mừng sinh nhật Nam An Market lần th�
                             <div class="card-body">
                                 <h6>ƯU ĐÃI GIỜ VÀNG, TỪ 11H ĐẾN 14H MỖI NGÀY (20/08-31/08)</h6>
                                 <p>Giảm ngay 50.000đ khi nhập mã "HAPPYHOURS" - Áp dụng hóa đơn từ 500.000đ <br>
-Chương trình kéo dài từ 20/08 đến hết 31/08/2020 <br>
-*Mã khuyến mãi chỉ áp dụng cho 30 đơn hàng đầu tiên trong khung giờ vàng mỗi ngày <br>
-*Chỉ áp dụng cho quý khách mua hàng online trên website của Nam An Market <br>
-☎️Hotline: 0903.166.228</p>
+                                    Chương trình kéo dài từ 20/08 đến hết 31/08/2020 <br>
+                                    *Mã khuyến mãi chỉ áp dụng cho 30 đơn hàng đầu tiên trong khung giờ vàng mỗi ngày <br>
+                                    *Chỉ áp dụng cho quý khách mua hàng online trên website của Nam An Market <br>
+                                    ☎️Hotline: 0903.166.228</p>
                             </div>
                         </div>
                     </div>
@@ -365,13 +388,13 @@ Chương trình kéo dài từ 20/08 đến hết 31/08/2020 <br>
                                 <p>.
 
 
-                                🎁 Nam An Market mang đến trải nghiệm mua sắm online tiện lợi, đa dạng và chất lượng như đi chợ truyền thống, giúp bạn tiết kiệm thời gian chỉ với vài thao tác đơn giản trên điện thoại. <br>
+                                    🎁 Nam An Market mang đến trải nghiệm mua sắm online tiện lợi, đa dạng và chất lượng như đi chợ truyền thống, giúp bạn tiết kiệm thời gian chỉ với vài thao tác đơn giản trên điện thoại. <br>
 
-🥦 Dù bạn là người bận rộn hay nội trợ, Nam An Market luôn sẵn sàng đáp ứng mọi nhu cầu với sự an toàn tuyệt đối. <br>
+                                    🥦 Dù bạn là người bận rộn hay nội trợ, Nam An Market luôn sẵn sàng đáp ứng mọi nhu cầu với sự an toàn tuyệt đối. <br>
 
-👉 Đặc biệt, bạn còn được miễn phí vận chuyển khi đặt hàng để nhận ngay sản phẩm chất lượng tận tay!
+                                    👉 Đặc biệt, bạn còn được miễn phí vận chuyển khi đặt hàng để nhận ngay sản phẩm chất lượng tận tay!
 
-</p>
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -405,7 +428,7 @@ Chương trình kéo dài từ 20/08 đến hết 31/08/2020 <br>
                             <div class="card-body">
                                 <h6>Các loại cherry hiện nay, lợi ích tuyệt mang lại vời và bí quyết chọn mua</h6>
                                 <p>
-                                Cherry xanh hiện nay phổ biến với các loại như cherry xanh Rainier, cherry xanh từ Chile và Mỹ, nổi bật bởi vị ngọt thanh và màu sắc hấp dẫn. Chúng chứa nhiều vitamin C, kali và chất chống oxy hóa, giúp cải thiện sức khỏe tim mạch, tăng cường miễn dịch và làm đẹp da. Khi mua, nên chọn quả cherry màu xanh nhạt tự nhiên, vỏ căng bóng, không dập nát, và cuống còn tươi. Cherry tươi thường có vị ngọt nhẹ, hương thơm dễ chịu. Bảo quản cherry ở nhiệt độ thấp để giữ được độ ngon và dinh dưỡng lâu hơn.!</p>
+                                    Cherry xanh hiện nay phổ biến với các loại như cherry xanh Rainier, cherry xanh từ Chile và Mỹ, nổi bật bởi vị ngọt thanh và màu sắc hấp dẫn. Chúng chứa nhiều vitamin C, kali và chất chống oxy hóa, giúp cải thiện sức khỏe tim mạch, tăng cường miễn dịch và làm đẹp da. Khi mua, nên chọn quả cherry màu xanh nhạt tự nhiên, vỏ căng bóng, không dập nát, và cuống còn tươi. Cherry tươi thường có vị ngọt nhẹ, hương thơm dễ chịu. Bảo quản cherry ở nhiệt độ thấp để giữ được độ ngon và dinh dưỡng lâu hơn.!</p>
                             </div>
                         </div>
                     </div>
@@ -417,7 +440,7 @@ Chương trình kéo dài từ 20/08 đến hết 31/08/2020 <br>
                             <div class="card-body">
                                 <h6>Quả Lựu Huyết Rồng</h6>
                                 <p>- Là một nguồn dinh dưỡng dồi dào, giàu vitamin C, A, E, K và các khoáng chất như kali, magie, rất tốt cho sức khỏe tim mạch và hệ miễn dịch. <br>
-                                - Thêm vào đó, loại lựu này có giá trị dinh dưỡng cao, hỗ trợ tiêu hóa, giảm cholesterol và giúp điều hòa huyết áp nhờ vào lượng kali dồi dào.</p>
+                                    - Thêm vào đó, loại lựu này có giá trị dinh dưỡng cao, hỗ trợ tiêu hóa, giảm cholesterol và giúp điều hòa huyết áp nhờ vào lượng kali dồi dào.</p>
                             </div>
                         </div>
                     </div>
@@ -440,7 +463,7 @@ Chương trình kéo dài từ 20/08 đến hết 31/08/2020 <br>
                             <div class="card-body">
                                 <h6>Hồng Giòn Mật Văn Sơn</h6>
                                 <p>
-                                Hồng Giòn Mật Văn Sơn là một giống hồng nổi tiếng với vị ngọt thanh, giòn tan và hương thơm đặc trưng. Quả có màu cam đẹp mắt, lớp vỏ mịn, thịt quả chắc và không có hạt, ăn rất thơm ngon. Đây là loại trái cây không chỉ ngon mà còn bổ dưỡng, giàu vitamin A, C, giúp cải thiện sức khỏe da và tăng cường hệ miễn dịch. Khi mua, nên chọn quả có màu cam đều, vỏ mịn và không bị nứt. Hồng Giòn Mật Văn Sơn rất thích hợp để ăn trực tiếp hoặc làm món tráng miệng.</p>
+                                    Hồng Giòn Mật Văn Sơn là một giống hồng nổi tiếng với vị ngọt thanh, giòn tan và hương thơm đặc trưng. Quả có màu cam đẹp mắt, lớp vỏ mịn, thịt quả chắc và không có hạt, ăn rất thơm ngon. Đây là loại trái cây không chỉ ngon mà còn bổ dưỡng, giàu vitamin A, C, giúp cải thiện sức khỏe da và tăng cường hệ miễn dịch. Khi mua, nên chọn quả có màu cam đều, vỏ mịn và không bị nứt. Hồng Giòn Mật Văn Sơn rất thích hợp để ăn trực tiếp hoặc làm món tráng miệng.</p>
                             </div>
                         </div>
                     </div>
@@ -452,14 +475,14 @@ Chương trình kéo dài từ 20/08 đến hết 31/08/2020 <br>
                             <div class="card-body">
                                 <h6>Mận Đỏ Ruột Vàng Family Tree Farms Mỹ</h6>
                                 <p>
-                                Mận Đỏ Ruột Vàng Family Tree Farms từ Mỹ là một giống mận đặc biệt với màu đỏ tươi sáng và ruột vàng bắt mắt. Vị mận ngọt đậm, chua nhẹ và rất mọng nước, mang đến cảm giác sảng khoái khi thưởng thức. Loại mận này giàu vitamin C, chất xơ và các chất chống oxy hóa, giúp tăng cường sức khỏe tim mạch và cải thiện làn da. Khi mua, hãy chọn quả có vỏ bóng, căng và không bị dập nát. Mận Đỏ Ruột Vàng thích hợp ăn trực tiếp hoặc sử dụng trong các món tráng miệng, sinh tố.</p>
+                                    Mận Đỏ Ruột Vàng Family Tree Farms từ Mỹ là một giống mận đặc biệt với màu đỏ tươi sáng và ruột vàng bắt mắt. Vị mận ngọt đậm, chua nhẹ và rất mọng nước, mang đến cảm giác sảng khoái khi thưởng thức. Loại mận này giàu vitamin C, chất xơ và các chất chống oxy hóa, giúp tăng cường sức khỏe tim mạch và cải thiện làn da. Khi mua, hãy chọn quả có vỏ bóng, căng và không bị dập nát. Mận Đỏ Ruột Vàng thích hợp ăn trực tiếp hoặc sử dụng trong các món tráng miệng, sinh tố.</p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
 
-           
+
 
             <!-- phan duoi -->
 
@@ -468,6 +491,6 @@ Chương trình kéo dài từ 20/08 đến hết 31/08/2020 <br>
         </body>
 
         </html>
-        <?php
+<?php
     }
 }

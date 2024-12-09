@@ -3600,3 +3600,343 @@ Stack trace:
 [02-Dec-2024 12:49:03 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "logDescription" in D:\Documents\GitHub\DuAn1Groud7\App\Views\Client\Pages\Product\Detail.php on line 112
 [02-Dec-2024 12:49:03 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "logDescription" in D:\Documents\GitHub\DuAn1Groud7\App\Views\Client\Pages\Product\Detail.php on line 133
 [02-Dec-2024 12:49:03 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "name" in D:\Documents\GitHub\DuAn1Groud7\App\Views\Client\Pages\Product\Detail.php on line 235
+[07-Dec-2024 16:42:21 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "quantity" in D:\Documents\GitHub\DuAn1Groud7\App\Views\Client\Pages\Product\Detail.php on line 88
+[07-Dec-2024 16:42:21 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "name" in D:\Documents\GitHub\DuAn1Groud7\App\Views\Client\Pages\Product\Detail.php on line 227
+[07-Dec-2024 16:43:06 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "quantity" in D:\Documents\GitHub\DuAn1Groud7\App\Views\Client\Pages\Product\Detail.php on line 88
+[07-Dec-2024 16:43:06 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "name" in D:\Documents\GitHub\DuAn1Groud7\App\Views\Client\Pages\Product\Detail.php on line 227
+[07-Dec-2024 17:05:46 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "quantity" in D:\Documents\GitHub\DuAn1Groud7\App\Views\Client\Pages\Product\Detail.php on line 88
+[07-Dec-2024 17:05:46 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "name" in D:\Documents\GitHub\DuAn1Groud7\App\Views\Client\Pages\Product\Detail.php on line 227
+[07-Dec-2024 17:05:48 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "quantity" in D:\Documents\GitHub\DuAn1Groud7\App\Controllers\Client\CartController.php on line 40
+[07-Dec-2024 17:06:18 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "quantity" in D:\Documents\GitHub\DuAn1Groud7\App\Views\Client\Pages\Product\Detail.php on line 88
+[07-Dec-2024 17:06:18 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "name" in D:\Documents\GitHub\DuAn1Groud7\App\Views\Client\Pages\Product\Detail.php on line 227
+[07-Dec-2024 17:06:22 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "quantity" in D:\Documents\GitHub\DuAn1Groud7\App\Views\Client\Pages\Product\Detail.php on line 88
+[07-Dec-2024 17:06:22 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "name" in D:\Documents\GitHub\DuAn1Groud7\App\Views\Client\Pages\Product\Detail.php on line 227
+[07-Dec-2024 17:12:55 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "quantity" in D:\Documents\GitHub\DuAn1Groud7\App\Views\Client\Pages\Product\Detail.php on line 88
+[07-Dec-2024 17:12:55 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "name" in D:\Documents\GitHub\DuAn1Groud7\App\Views\Client\Pages\Product\Detail.php on line 227
+[07-Dec-2024 17:12:58 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught TypeError: Unsupported operand types: string * int in D:\Documents\GitHub\DuAn1Groud7\App\Views\Client\Pages\Cart\Index.php:41
+Stack trace:
+#0 D:\Documents\GitHub\DuAn1Groud7\App\Controllers\Client\CartController.php(18): App\Views\Client\Pages\Cart\Index::render()
+#1 D:\Documents\GitHub\DuAn1Groud7\App\Route.php(82): App\Controllers\Client\CartController::index()
+#2 D:\Documents\GitHub\DuAn1Groud7\index.php(105): App\Route::dispatch()
+#3 {main}
+  thrown in D:\Documents\GitHub\DuAn1Groud7\App\Views\Client\Pages\Cart\Index.php on line 41
+[07-Dec-2024 17:13:51 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught TypeError: Unsupported operand types: string * int in D:\Documents\GitHub\DuAn1Groud7\App\Views\Client\Pages\Cart\Index.php:41
+Stack trace:
+#0 D:\Documents\GitHub\DuAn1Groud7\App\Controllers\Client\CartController.php(18): App\Views\Client\Pages\Cart\Index::render()
+#1 D:\Documents\GitHub\DuAn1Groud7\App\Route.php(82): App\Controllers\Client\CartController::index()
+#2 D:\Documents\GitHub\DuAn1Groud7\index.php(105): App\Route::dispatch()
+#3 {main}
+  thrown in D:\Documents\GitHub\DuAn1Groud7\App\Views\Client\Pages\Cart\Index.php on line 41
+[07-Dec-2024 17:14:24 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught TypeError: Unsupported operand types: string * int in D:\Documents\GitHub\DuAn1Groud7\App\Views\Client\Pages\Cart\Index.php:41
+Stack trace:
+#0 D:\Documents\GitHub\DuAn1Groud7\App\Controllers\Client\CartController.php(18): App\Views\Client\Pages\Cart\Index::render()
+#1 D:\Documents\GitHub\DuAn1Groud7\App\Route.php(82): App\Controllers\Client\CartController::index()
+#2 D:\Documents\GitHub\DuAn1Groud7\index.php(105): App\Route::dispatch()
+#3 {main}
+  thrown in D:\Documents\GitHub\DuAn1Groud7\App\Views\Client\Pages\Cart\Index.php on line 41
+[07-Dec-2024 17:14:25 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "quantity" in D:\Documents\GitHub\DuAn1Groud7\App\Views\Client\Pages\Product\Detail.php on line 88
+[07-Dec-2024 17:14:25 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "name" in D:\Documents\GitHub\DuAn1Groud7\App\Views\Client\Pages\Product\Detail.php on line 227
+[07-Dec-2024 17:14:36 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "quantity" in D:\Documents\GitHub\DuAn1Groud7\App\Views\Client\Pages\Product\Detail.php on line 88
+[07-Dec-2024 17:14:36 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "name" in D:\Documents\GitHub\DuAn1Groud7\App\Views\Client\Pages\Product\Detail.php on line 227
+[07-Dec-2024 17:14:37 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught TypeError: Unsupported operand types: string * int in D:\Documents\GitHub\DuAn1Groud7\App\Views\Client\Pages\Cart\Index.php:41
+Stack trace:
+#0 D:\Documents\GitHub\DuAn1Groud7\App\Controllers\Client\CartController.php(18): App\Views\Client\Pages\Cart\Index::render()
+#1 D:\Documents\GitHub\DuAn1Groud7\App\Route.php(82): App\Controllers\Client\CartController::index()
+#2 D:\Documents\GitHub\DuAn1Groud7\index.php(105): App\Route::dispatch()
+#3 {main}
+  thrown in D:\Documents\GitHub\DuAn1Groud7\App\Views\Client\Pages\Cart\Index.php on line 41
+[07-Dec-2024 17:14:39 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "quantity" in D:\Documents\GitHub\DuAn1Groud7\App\Views\Client\Pages\Product\Detail.php on line 88
+[07-Dec-2024 17:14:39 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "name" in D:\Documents\GitHub\DuAn1Groud7\App\Views\Client\Pages\Product\Detail.php on line 227
+[07-Dec-2024 17:14:49 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught TypeError: Unsupported operand types: string * int in D:\Documents\GitHub\DuAn1Groud7\App\Views\Client\Pages\Cart\Index.php:41
+Stack trace:
+#0 D:\Documents\GitHub\DuAn1Groud7\App\Controllers\Client\CartController.php(18): App\Views\Client\Pages\Cart\Index::render()
+#1 D:\Documents\GitHub\DuAn1Groud7\App\Route.php(82): App\Controllers\Client\CartController::index()
+#2 D:\Documents\GitHub\DuAn1Groud7\index.php(105): App\Route::dispatch()
+#3 {main}
+  thrown in D:\Documents\GitHub\DuAn1Groud7\App\Views\Client\Pages\Cart\Index.php on line 41
+[07-Dec-2024 17:14:50 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "quantity" in D:\Documents\GitHub\DuAn1Groud7\App\Views\Client\Pages\Product\Detail.php on line 88
+[07-Dec-2024 17:14:50 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "name" in D:\Documents\GitHub\DuAn1Groud7\App\Views\Client\Pages\Product\Detail.php on line 227
+[07-Dec-2024 17:15:04 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "name" in D:\Documents\GitHub\DuAn1Groud7\App\Views\Client\Pages\Product\Detail.php on line 226
+[07-Dec-2024 17:15:05 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught TypeError: Unsupported operand types: string * int in D:\Documents\GitHub\DuAn1Groud7\App\Views\Client\Pages\Cart\Index.php:41
+Stack trace:
+#0 D:\Documents\GitHub\DuAn1Groud7\App\Controllers\Client\CartController.php(18): App\Views\Client\Pages\Cart\Index::render()
+#1 D:\Documents\GitHub\DuAn1Groud7\App\Route.php(82): App\Controllers\Client\CartController::index()
+#2 D:\Documents\GitHub\DuAn1Groud7\index.php(105): App\Route::dispatch()
+#3 {main}
+  thrown in D:\Documents\GitHub\DuAn1Groud7\App\Views\Client\Pages\Cart\Index.php on line 41
+[07-Dec-2024 17:15:07 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught TypeError: Unsupported operand types: string * int in D:\Documents\GitHub\DuAn1Groud7\App\Views\Client\Pages\Cart\Index.php:41
+Stack trace:
+#0 D:\Documents\GitHub\DuAn1Groud7\App\Controllers\Client\CartController.php(18): App\Views\Client\Pages\Cart\Index::render()
+#1 D:\Documents\GitHub\DuAn1Groud7\App\Route.php(82): App\Controllers\Client\CartController::index()
+#2 D:\Documents\GitHub\DuAn1Groud7\index.php(105): App\Route::dispatch()
+#3 {main}
+  thrown in D:\Documents\GitHub\DuAn1Groud7\App\Views\Client\Pages\Cart\Index.php on line 41
+[07-Dec-2024 17:15:12 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught TypeError: Unsupported operand types: string * int in D:\Documents\GitHub\DuAn1Groud7\App\Views\Client\Pages\Cart\Index.php:41
+Stack trace:
+#0 D:\Documents\GitHub\DuAn1Groud7\App\Controllers\Client\CartController.php(18): App\Views\Client\Pages\Cart\Index::render()
+#1 D:\Documents\GitHub\DuAn1Groud7\App\Route.php(82): App\Controllers\Client\CartController::index()
+#2 D:\Documents\GitHub\DuAn1Groud7\index.php(105): App\Route::dispatch()
+#3 {main}
+  thrown in D:\Documents\GitHub\DuAn1Groud7\App\Views\Client\Pages\Cart\Index.php on line 41
+[07-Dec-2024 17:15:18 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught TypeError: Unsupported operand types: string * int in D:\Documents\GitHub\DuAn1Groud7\App\Views\Client\Pages\Cart\Index.php:41
+Stack trace:
+#0 D:\Documents\GitHub\DuAn1Groud7\App\Controllers\Client\CartController.php(18): App\Views\Client\Pages\Cart\Index::render()
+#1 D:\Documents\GitHub\DuAn1Groud7\App\Route.php(82): App\Controllers\Client\CartController::index()
+#2 D:\Documents\GitHub\DuAn1Groud7\index.php(105): App\Route::dispatch()
+#3 {main}
+  thrown in D:\Documents\GitHub\DuAn1Groud7\App\Views\Client\Pages\Cart\Index.php on line 41
+[07-Dec-2024 17:15:19 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught TypeError: Unsupported operand types: string * int in D:\Documents\GitHub\DuAn1Groud7\App\Views\Client\Pages\Cart\Index.php:41
+Stack trace:
+#0 D:\Documents\GitHub\DuAn1Groud7\App\Controllers\Client\CartController.php(18): App\Views\Client\Pages\Cart\Index::render()
+#1 D:\Documents\GitHub\DuAn1Groud7\App\Route.php(82): App\Controllers\Client\CartController::index()
+#2 D:\Documents\GitHub\DuAn1Groud7\index.php(105): App\Route::dispatch()
+#3 {main}
+  thrown in D:\Documents\GitHub\DuAn1Groud7\App\Views\Client\Pages\Cart\Index.php on line 41
+[07-Dec-2024 17:15:21 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "quantity" in D:\Documents\GitHub\DuAn1Groud7\App\Views\Client\Pages\Product\Detail.php on line 88
+[07-Dec-2024 17:15:21 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "name" in D:\Documents\GitHub\DuAn1Groud7\App\Views\Client\Pages\Product\Detail.php on line 227
+[07-Dec-2024 17:15:22 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught TypeError: Unsupported operand types: string * int in D:\Documents\GitHub\DuAn1Groud7\App\Views\Client\Pages\Cart\Index.php:41
+Stack trace:
+#0 D:\Documents\GitHub\DuAn1Groud7\App\Controllers\Client\CartController.php(18): App\Views\Client\Pages\Cart\Index::render()
+#1 D:\Documents\GitHub\DuAn1Groud7\App\Route.php(82): App\Controllers\Client\CartController::index()
+#2 D:\Documents\GitHub\DuAn1Groud7\index.php(105): App\Route::dispatch()
+#3 {main}
+  thrown in D:\Documents\GitHub\DuAn1Groud7\App\Views\Client\Pages\Cart\Index.php on line 41
+[07-Dec-2024 17:15:31 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught TypeError: Unsupported operand types: string * int in D:\Documents\GitHub\DuAn1Groud7\App\Views\Client\Pages\Cart\Index.php:41
+Stack trace:
+#0 D:\Documents\GitHub\DuAn1Groud7\App\Controllers\Client\CartController.php(18): App\Views\Client\Pages\Cart\Index::render()
+#1 D:\Documents\GitHub\DuAn1Groud7\App\Route.php(82): App\Controllers\Client\CartController::index()
+#2 D:\Documents\GitHub\DuAn1Groud7\index.php(105): App\Route::dispatch()
+#3 {main}
+  thrown in D:\Documents\GitHub\DuAn1Groud7\App\Views\Client\Pages\Cart\Index.php on line 41
+[07-Dec-2024 17:15:32 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "quantity" in D:\Documents\GitHub\DuAn1Groud7\App\Views\Client\Pages\Product\Detail.php on line 88
+[07-Dec-2024 17:15:32 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "name" in D:\Documents\GitHub\DuAn1Groud7\App\Views\Client\Pages\Product\Detail.php on line 227
+[07-Dec-2024 17:15:33 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "quantity" in D:\Documents\GitHub\DuAn1Groud7\App\Views\Client\Pages\Product\Detail.php on line 88
+[07-Dec-2024 17:15:33 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "name" in D:\Documents\GitHub\DuAn1Groud7\App\Views\Client\Pages\Product\Detail.php on line 227
+[07-Dec-2024 17:15:34 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught TypeError: Unsupported operand types: string * int in D:\Documents\GitHub\DuAn1Groud7\App\Views\Client\Pages\Cart\Index.php:41
+Stack trace:
+#0 D:\Documents\GitHub\DuAn1Groud7\App\Controllers\Client\CartController.php(18): App\Views\Client\Pages\Cart\Index::render()
+#1 D:\Documents\GitHub\DuAn1Groud7\App\Route.php(82): App\Controllers\Client\CartController::index()
+#2 D:\Documents\GitHub\DuAn1Groud7\index.php(105): App\Route::dispatch()
+#3 {main}
+  thrown in D:\Documents\GitHub\DuAn1Groud7\App\Views\Client\Pages\Cart\Index.php on line 41
+[07-Dec-2024 17:15:37 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught TypeError: Unsupported operand types: string * int in D:\Documents\GitHub\DuAn1Groud7\App\Views\Client\Pages\Cart\Index.php:41
+Stack trace:
+#0 D:\Documents\GitHub\DuAn1Groud7\App\Controllers\Client\CartController.php(18): App\Views\Client\Pages\Cart\Index::render()
+#1 D:\Documents\GitHub\DuAn1Groud7\App\Route.php(82): App\Controllers\Client\CartController::index()
+#2 D:\Documents\GitHub\DuAn1Groud7\index.php(105): App\Route::dispatch()
+#3 {main}
+  thrown in D:\Documents\GitHub\DuAn1Groud7\App\Views\Client\Pages\Cart\Index.php on line 41
+[07-Dec-2024 17:16:12 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "quantity" in D:\Documents\GitHub\DuAn1Groud7\App\Views\Client\Pages\Product\Detail.php on line 88
+[07-Dec-2024 17:17:58 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "quantity" in D:\Documents\GitHub\DuAn1Groud7\App\Views\Client\Pages\Product\Detail.php on line 88
+[07-Dec-2024 17:17:58 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "name" in D:\Documents\GitHub\DuAn1Groud7\App\Views\Client\Pages\Product\Detail.php on line 227
+[07-Dec-2024 17:18:45 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "quantity" in D:\Documents\GitHub\DuAn1Groud7\App\Views\Client\Pages\Product\Detail.php on line 88
+[07-Dec-2024 17:18:45 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "name" in D:\Documents\GitHub\DuAn1Groud7\App\Views\Client\Pages\Product\Detail.php on line 227
+[07-Dec-2024 17:24:39 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "quantity" in D:\Documents\GitHub\DuAn1Groud7\App\Views\Client\Pages\Product\Detail.php on line 88
+[07-Dec-2024 17:24:39 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "name" in D:\Documents\GitHub\DuAn1Groud7\App\Views\Client\Pages\Product\Detail.php on line 227
+[07-Dec-2024 17:28:35 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "quantity" in D:\Documents\GitHub\DuAn1Groud7\App\Views\Client\Pages\Product\Detail.php on line 88
+[07-Dec-2024 17:28:35 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "name" in D:\Documents\GitHub\DuAn1Groud7\App\Views\Client\Pages\Product\Detail.php on line 227
+[07-Dec-2024 17:30:07 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "quantity" in D:\Documents\GitHub\DuAn1Groud7\App\Views\Client\Pages\Product\Detail.php on line 88
+[07-Dec-2024 17:30:07 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "name" in D:\Documents\GitHub\DuAn1Groud7\App\Views\Client\Pages\Product\Detail.php on line 227
+[07-Dec-2024 17:31:14 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "quantity" in D:\Documents\GitHub\DuAn1Groud7\App\Views\Client\Pages\Product\Detail.php on line 99
+[07-Dec-2024 17:31:14 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "name" in D:\Documents\GitHub\DuAn1Groud7\App\Views\Client\Pages\Product\Detail.php on line 238
+[07-Dec-2024 17:31:48 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "quantity" in D:\Documents\GitHub\DuAn1Groud7\App\Views\Client\Pages\Product\Detail.php on line 99
+[07-Dec-2024 17:31:48 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "name" in D:\Documents\GitHub\DuAn1Groud7\App\Views\Client\Pages\Product\Detail.php on line 238
+[07-Dec-2024 17:32:10 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "quantity" in D:\Documents\GitHub\DuAn1Groud7\App\Views\Client\Pages\Product\Detail.php on line 99
+[07-Dec-2024 17:32:10 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "name" in D:\Documents\GitHub\DuAn1Groud7\App\Views\Client\Pages\Product\Detail.php on line 238
+[07-Dec-2024 17:33:00 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "quantity" in D:\Documents\GitHub\DuAn1Groud7\App\Views\Client\Pages\Product\Detail.php on line 99
+[07-Dec-2024 17:33:00 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "name" in D:\Documents\GitHub\DuAn1Groud7\App\Views\Client\Pages\Product\Detail.php on line 238
+[07-Dec-2024 17:33:31 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "quantity" in D:\Documents\GitHub\DuAn1Groud7\App\Views\Client\Pages\Product\Detail.php on line 99
+[07-Dec-2024 17:33:31 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "name" in D:\Documents\GitHub\DuAn1Groud7\App\Views\Client\Pages\Product\Detail.php on line 238
+[07-Dec-2024 17:34:21 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "quantity" in D:\Documents\GitHub\DuAn1Groud7\App\Views\Client\Pages\Product\Detail.php on line 99
+[07-Dec-2024 17:34:21 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "username" in D:\Documents\GitHub\DuAn1Groud7\App\Views\Client\Pages\Product\Detail.php on line 225
+[07-Dec-2024 17:34:21 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\Documents\GitHub\DuAn1Groud7\App\Views\Client\Pages\Product\Detail.php on line 225
+[07-Dec-2024 17:34:40 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "quantity" in D:\Documents\GitHub\DuAn1Groud7\App\Views\Client\Pages\Product\Detail.php on line 99
+[07-Dec-2024 17:34:43 Asia/Ho_Chi_Minh] Lỗi khi thêm dữ liệu: Field 'date' doesn't have a default value
+[07-Dec-2024 17:34:43 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "quantity" in D:\Documents\GitHub\DuAn1Groud7\App\Views\Client\Pages\Product\Detail.php on line 99
+[07-Dec-2024 17:35:08 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "quantity" in D:\Documents\GitHub\DuAn1Groud7\App\Views\Client\Pages\Product\Detail.php on line 99
+[07-Dec-2024 17:35:12 Asia/Ho_Chi_Minh] Lỗi khi thêm dữ liệu: Field 'date' doesn't have a default value
+[07-Dec-2024 17:35:13 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "quantity" in D:\Documents\GitHub\DuAn1Groud7\App\Views\Client\Pages\Product\Detail.php on line 99
+[07-Dec-2024 17:35:42 Asia/Ho_Chi_Minh] Lỗi khi thêm dữ liệu: Field 'date' doesn't have a default value
+[07-Dec-2024 17:37:48 Asia/Ho_Chi_Minh] PHP Parse error:  syntax error, unexpected token "?", expecting "function" or "const" in D:\Documents\GitHub\DuAn1Groud7\App\Models\Comment.php on line 87
+[07-Dec-2024 17:38:08 Asia/Ho_Chi_Minh] Lỗi khi thêm dữ liệu: Field 'date' doesn't have a default value
+[07-Dec-2024 17:39:02 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "date" in D:\Documents\GitHub\DuAn1Groud7\App\Controllers\Client\CommentController.php on line 33
+[07-Dec-2024 17:39:02 Asia/Ho_Chi_Minh] Lỗi khi thêm dữ liệu: Incorrect datetime value: '' for column 'date' at row 1
+[07-Dec-2024 17:55:35 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught Error: Class "App\Views\Client\Pages\Pay\index" not found in D:\Documents\GitHub\DuAn1Groud7\App\Controllers\Client\PayController.php:18
+Stack trace:
+#0 D:\Documents\GitHub\DuAn1Groud7\App\Route.php(82): App\Controllers\Client\PayController::index()
+#1 D:\Documents\GitHub\DuAn1Groud7\index.php(105): App\Route::dispatch()
+#2 {main}
+  thrown in D:\Documents\GitHub\DuAn1Groud7\App\Controllers\Client\PayController.php on line 18
+[07-Dec-2024 21:19:23 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught Error: Call to undefined method App\Controllers\Admin\UserController::getSearchUsers() in D:\Documents\GitHub\DuAn1Groud7\App\Route.php:82
+Stack trace:
+#0 D:\Documents\GitHub\DuAn1Groud7\index.php(109): App\Route::dispatch()
+#1 {main}
+  thrown in D:\Documents\GitHub\DuAn1Groud7\App\Route.php on line 82
+[08-Dec-2024 13:21:23 Asia/Ho_Chi_Minh] PHP Parse error:  syntax error, unexpected token ";", expecting "function" or "const" in D:\Documents\GitHub\DuAn1Groud7\App\Views\Client\Pages\Pay\Payment_method.php on line 14
+[08-Dec-2024 13:48:00 Asia/Ho_Chi_Minh] PHP Warning:  Undefined variable $jsonResult in D:\Documents\GitHub\DuAn1Groud7\App\Views\Client\Pages\Pay\Payment_method.php on line 85
+[08-Dec-2024 13:48:00 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\Documents\GitHub\DuAn1Groud7\App\Views\Client\Pages\Pay\Payment_method.php on line 85
+[08-Dec-2024 13:48:00 Asia/Ho_Chi_Minh] PHP Warning:  Cannot modify header information - headers already sent by (output started at D:\Documents\GitHub\DuAn1Groud7\App\Views\Client\Layouts\Header.php:53) in D:\Documents\GitHub\DuAn1Groud7\App\Views\Client\Pages\Pay\Payment_method.php on line 85
+[08-Dec-2024 13:48:21 Asia/Ho_Chi_Minh] PHP Warning:  Undefined variable $jsonResult in D:\Documents\GitHub\DuAn1Groud7\App\Views\Client\Pages\Pay\Payment_method.php on line 85
+[08-Dec-2024 13:48:21 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\Documents\GitHub\DuAn1Groud7\App\Views\Client\Pages\Pay\Payment_method.php on line 85
+[08-Dec-2024 13:48:21 Asia/Ho_Chi_Minh] PHP Warning:  Cannot modify header information - headers already sent by (output started at D:\Documents\GitHub\DuAn1Groud7\App\Views\Client\Layouts\Header.php:53) in D:\Documents\GitHub\DuAn1Groud7\App\Views\Client\Pages\Pay\Payment_method.php on line 85
+[08-Dec-2024 13:51:28 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "partnerCode" in D:\Documents\GitHub\DuAn1Groud7\App\Views\Client\Pages\Pay\Payment_method.php on line 40
+[08-Dec-2024 13:51:28 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "accessKey" in D:\Documents\GitHub\DuAn1Groud7\App\Views\Client\Pages\Pay\Payment_method.php on line 41
+[08-Dec-2024 13:51:28 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "secretKey" in D:\Documents\GitHub\DuAn1Groud7\App\Views\Client\Pages\Pay\Payment_method.php on line 42
+[08-Dec-2024 13:51:28 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "orderId" in D:\Documents\GitHub\DuAn1Groud7\App\Views\Client\Pages\Pay\Payment_method.php on line 43
+[08-Dec-2024 13:51:28 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "orderInfo" in D:\Documents\GitHub\DuAn1Groud7\App\Views\Client\Pages\Pay\Payment_method.php on line 44
+[08-Dec-2024 13:51:28 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "amount" in D:\Documents\GitHub\DuAn1Groud7\App\Views\Client\Pages\Pay\Payment_method.php on line 45
+[08-Dec-2024 13:51:28 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "ipnUrl" in D:\Documents\GitHub\DuAn1Groud7\App\Views\Client\Pages\Pay\Payment_method.php on line 46
+[08-Dec-2024 13:51:28 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "redirectUrl" in D:\Documents\GitHub\DuAn1Groud7\App\Views\Client\Pages\Pay\Payment_method.php on line 47
+[08-Dec-2024 13:51:28 Asia/Ho_Chi_Minh] PHP Deprecated:  hash_hmac(): Passing null to parameter #3 ($key) of type string is deprecated in D:\Documents\GitHub\DuAn1Groud7\App\Views\Client\Pages\Pay\Payment_method.php on line 53
+[08-Dec-2024 22:08:23 Asia/Ho_Chi_Minh] Lỗi khi thêm dữ liệu: Field 'date' doesn't have a default value
+[08-Dec-2024 22:12:38 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "discount_price" in D:\Documents\GitHub\DuAn1Groud7\App\Views\Client\Pages\Pay\Index.php on line 212
+[08-Dec-2024 22:12:38 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "discount_price" in D:\Documents\GitHub\DuAn1Groud7\App\Views\Client\Pages\Pay\Index.php on line 217
+[08-Dec-2024 22:12:38 Asia/Ho_Chi_Minh] PHP Deprecated:  number_format(): Passing null to parameter #1 ($num) of type float is deprecated in D:\Documents\GitHub\DuAn1Groud7\App\Views\Client\Pages\Pay\Index.php on line 217
+[08-Dec-2024 22:12:38 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "discount_price" in D:\Documents\GitHub\DuAn1Groud7\App\Views\Client\Pages\Pay\Index.php on line 218
+[08-Dec-2024 22:57:18 Asia/Ho_Chi_Minh] PHP Warning:  Cannot modify header information - headers already sent by (output started at D:\Documents\GitHub\DuAn1Groud7\App\Views\Client\Layouts\Header.php:53) in D:\Documents\GitHub\DuAn1Groud7\App\Helpers\AuthHelper.php on line 55
+[08-Dec-2024 22:57:34 Asia/Ho_Chi_Minh] PHP Warning:  Cannot modify header information - headers already sent by (output started at D:\Documents\GitHub\DuAn1Groud7\App\Views\Client\Layouts\Header.php:53) in D:\Documents\GitHub\DuAn1Groud7\App\Helpers\AuthHelper.php on line 55
+[08-Dec-2024 22:58:06 Asia/Ho_Chi_Minh] PHP Warning:  Cannot modify header information - headers already sent by (output started at D:\Documents\GitHub\DuAn1Groud7\App\Views\Client\Layouts\Header.php:53) in D:\Documents\GitHub\DuAn1Groud7\App\Helpers\AuthHelper.php on line 55
+[08-Dec-2024 22:58:14 Asia/Ho_Chi_Minh] PHP Warning:  Cannot modify header information - headers already sent by (output started at D:\Documents\GitHub\DuAn1Groud7\App\Views\Client\Layouts\Header.php:53) in D:\Documents\GitHub\DuAn1Groud7\App\Helpers\AuthHelper.php on line 55
+[09-Dec-2024 00:14:24 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\Documents\GitHub\DuAn1Groud7\App\Views\Client\Pages\Pay\Index.php on line 170
+[09-Dec-2024 00:15:03 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\Documents\GitHub\DuAn1Groud7\App\Views\Client\Pages\Pay\Index.php on line 170
+[09-Dec-2024 00:17:32 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\Documents\GitHub\DuAn1Groud7\App\Views\Client\Pages\Pay\Index.php on line 170
+[09-Dec-2024 00:17:34 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\Documents\GitHub\DuAn1Groud7\App\Views\Client\Pages\Pay\Index.php on line 170
+[09-Dec-2024 00:40:08 Asia/Ho_Chi_Minh] PHP Parse error:  syntax error, unexpected identifier "a", expecting "function" or "const" in D:\Documents\GitHub\DuAn1Groud7\App\Views\Client\Pages\Method\Momo.php on line 10
+[09-Dec-2024 00:41:45 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught Error: Class "App\Views\Client\Pages\Method\Momo" not found in D:\Documents\GitHub\DuAn1Groud7\App\Controllers\Client\MethodController.php:19
+Stack trace:
+#0 D:\Documents\GitHub\DuAn1Groud7\App\Route.php(82): App\Controllers\Client\MethodController::momo()
+#1 D:\Documents\GitHub\DuAn1Groud7\index.php(109): App\Route::dispatch()
+#2 {main}
+  thrown in D:\Documents\GitHub\DuAn1Groud7\App\Controllers\Client\MethodController.php on line 19
+[09-Dec-2024 00:42:00 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught Error: Class "App\Controllers\Client\MethodController" not found in D:\Documents\GitHub\DuAn1Groud7\App\Route.php:79
+Stack trace:
+#0 D:\Documents\GitHub\DuAn1Groud7\index.php(109): App\Route::dispatch()
+#1 {main}
+  thrown in D:\Documents\GitHub\DuAn1Groud7\App\Route.php on line 79
+[09-Dec-2024 00:42:23 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught Error: Class "App\Views\Client\Pages\Method\Momo" not found in D:\Documents\GitHub\DuAn1Groud7\App\Controllers\Client\MethodController.php:19
+Stack trace:
+#0 D:\Documents\GitHub\DuAn1Groud7\App\Route.php(82): App\Controllers\Client\MethodController::momo()
+#1 D:\Documents\GitHub\DuAn1Groud7\index.php(109): App\Route::dispatch()
+#2 {main}
+  thrown in D:\Documents\GitHub\DuAn1Groud7\App\Controllers\Client\MethodController.php on line 19
+[09-Dec-2024 00:42:55 Asia/Ho_Chi_Minh] PHP Parse error:  syntax error, unexpected token ";", expecting "function" or "const" in D:\Documents\GitHub\DuAn1Groud7\App\Views\Client\Pages\Method\Momo.php on line 14
+[09-Dec-2024 00:44:03 Asia/Ho_Chi_Minh] PHP Warning:  Cannot modify header information - headers already sent by (output started at D:\Documents\GitHub\DuAn1Groud7\App\Views\Client\Layouts\Header.php:53) in D:\Documents\GitHub\DuAn1Groud7\App\Views\Client\Pages\Method\Momo.php on line 17
+[09-Dec-2024 00:44:09 Asia/Ho_Chi_Minh] PHP Warning:  Cannot modify header information - headers already sent by (output started at D:\Documents\GitHub\DuAn1Groud7\App\Views\Client\Layouts\Header.php:53) in D:\Documents\GitHub\DuAn1Groud7\App\Views\Client\Pages\Method\Momo.php on line 17
+[09-Dec-2024 01:15:28 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught Error: Class "App\Controllers\Client\MethodController" not found in D:\Documents\GitHub\DuAn1Groud7\App\Route.php:79
+Stack trace:
+#0 D:\Documents\GitHub\DuAn1Groud7\index.php(109): App\Route::dispatch()
+#1 {main}
+  thrown in D:\Documents\GitHub\DuAn1Groud7\App\Route.php on line 79
+[09-Dec-2024 01:15:41 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught Error: Class "App\Controllers\Client\MethodController" not found in D:\Documents\GitHub\DuAn1Groud7\App\Route.php:79
+Stack trace:
+#0 D:\Documents\GitHub\DuAn1Groud7\index.php(109): App\Route::dispatch()
+#1 {main}
+  thrown in D:\Documents\GitHub\DuAn1Groud7\App\Route.php on line 79
+[09-Dec-2024 01:15:42 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught Error: Class "App\Controllers\Client\MethodController" not found in D:\Documents\GitHub\DuAn1Groud7\App\Route.php:79
+Stack trace:
+#0 D:\Documents\GitHub\DuAn1Groud7\index.php(109): App\Route::dispatch()
+#1 {main}
+  thrown in D:\Documents\GitHub\DuAn1Groud7\App\Route.php on line 79
+[09-Dec-2024 01:28:40 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught Error: Call to undefined method App\Controllers\Client\MethodController::Momo() in D:\Documents\GitHub\DuAn1Groud7\App\Route.php:82
+Stack trace:
+#0 D:\Documents\GitHub\DuAn1Groud7\index.php(109): App\Route::dispatch()
+#1 {main}
+  thrown in D:\Documents\GitHub\DuAn1Groud7\App\Route.php on line 82
+[09-Dec-2024 01:31:56 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught Error: Call to undefined method App\Controllers\Client\MethodController::Momo() in D:\Documents\GitHub\DuAn1Groud7\App\Route.php:82
+Stack trace:
+#0 D:\Documents\GitHub\DuAn1Groud7\index.php(109): App\Route::dispatch()
+#1 {main}
+  thrown in D:\Documents\GitHub\DuAn1Groud7\App\Route.php on line 82
+[09-Dec-2024 01:32:13 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught Error: Call to undefined method App\Controllers\Client\MethodController::Momo() in D:\Documents\GitHub\DuAn1Groud7\App\Route.php:82
+Stack trace:
+#0 D:\Documents\GitHub\DuAn1Groud7\index.php(109): App\Route::dispatch()
+#1 {main}
+  thrown in D:\Documents\GitHub\DuAn1Groud7\App\Route.php on line 82
+[09-Dec-2024 01:35:41 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught Error: Class "App\Views\Client\Pages\Method\Momo" not found in D:\Documents\GitHub\DuAn1Groud7\App\Controllers\Client\MethodController.php:15
+Stack trace:
+#0 D:\Documents\GitHub\DuAn1Groud7\App\Route.php(82): App\Controllers\Client\MethodController::momo()
+#1 D:\Documents\GitHub\DuAn1Groud7\index.php(109): App\Route::dispatch()
+#2 {main}
+  thrown in D:\Documents\GitHub\DuAn1Groud7\App\Controllers\Client\MethodController.php on line 15
+[09-Dec-2024 01:36:40 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught Error: Class "App\Views\Client\Pages\Method\Momo" not found in D:\Documents\GitHub\DuAn1Groud7\App\Controllers\Client\MethodController.php:18
+Stack trace:
+#0 D:\Documents\GitHub\DuAn1Groud7\App\Route.php(82): App\Controllers\Client\MethodController::momo()
+#1 D:\Documents\GitHub\DuAn1Groud7\index.php(109): App\Route::dispatch()
+#2 {main}
+  thrown in D:\Documents\GitHub\DuAn1Groud7\App\Controllers\Client\MethodController.php on line 18
+[09-Dec-2024 01:37:18 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\Documents\GitHub\DuAn1Groud7\App\Views\Client\Pages\Method\Momo.php on line 77
+[09-Dec-2024 01:37:19 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\Documents\GitHub\DuAn1Groud7\App\Views\Client\Pages\Method\Momo.php on line 77
+[09-Dec-2024 01:37:41 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\Documents\GitHub\DuAn1Groud7\App\Views\Client\Pages\Method\Momo.php on line 74
+[09-Dec-2024 01:37:45 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\Documents\GitHub\DuAn1Groud7\App\Views\Client\Pages\Method\Momo.php on line 74
+[09-Dec-2024 01:51:32 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\Documents\GitHub\DuAn1Groud7\App\Views\Client\Pages\Method\Momo.php on line 72
+[09-Dec-2024 01:53:00 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\Documents\GitHub\DuAn1Groud7\App\Views\Client\Pages\Method\Momo.php on line 72
+[09-Dec-2024 01:59:14 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\Documents\GitHub\DuAn1Groud7\App\Views\Client\Pages\Method\Momo.php on line 72
+[09-Dec-2024 02:23:12 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "id" in D:\Documents\GitHub\DuAn1Groud7\App\Views\Client\Pages\Cart\Index.php on line 55
+[09-Dec-2024 02:23:12 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "id" in D:\Documents\GitHub\DuAn1Groud7\App\Views\Client\Pages\Cart\Index.php on line 55
+[09-Dec-2024 02:23:12 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "id" in D:\Documents\GitHub\DuAn1Groud7\App\Views\Client\Pages\Cart\Index.php on line 55
+[09-Dec-2024 02:23:12 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "id" in D:\Documents\GitHub\DuAn1Groud7\App\Views\Client\Pages\Cart\Index.php on line 55
+[09-Dec-2024 02:23:24 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "id" in D:\Documents\GitHub\DuAn1Groud7\App\Views\Client\Pages\Cart\Index.php on line 55
+[09-Dec-2024 02:23:24 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "id" in D:\Documents\GitHub\DuAn1Groud7\App\Views\Client\Pages\Cart\Index.php on line 55
+[09-Dec-2024 02:23:24 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "id" in D:\Documents\GitHub\DuAn1Groud7\App\Views\Client\Pages\Cart\Index.php on line 55
+[09-Dec-2024 02:23:24 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "id" in D:\Documents\GitHub\DuAn1Groud7\App\Views\Client\Pages\Cart\Index.php on line 55
+[09-Dec-2024 02:23:59 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "id" in D:\Documents\GitHub\DuAn1Groud7\App\Views\Client\Pages\Cart\Index.php on line 54
+[09-Dec-2024 02:23:59 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "id" in D:\Documents\GitHub\DuAn1Groud7\App\Views\Client\Pages\Cart\Index.php on line 54
+[09-Dec-2024 02:23:59 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "id" in D:\Documents\GitHub\DuAn1Groud7\App\Views\Client\Pages\Cart\Index.php on line 54
+[09-Dec-2024 02:23:59 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "id" in D:\Documents\GitHub\DuAn1Groud7\App\Views\Client\Pages\Cart\Index.php on line 54
+[09-Dec-2024 02:26:19 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\Documents\GitHub\DuAn1Groud7\App\Views\Client\Pages\Method\Momo.php on line 72
+[09-Dec-2024 02:29:34 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "extraData" in D:\Documents\GitHub\DuAn1Groud7\App\Views\Client\Pages\Method\Momo.php on line 49
+[09-Dec-2024 02:29:34 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\Documents\GitHub\DuAn1Groud7\App\Views\Client\Pages\Method\Momo.php on line 71
+[09-Dec-2024 10:02:07 Asia/Ho_Chi_Minh] PHP Fatal error:  Class declarations may not be nested in D:\Documents\GitHub\DuAn1Groud7\App\Views\Client\Pages\Method\Momo.php on line 14
+[09-Dec-2024 10:03:20 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught Error: Class "App\Views\Client\Pages\Method\Momo" not found in D:\Documents\GitHub\DuAn1Groud7\App\Controllers\Client\MethodController.php:17
+Stack trace:
+#0 D:\Documents\GitHub\DuAn1Groud7\App\Route.php(82): App\Controllers\Client\MethodController::momo()
+#1 D:\Documents\GitHub\DuAn1Groud7\index.php(109): App\Route::dispatch()
+#2 {main}
+  thrown in D:\Documents\GitHub\DuAn1Groud7\App\Controllers\Client\MethodController.php on line 17
+[09-Dec-2024 10:03:49 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught Error: Class "App\Views\Client\Pages\Method\Momo" not found in D:\Documents\GitHub\DuAn1Groud7\App\Controllers\Client\MethodController.php:17
+Stack trace:
+#0 D:\Documents\GitHub\DuAn1Groud7\App\Route.php(82): App\Controllers\Client\MethodController::momo()
+#1 D:\Documents\GitHub\DuAn1Groud7\index.php(109): App\Route::dispatch()
+#2 {main}
+  thrown in D:\Documents\GitHub\DuAn1Groud7\App\Controllers\Client\MethodController.php on line 17
+[09-Dec-2024 10:04:26 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught Error: Class "App\Views\Client\Pages\Method\Momo" not found in D:\Documents\GitHub\DuAn1Groud7\App\Controllers\Client\MethodController.php:17
+Stack trace:
+#0 D:\Documents\GitHub\DuAn1Groud7\App\Route.php(82): App\Controllers\Client\MethodController::momo()
+#1 D:\Documents\GitHub\DuAn1Groud7\index.php(109): App\Route::dispatch()
+#2 {main}
+  thrown in D:\Documents\GitHub\DuAn1Groud7\App\Controllers\Client\MethodController.php on line 17
+[09-Dec-2024 10:04:42 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught Error: Class "App\Views\Client\Pages\Method\Momo" not found in D:\Documents\GitHub\DuAn1Groud7\App\Controllers\Client\MethodController.php:17
+Stack trace:
+#0 D:\Documents\GitHub\DuAn1Groud7\App\Route.php(82): App\Controllers\Client\MethodController::momo()
+#1 D:\Documents\GitHub\DuAn1Groud7\index.php(109): App\Route::dispatch()
+#2 {main}
+  thrown in D:\Documents\GitHub\DuAn1Groud7\App\Controllers\Client\MethodController.php on line 17
+[09-Dec-2024 10:09:56 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught Error: Class "App\Views\Client\Pages\Method\Momo" not found in D:\Documents\GitHub\DuAn1Groud7\App\Controllers\Client\MethodController.php:17
+Stack trace:
+#0 D:\Documents\GitHub\DuAn1Groud7\App\Route.php(82): App\Controllers\Client\MethodController::momo()
+#1 D:\Documents\GitHub\DuAn1Groud7\index.php(109): App\Route::dispatch()
+#2 {main}
+  thrown in D:\Documents\GitHub\DuAn1Groud7\App\Controllers\Client\MethodController.php on line 17
+[09-Dec-2024 10:12:09 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught Error: Class "App\Views\Client\Pages\Method\Momo" not found in D:\Documents\GitHub\DuAn1Groud7\App\Controllers\Client\MethodController.php:17
+Stack trace:
+#0 D:\Documents\GitHub\DuAn1Groud7\App\Route.php(82): App\Controllers\Client\MethodController::momo()
+#1 D:\Documents\GitHub\DuAn1Groud7\index.php(109): App\Route::dispatch()
+#2 {main}
+  thrown in D:\Documents\GitHub\DuAn1Groud7\App\Controllers\Client\MethodController.php on line 17
+[09-Dec-2024 10:16:48 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "status" in D:\Documents\GitHub\DuAn1Groud7\App\Views\Admin\Pages\Product\Edit.php on line 112
+[09-Dec-2024 10:20:28 Asia/Ho_Chi_Minh] Lỗi khi thêm dữ liệu: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '2 - Chủ nhật)
+</span></p><p><span style="background-color:rgb(255,255,255);' at line 27
+[09-Dec-2024 10:20:44 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "status" in D:\Documents\GitHub\DuAn1Groud7\App\Views\Admin\Pages\Product\Edit.php on line 112
+[09-Dec-2024 10:21:47 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught TypeError: error_log(): Argument #2 ($message_type) must be of type int, string given in D:\Documents\GitHub\DuAn1Groud7\App\Models\BaseModel.php:95
+Stack trace:
+#0 D:\Documents\GitHub\DuAn1Groud7\App\Models\BaseModel.php(95): error_log()
+#1 D:\Documents\GitHub\DuAn1Groud7\App\Models\Product.php(23): App\Models\BaseModel->update()
+#2 D:\Documents\GitHub\DuAn1Groud7\App\Controllers\Admin\ProductController.php(136): App\Models\Product->updateProduct()
+#3 D:\Documents\GitHub\DuAn1Groud7\App\Route.php(104): App\Controllers\Admin\ProductController::update()
+#4 D:\Documents\GitHub\DuAn1Groud7\index.php(109): App\Route::dispatch()
+#5 {main}
+  thrown in D:\Documents\GitHub\DuAn1Groud7\App\Models\BaseModel.php on line 95
+[09-Dec-2024 10:21:57 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "status" in D:\Documents\GitHub\DuAn1Groud7\App\Views\Admin\Pages\Product\Edit.php on line 112
+[09-Dec-2024 10:23:44 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "status" in D:\Documents\GitHub\DuAn1Groud7\App\Views\Admin\Pages\Product\Edit.php on line 112
+[09-Dec-2024 10:26:45 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "status" in D:\Documents\GitHub\DuAn1Groud7\App\Views\Admin\Pages\Product\Edit.php on line 112
+[09-Dec-2024 10:34:15 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "status" in D:\Documents\GitHub\DuAn1Groud7\App\Views\Admin\Pages\Product\Edit.php on line 112
