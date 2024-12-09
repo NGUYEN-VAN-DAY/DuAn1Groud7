@@ -9,20 +9,19 @@ class Detail extends BaseView
 {
     public static function render($data = null)
     {
-
         // var_dump($_SESSION);
-        ?>
+?>
         <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous"> -->
         <style>
-            .product_review_form {
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-                gap: 10px;
-            }
-
-            .action-buttons {
+            p.card-text {
                 white-space: nowrap;
+                /* Ngăn chữ xuống dòng */
+                overflow: hidden;
+                /* Ẩn nội dung tràn */
+                text-overflow: ellipsis;
+                /* Hiển thị dấu 3 chấm */
+                max-width: 500px;
+                /* Đặt chiều rộng tối đa cho cột */
             }
         </style>
         <div class="container mt-5 mb-5">
@@ -36,9 +35,9 @@ class Detail extends BaseView
                 </div>
                 <div class="col-md-4">
 
-                    <h1 class="fs-1"><?= $data['product']['name'] ?></h1>
+                    <p class="" style="font-size: medium;"><?= $data['product']['name'] ?></p>
                     <!-- <h4>trạng thái: <button class="btn btn-success">còn hàng</button></h4> -->
-                    <h5>Mô tả: <?= $data['product']['description'] ?></h5>
+                    <p>Mô tả: <?= $data['product']['description'] ?></p>
 
 
                     <?php
@@ -139,22 +138,42 @@ class Detail extends BaseView
             <hr>
             <!-- ----------------------- -->
             <div class="row">
-                <div class="col-md-6">
-                    <h3>Lưu ý khi sử dụng</h3>
-                    <!-- <hr> -->
-                    <span>không sử dụng sản phẩm đã hết hạn</span>
-                    <br><br>
-                    <span>Nếu bạn có dị ứng với bất kỳ thành phần nào của sản phẩm, hãy ngừng sử dụng và tham khảo ý kiến bác
-                        sĩ.</span>
+
+                <div class="container mt-5">
+                    <div class="text mb-4">
+                        <h2 class="text-danger">Lưu ý khi sử dụng</h2>
+                    </div>
+                    <ul class="list-unstyled">
+                        <li class="mb-3">
+                            <strong>Kiểm tra hạn sử dụng:</strong> Tuyệt đối không sử dụng sản phẩm đã hết hạn để đảm bảo an toàn cho sức khỏe. Nên kiểm tra kỹ thông tin hạn sử dụng trên bao bì trước khi dùng.
+                        </li>
+                        <li class="mb-3">
+                            <strong>Phản ứng dị ứng:</strong> Nếu bạn có bất kỳ dấu hiệu dị ứng nào như mẩn ngứa, đỏ da, khó thở, hãy ngừng sử dụng sản phẩm ngay lập tức. Tham khảo ý kiến bác sĩ nếu cần thiết.
+                        </li>
+                        <li class="mb-3">
+                            <strong>Bảo quản sản phẩm đúng cách:</strong> Lưu trữ sản phẩm ở nơi khô ráo, thoáng mát, tránh ánh nắng trực tiếp và nhiệt độ cao. Đậy kín nắp sau khi sử dụng.
+                        </li>
+                        <li class="mb-3">
+                            <strong>Hướng dẫn sử dụng:</strong> Sử dụng sản phẩm đúng mục đích, không lạm dụng hoặc sử dụng quá liều lượng khuyến nghị. Đọc kỹ hướng dẫn sử dụng kèm theo trước khi dùng.
+                        </li>
+                        <li class="mb-3">
+                            <strong>Đối tượng sử dụng:</strong> Tránh xa tầm tay trẻ em nếu sản phẩm không phù hợp với trẻ nhỏ. Nếu bạn đang mang thai, cho con bú hoặc có vấn đề sức khỏe đặc biệt, nên tham khảo ý kiến bác sĩ trước khi sử dụng.
+                        </li>
+                        <li class="mb-3">
+                            <strong>Lưu ý khác:</strong> Nếu sản phẩm có dấu hiệu biến đổi màu sắc, mùi vị hoặc kết cấu bất thường, không nên tiếp tục sử dụng.
+                        </li>
+                    </ul>
                 </div>
 
-                    <div class="col-md-12 mt-5">
-                        <hr>
-                        <h3>Mô tả sản phẩm</h3>
-                        <!-- <hr> -->
+                <div class="col-12 mt-5">
+                    <div class="border-bottom pb-2 mb-4">
+                        <h3 class="text">Mô tả sản phẩm</h3>
+                    </div>
+                    <div class="text-secondary">
                         <?= $data['product']['long_description'] ?>
                     </div>
-                    <br>
+                </div>
+                <br>
 
             </div>
             <!-- -------------- -->

@@ -44,6 +44,14 @@ class Index extends BaseView
                         <div class="card">
                             <div class="card-body">
                                 <h5 class="card-title">Danh sách tài khoản</h5>
+                                <form action="/admin/users/seach" method="get">
+                                    <input type="hidden" name="method" value="GET">
+
+                                    <div class="input-group w-100 mx-auto d-flex mb-3">
+                                        <input type="search" class="form-control " name="query" id="query" placeholder="TÌM KIẾM" aria-describedby="search-icon-1" onchange="this.form.submit()">
+                                        <span id="search-icon-1" class="input-group-text p-2"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Search_Icon.svg/20px-Search_Icon.svg.png" alt=""></span>
+                                    </div>
+                                </form>
                                 <?php
                                 if (count($data)) :
                                 ?>

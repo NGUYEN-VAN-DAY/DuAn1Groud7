@@ -23,7 +23,10 @@ Route::get(url: '/', controllerMethod: 'App\Controllers\Client\HomeController@in
 Route::get(url: '/contact', controllerMethod: '\App\Controllers\Client\ContactController@index');
 Route::post(url: '/contact', controllerMethod: '\App\Controllers\Client\ContactController@handleContactForm');
 Route::get(url: '/post', controllerMethod: 'App\Controllers\Client\PostController@index');
+
 Route::get(url: '/pay', controllerMethod: 'App\Controllers\Client\PayController@index');
+Route::get(url: '/momo', controllerMethod: 'App\Controllers\Client\MethodController@Momo');
+
 //
 Route::get(url: '/introduce', controllerMethod: 'App\Controllers\Client\IntroduceController@index');
 
@@ -89,6 +92,8 @@ Route::post(url: '/admin/users', controllerMethod: 'App\Controllers\Admin\UserCo
 Route::get('/admin/users/{id}', 'App\Controllers\Admin\UserController@edit');
 Route::put('/admin/users/{id}', 'App\Controllers\Admin\UserController@update');
 Route::delete('/admin/users/{id}', 'App\Controllers\Admin\UserController@delete');
+Route::get(url: '/admin/users/seach', controllerMethod: 'App\Controllers\Admin\UserController@getSearchUsers');
+
 //Comment
 Route::get('/admin/comments', 'App\Controllers\Admin\CommentController@index');
 
