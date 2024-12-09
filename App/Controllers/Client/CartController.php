@@ -26,7 +26,7 @@ class CartController
         //nếu có 1 sản phẩm đó trong giỏ hàng rồi thì tăng số lượng lên
         if (isset($_SESSION['cart'][$product_id])) {
             $_SESSION['cart'][$product_id]['quantity'] += 1;
-            NotificationHelper::set('success', 'Thêm sản phẩm vào giỏ hàng thành công');
+            // NotificationHelper::set('success', 'Thêm sản phẩm vào giỏ hàng thành công');
             header('Location: /cart');
             return;
         }
@@ -42,7 +42,7 @@ class CartController
         ];
 
         $_SESSION['cart'] = $cart;
-        NotificationHelper::set('success', 'Thêm sản phẩm vào giỏ hàng thành công');
+        // NotificationHelper::set('success', 'Thêm sản phẩm vào giỏ hàng thành công');
         header('Location: /cart');
     }
 
@@ -52,7 +52,7 @@ class CartController
         $cart = $_SESSION['cart'] ?? [];
         unset($cart[$id]);
         $_SESSION['cart'] = $cart;
-        NotificationHelper::set('success', 'Xóa sản phẩm khỏi giỏ hàng thành công');
+        // NotificationHelper::set('success', 'Xóa sản phẩm khỏi giỏ hàng thành công');
         header('Location: /cart');
     }
 }
