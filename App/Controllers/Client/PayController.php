@@ -18,4 +18,5 @@ class PayController
         index::render();
         Footer::render();
     }
+    
 }
