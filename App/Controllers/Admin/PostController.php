@@ -122,7 +122,7 @@ public static function update(int $id)
         exit;
     }
 
-    // Lấy dữ liệu từ form
+    // Lấy dữ liệu từ formMM
     $title = $_POST['title'];
     $content = $_POST['content'];
     $status = $_POST['status'];

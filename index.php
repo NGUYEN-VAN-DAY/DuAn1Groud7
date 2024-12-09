@@ -1,4 +1,4 @@
-    <?php
+<?php
     session_start();
     ini_set('display_errors', '1');
     ini_set('display_startup_errors', '1');
@@ -29,6 +29,9 @@
 
     //Bài viết
     Route::get(url: '/post', controllerMethod: 'App\Controllers\Client\PostController@index');
+    Route::get(url: '/posts', controllerMethod: 'App\Controllers\Client\PostController@index');
+
+
     //Thanh toán
     Route::get(url: '/pay', controllerMethod: 'App\Controllers\Client\PayController@index');
     //
@@ -105,9 +108,10 @@
     //post
     // Route::post('/admin/posts', 'App\Controllers\Admin\PostController@index');
 
-
+    ------
     // Post Management
     Route::get('/admin/posts', 'App\Controllers\Admin\PostController@index'); // View all posts
+    
     Route::get('/admin/posts/create', 'App\Controllers\Admin\PostController@create'); // Show form to create a post
     Route::post(url: '/admin/posts', controllerMethod: 'App\Controllers\Admin\PostController@store'); // Store a new post
     Route::get('/admin/posts/{id}', controllerMethod: 'App\Controllers\Admin\PostController@edit'); // Show form to edit a post

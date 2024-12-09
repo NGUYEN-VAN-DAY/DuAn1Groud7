@@ -74,7 +74,7 @@ class Post extends BaseModel
         }
     }
 
-    // Lấy tất cả bài viết theo tên (dùng LIKE để tìm kiếm bài viết tương tự)
+    // Lấy tất cả bài viết theo tên (dùng LIKE để tìm kiếm bài viết tương tự))))
     public function getAllPostByName($title)
     {
         $result = [];
