@@ -12,6 +12,18 @@ class Index extends BaseView
 
 
 ?>
+        <style>
+            p.card-text {
+                white-space: nowrap;
+                /* Ngăn chữ xuống dòng */
+                overflow: hidden;
+                /* Ẩn nội dung tràn */
+                text-overflow: ellipsis;
+                /* Hiển thị dấu 3 chấm */
+                max-width: 500px;
+                /* Đặt chiều rộng tối đa cho cột */
+            }
+        </style>
         <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous"> -->
         <div class="container-fluid">
             <section class="shop_section layout_padding">
@@ -83,8 +95,8 @@ class Index extends BaseView
                                                 <div class="box" id="box">
                                                     <a href="/products/<?= $item['id'] ?>" class="">
                                                         <div class="card mb-4 shadow-sm">
-                                                           
-                                                            <img class="img-index" id="img" src="<?= APP_URL ?>/public/uploads/products/<?= $item['image'] ?>" class="card-img-top" alt="" data-holder-rendered="true">
+
+                                                            <img class="img-index" src="<?= APP_URL ?>/public/uploads/products/<?= $item['image'] ?> " class="card-img-top" alt="" data-holder-rendered="true" style="height: 130px;">
                                                         </div>
                                                         <div class="">
                                                             <h6>

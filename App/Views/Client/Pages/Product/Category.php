@@ -14,6 +14,18 @@ class Category extends BaseView
     {
 
 ?>
+        <style>
+            p.card-text {
+                white-space: nowrap;
+                /* Ngăn chữ xuống dòng */
+                overflow: hidden;
+                /* Ẩn nội dung tràn */
+                text-overflow: ellipsis;
+                /* Hiển thị dấu 3 chấm */
+                max-width: 500px;
+                /* Đặt chiều rộng tối đa cho cột */
+            }
+        </style>
 
         <div class="container-fluid">
 
